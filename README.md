@@ -1,5 +1,5 @@
 
-###This project is a copy of front Amazon website for improve my React & Typescript skills and front-end fundamentals
+### This project is a copy of front Amazon website for improve my React & Typescript skills and front-end fundamentals
 
 # React + TypeScript + Vite
 
