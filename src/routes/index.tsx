@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes as Switch, Navigate } from "react-router-dom"
 
-import {Login, Register} from "../pages/index";
+import {Login, Register, Menu} from "../pages/index";
 
 
 export const Routes = () => {
@@ -9,6 +9,7 @@ export const Routes = () => {
             <Switch>
                 <Route path="/signup" element={<Register/>}/>
                 <Route path="/signin" element={<Login/>}/>
+                <Route path="/menu" element={<Menu/>} />
                 <Route path="*" Component={()=> <Navigate to="/signup"/> }/> 
             </Switch>
         </BrowserRouter>
