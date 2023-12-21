@@ -1,3 +1,6 @@
+
+### This project is a copy of front Amazon website for improve my React & Typescript skills and front-end fundamentals
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
