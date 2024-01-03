@@ -1,16 +1,19 @@
 import { Container } from "./style"
+import { Local, Search, LayoutTools} from "./components/Index"
 
-
+import logoMenu from "../../../../images/logo-menu.png";
 
 export const Header = ()=> {
     return (
         <Container>
             <header>
-                <h1>Logo</h1>
-                <h1>Local</h1>
-                <h1>Pesquisa</h1>
-                <h1>Usuario</h1>
+                <div className="logo">
+                    <img src={logoMenu}/>
+                </div>
 
+                <Local/>
+                <Search/>
+                <LayoutTools/>
             </header>
         </Container>
     )
