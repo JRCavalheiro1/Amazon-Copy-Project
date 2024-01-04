@@ -8,12 +8,12 @@ export const Header = ()=> {
         <Container>
             <header>
                 <div className="logo">
-                    <img className="logo" src={logoMenu}/>
+                    <img src={logoMenu}/>
                 </div>
-
                 <Local/>
                 <Search/>
-                <LayoutTools/>
+
+                {/*<LayoutTools/>*/}
             </header>
         </Container>
     )

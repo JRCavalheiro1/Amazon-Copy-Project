@@ -7,8 +7,6 @@ export const Local = ()=> {
                 <img src={localIcon}/> 
                 <p>A entrega será feita em Torres 95560000</p>
                 <h3>Atualizar local</h3>        
-           
-            
         </Container>
     )
 }
