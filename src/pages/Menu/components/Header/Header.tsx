@@ -8,7 +8,7 @@ export const Header = ()=> {
         <Container>
             <header>
                 <div className="logo">
-                    <img src={logoMenu}/>
+                    <img className="logo" src={logoMenu}/>
                 </div>
 
                 <Local/>
