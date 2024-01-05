@@ -1,12 +1,18 @@
-import localIcon from "../../../../../../images/local.svg"
+import localLogo from "../../../../../../images/local.svg"
 
 import { Container } from "./style"
 export const Local = ()=> {
     return (
         <Container>
-                <img src={localIcon}/> 
-                <p>A entrega será feita em Torres 95560000</p>
-                <h3>Atualizar local</h3>        
+            <a className="nav-local">
+                    <div className="logo-local">
+                        <img src={localLogo}/>
+                    </div>
+                    <div className="span-msg">
+                        <span id="s1">A entrega será feita em Torres 95560000</span>
+                        <span id="s2">Atualizar local</span>
+                    </div>
+                </a>
         </Container>
     )
 }

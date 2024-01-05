@@ -4,6 +4,7 @@ import { Container } from "./style";
 export const Search = () => {
     return (
         <Container>
+            <div className="nav-search">
             <label>
                 <select name="Select">
                     <option>Todos</option>
@@ -17,6 +18,7 @@ export const Search = () => {
                 <input placeholder="Pesquisa Amazon.com.br"/>
                 <button>send</button>
             </label>
+            </div>
         </Container>
     )
 }
