@@ -5,9 +5,11 @@ export const Container = styled.div`
         display: flex;
         cursor: pointer;
         margin-left: 1rem;
+        margin-right: 1rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
         border: 1px solid transparent;
+
 
         span {
             display: block;

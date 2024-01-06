@@ -15,7 +15,6 @@ export const Header = ()=> {
 
                 
                 <div className="nav-search">
-                    <label>
                         <select name="todos">
                             <option>Todos</option>
                             <option>product2</option>
@@ -24,8 +23,7 @@ export const Header = ()=> {
                         </select>
                         
                         <input className="input-search" type="text" placeholder="Pesquisa Amazon.com.br"/>
-                        <input className="input-submit" type="submit"/>
-                    </label>
+                        <input className="input-submit" type="submit" />
                  </div>
 
                 {/*<LayoutTools/>*/}
