@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const Container = styled.div`
      .nav-local {
         display: flex;
+        height: 100%;
         cursor: pointer;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 1.4rem;
+        margin-right: 1.4rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
         border: 1px solid transparent;
