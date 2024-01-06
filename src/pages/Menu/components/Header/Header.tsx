@@ -1,8 +1,8 @@
 import { Container } from "./style"
 import { Local, Search, LayoutTools} from "./components/Index"
-import localLogo from "../../../../images/local.svg"
-
 import logoMenu from "../../../../images/logo-menu.png";
+
+
 
 export const Header = ()=> {
     return (
@@ -24,6 +24,7 @@ export const Header = ()=> {
                         
                         <input className="input-search" type="text" placeholder="Pesquisa Amazon.com.br"/>
                         <input className="input-submit" type="submit" />
+                        
                  </div>
 
                 {/*<LayoutTools/>*/}
