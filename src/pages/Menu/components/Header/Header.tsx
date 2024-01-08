@@ -1,5 +1,5 @@
 import { Container } from "./style";
-import { Local, Search, LayoutTools} from "./components/Index";
+import { Local, Search, User, Ordered} from "./components/Index";
 import logoMenu from "../../../../images/logo-menu.png";
 
 
@@ -12,11 +12,8 @@ export const Header = ()=> {
                 
                 <Local/>
                 <Search/>
-                
-                
-
-                {/*<LayoutTools/>*/}
-            
+                <User/>
+                <Ordered/>
         </Container>
     )
 }

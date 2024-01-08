@@ -7,14 +7,13 @@ export const Container = styled.div`
         cursor: pointer;
         margin-left: 1.4rem;
         margin-right: 1.4rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding: 10px 10px 10px 10px;
         border: 1px solid transparent;
-
+        border-radius: 2px;
 
         span {
             display: block;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
         #s1 {
             line-height: 1;
@@ -30,4 +29,8 @@ export const Container = styled.div`
         }
     }
 
+    .nav-local:hover {
+        border-color: #ffffff;
+
+    }
 `;

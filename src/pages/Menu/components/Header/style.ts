@@ -14,7 +14,11 @@ export const Container = styled.div`
         padding-left: 0.5rem;  
         cursor: pointer;
         border: 1px solid transparent;
+        border-radius: 2px;
     } 
 
+    .logo:hover {
+        border-color: #ffffff;
+    }
     
 `;

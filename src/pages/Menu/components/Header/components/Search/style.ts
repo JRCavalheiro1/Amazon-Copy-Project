@@ -1,11 +1,13 @@
 import { styled } from "styled-components";
+//1000px
 
 export const Container = styled.div`
+  width: 1080px;
   .nav-search {
         display: flex;
         align-items: center;
-        width: 900px;
-    }
+        padding: 0px 25px 0px 4px;
+    }   
    
    select, input {
         padding: 1rem;
@@ -13,10 +15,10 @@ export const Container = styled.div`
     }
 
     .input-search {
-            width: 90%;
+            width: 100%;
             outline: none;
         }
-        
+       
     select {
             position: relative;
             border: none;
@@ -62,5 +64,4 @@ export const Container = styled.div`
         .submit, .input-submit {
             cursor: pointer;
         }
-    
 `;
