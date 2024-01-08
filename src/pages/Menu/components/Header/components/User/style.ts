@@ -21,5 +21,4 @@ export const Container = styled.div`
         font-weight: 600;
         display: inline;
     }
-    
 `;
