@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
      .nav-local {
+        position: static;
         display: flex;
-        height: 100%;
         cursor: pointer;
         margin-left: 1.4rem;
         margin-right: 1.4rem;
