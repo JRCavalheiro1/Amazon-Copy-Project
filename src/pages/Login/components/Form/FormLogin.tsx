@@ -2,6 +2,8 @@ import { Input, Button, Alert, Alert2, ConditionsText} from "../../../../shared/
 import { validationSigninSchema as validationSchema } from "../../../Register/Validation";
 import { Help } from "../Help/Help";
 import { Container } from "./style";
+import { auth } from "../../../../Firebase/firebase-cfg";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 import { useFormik} from "formik";
 import { useState } from "react";
@@ -24,24 +26,26 @@ export const FormLogin = () => {
     const [emailLogged, setEmailLogged] = useState(false);
     const [emailData, setEmailData] = useState("");
 
-
     const navigate = useNavigate();
-
     
     const onSubmit = (values : loginValues) => {
-        console.log("pelo amor de cristo" + values.email)
         setEmailLogged(true);
-
+        signInWithEmailAndPassword(auth, values.email, values.password).
+        then(() => {
+            navigate("/menu");
+            setEmailLogged(true);
+        })
+        .catch((error) => {
+            console.log(error);
+        })
     }
     
-
     const formik = useFormik<loginValues>({
         validationSchema,
         initialValues,
         onSubmit
     });
 
-    
     return (
         <Container send={emailLogged} >
             <form onSubmit={formik.handleSubmit}>

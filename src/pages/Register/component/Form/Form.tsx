@@ -30,7 +30,6 @@ const initialValues: formValues = {
     confirmPassword: "",
 };
 
-
 export const Form = () => {
 
     const navigate = useNavigate();
