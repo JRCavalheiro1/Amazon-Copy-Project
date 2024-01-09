@@ -11,7 +11,9 @@ import { Button } from "../../../../shared/components/Button/Button";
 //import of validation, firebase & other methods
 import { useFormik} from "formik";
 import { auth } from "../../../../Firebase/firebase-cfg";
+import { fireStore } from "../../../../Firebase/firebase-cfg";
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { collection, addDoc } from "firebase/firestore";
 
 import { useNavigate, Link } from "react-router-dom";
 
@@ -37,7 +39,8 @@ export const Form = () => {
     const onSubmit = (values : formValues) => {
         if(password == confirmPassword) {
             createUserWithEmailAndPassword(auth, values.email, values.password)
-            .then((userCredential) => {
+            .then( (userCredential) => {
+
                 console.log("Dados do usuário cadastrado" + userCredential.user)
                 navigate("/signin");
             })

@@ -9,6 +9,7 @@ import { useFormik} from "formik";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+
 interface loginValues {
     email: string,
     password: string
@@ -28,16 +29,21 @@ export const FormLogin = () => {
 
     const navigate = useNavigate();
     
-    const onSubmit = (values : loginValues) => {
-        setEmailLogged(true);
-        signInWithEmailAndPassword(auth, values.email, values.password).
+    const user = auth.currentUser;
+    const handleLogin = ({email, password} : loginValues) => {
+        signInWithEmailAndPassword(auth, email, password).
         then(() => {
+            console.log("Logado com sucesso " + user?.displayName);
             navigate("/menu");
-            setEmailLogged(true);
         })
         .catch((error) => {
             console.log(error);
         })
+    }
+
+    const onSubmit = (values : loginValues) => {
+        setEmailLogged(true);
+        handleLogin(values);
     }
     
     const formik = useFormik<loginValues>({
