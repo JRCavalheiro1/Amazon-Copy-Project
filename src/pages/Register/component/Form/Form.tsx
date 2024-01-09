@@ -13,7 +13,7 @@ import { useFormik} from "formik";
 import { auth } from "../../../../Firebase/firebase-cfg";
 import { fireStore } from "../../../../Firebase/firebase-cfg";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, doc} from "firebase/firestore";
 
 import { useNavigate, Link } from "react-router-dom";
 
@@ -33,13 +33,24 @@ const initialValues: formValues = {
 };
 
 export const Form = () => {
-
     const navigate = useNavigate();
+
+    const usersCollection = collection(fireStore, "/users");
+
+    async function newUserDocument(userValue : formValues) {
+        const newDoc = await addDoc(usersCollection, {
+            name: userValue.name,
+            email: userValue.email
+        })
+        console.log("Document has been created "+ newDoc.path);
+    };
 
     const onSubmit = (values : formValues) => {
         if(password == confirmPassword) {
             createUserWithEmailAndPassword(auth, values.email, values.password)
             .then( (userCredential) => {
+                const userId = userCredential.user.uid;
+                newUserDocument(values);
 
                 console.log("Dados do usuário cadastrado" + userCredential.user)
                 navigate("/signin");
