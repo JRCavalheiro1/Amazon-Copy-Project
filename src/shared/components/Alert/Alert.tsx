@@ -1,7 +1,6 @@
+import { AlertContainer } from './style';
 import iconAlert from "../../../images/umapoha.png";
 import iconAlert2 from "../../../images/alert2.png";
-
-import { AlertContainer } from './style';
 
 export const Alert = () => {
     return (

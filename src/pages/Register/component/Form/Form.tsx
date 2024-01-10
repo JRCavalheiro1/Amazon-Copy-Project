@@ -1,23 +1,19 @@
 import React, { useState } from "react";
 import ReactDOM  from "react";
 
-//import of components and styles
+//import components and styles
 import { ContainerForm } from "./style"
 import { Alert, Alert2 } from "../../../../shared/components/Alert/Alert";
 import { validationSchema } from "../../Validation";
 import { Input } from "../../../../shared/components/Input/Input";
 import { Button } from "../../../../shared/components/Button/Button";
 
-//import of validation, firebase & other methods
+//import validation, firebase & other methods
 import { useFormik} from "formik";
-import { auth } from "../../../../Firebase/firebase-cfg";
-import { fireStore } from "../../../../Firebase/firebase-cfg";
+import { auth, fireStore} from "../../../../Firebase/firebase-cfg";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { collection, addDoc, doc} from "firebase/firestore";
-
-import { useNavigate, Link } from "react-router-dom";
-
-interface ownProps {}
+import { doc, setDoc} from "firebase/firestore";
+import { useNavigate} from "react-router-dom";
 
 interface formValues {
     name: string,
@@ -35,23 +31,20 @@ const initialValues: formValues = {
 export const Form = () => {
     const navigate = useNavigate();
 
-    const usersCollection = collection(fireStore, "/users");
-
-    async function newUserDocument(userValue : formValues) {
-        const newDoc = await addDoc(usersCollection, {
-            name: userValue.name,
-            email: userValue.email
-        })
-        console.log("Document has been created "+ newDoc.path);
-    };
-
+    //this function set a new document of an user when it is created
+    async function newUserDocument(values: formValues, id: string) {
+        await setDoc(doc(fireStore, "/users", id), {
+            name: values.name,
+            email: values.email
+        });
+    } 
+   
     const onSubmit = (values : formValues) => {
         if(password == confirmPassword) {
-            createUserWithEmailAndPassword(auth, values.email, values.password)
+            createUserWithEmailAndPassword(auth, values.email, values.password)//create a new user
             .then( (userCredential) => {
                 const userId = userCredential.user.uid;
-                newUserDocument(values);
-
+                newUserDocument(values, userId); 
                 console.log("Dados do usuário cadastrado" + userCredential.user)
                 navigate("/signin");
             })
@@ -73,13 +66,11 @@ export const Form = () => {
     const password = formik.values.password;
     const confirmPassword = formik.values.confirmPassword;
     
-    
     return (
         <ContainerForm>
                     
                     <form onSubmit={formik.handleSubmit}>
                         <h1>Criar conta</h1>
-
                         <Input
                             label={"Seu nome"}
                             placeholder={"Nome e sobrenome"}
@@ -128,9 +119,7 @@ export const Form = () => {
                         >
                             Continuar
                         </Button>
-
                     </form>
-           
         </ContainerForm>
     )
 }

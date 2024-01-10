@@ -1,7 +1,5 @@
 import { BrowserRouter, Route, Routes as Switch, Navigate } from "react-router-dom"
-
 import {Login, Register, Menu} from "../pages/index";
-
 
 export const Routes = () => {
     return (    
