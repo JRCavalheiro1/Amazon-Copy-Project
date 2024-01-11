@@ -6,16 +6,16 @@ import { Firestore, doc, getDoc } from "firebase/firestore";
 
 import { useState } from "react";
 
-export const User = () => {
-    const [userLogged, setUserLogged] = useState(false);
-    const [userName, setUserName] = useState("");
-    
+interface UserProps {
+    name: string
+}
+export const User = ({ name } : UserProps) => {
 
     return (
         <Container>
             <div className="nav-user">
                <a className="nav-user-link">
-                    <span>Olá, faça seu login</span>
+                    <span>Olá, {name}</span>
                     <span>Contas e Listas </span> <img src={arrow}/>
                </a>
             </div>

@@ -31,16 +31,10 @@ export const FormLogin = () => {
     const navigate = useNavigate();
     
     //acess doc user name
-    async function getUserDocument(id: any) {
-        const userDoc = await getDoc(doc(fireStore, 'users', id));
-        const userDocName = userDoc.get('name');
-    }
-
+   
     const loginUser = ({email, password} : loginValues) => {
         signInWithEmailAndPassword(auth, email, password).
         then(() => {
-        const userId = auth.currentUser?.uid; //takes user id
-            getUserDocument(userId);    
             navigate("/menu");
         })
         .catch((error) => {

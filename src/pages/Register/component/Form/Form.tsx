@@ -38,7 +38,6 @@ export const Form = () => {
             email: values.email
         });
     } 
-   
 
     const onSubmit = (values : formValues) => {
         if(password == confirmPassword) {
