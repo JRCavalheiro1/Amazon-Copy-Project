@@ -26,19 +26,20 @@ const initialValues: loginValues = {
 export const FormLogin = () => {
     const [emailLogged, setEmailLogged] = useState(false);
     const [emailData, setEmailData] = useState("");
+    
 
     const navigate = useNavigate();
     
+    //acess doc user name
     async function getUserDocument(id: any) {
         const userDoc = await getDoc(doc(fireStore, 'users', id));
-        const userData = userDoc.data(); 
-        console.log(userData);
+        const userDocName = userDoc.get('name');
     }
 
     const loginUser = ({email, password} : loginValues) => {
         signInWithEmailAndPassword(auth, email, password).
         then(() => {
-        const userId = auth.currentUser?.uid; //take user id
+        const userId = auth.currentUser?.uid; //takes user id
             getUserDocument(userId);    
             navigate("/menu");
         })
