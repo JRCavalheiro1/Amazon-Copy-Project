@@ -1,18 +1,15 @@
 import  { Container } from "./style"; 
 import arrow from "../../../../../../images/arrow.svg";
 
+import { auth, fireStore } from "../../../../../../Firebase/firebase-cfg";
+import { Firestore, doc, getDoc } from "firebase/firestore";
 
-import { auth } from "../../../../../../Firebase/firebase-cfg";
-import { onAuthStateChanged } from "firebase/auth";
 import { useState } from "react";
 
 export const User = () => {
-    const [userName, setUserName] = useState('');
-    onAuthStateChanged(auth, (user)=> {
-        if(user) {
-            //something here soon
-        }
-    })
+    const [userLogged, setUserLogged] = useState(false);
+    const [userName, setUserName] = useState("");
+    
     return (
         <Container>
             <div className="nav-user">
