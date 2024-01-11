@@ -13,9 +13,9 @@ export const Menu = ()=> {
     useEffect(()=> {
         const userId = auth.currentUser?.uid;
         getUserDocument(userId);
+
     }, [getUserDocument, nameUser])
 
-    
     async function getUserDocument(id: any) {
         const userDoc = await getDoc(doc(fireStore, 'users', id));
         const userDocName = userDoc.get('name');
@@ -25,15 +25,6 @@ export const Menu = ()=> {
     return (
         <Container>
             <Header name={nameUser}/>
-            
-            {/*Header
-                -logo
-                -local
-                -search
-                -user
-                -ordered
-                -cart
-            */}
 
             {/*Content
                 -hero
