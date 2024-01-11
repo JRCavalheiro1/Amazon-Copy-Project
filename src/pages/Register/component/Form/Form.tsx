@@ -12,7 +12,7 @@ import { Button } from "../../../../shared/components/Button/Button";
 import { useFormik} from "formik";
 import { auth, fireStore} from "../../../../Firebase/firebase-cfg";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { doc, setDoc} from "firebase/firestore";
+import { doc, setDoc, getDoc} from "firebase/firestore";
 import { useNavigate} from "react-router-dom";
 
 interface formValues {
@@ -39,6 +39,7 @@ export const Form = () => {
         });
     } 
    
+
     const onSubmit = (values : formValues) => {
         if(password == confirmPassword) {
             createUserWithEmailAndPassword(auth, values.email, values.password)//create a new user

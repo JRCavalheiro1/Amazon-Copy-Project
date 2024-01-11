@@ -3,8 +3,9 @@ import { Input, Button, Alert, Alert2, ConditionsText} from "../../../../shared/
 import { validationSigninSchema as validationSchema } from "../../../Register/Validation";
 import { Help } from "../Help/Help";
 import { Container } from "./style";
-import { auth } from "../../../../Firebase/firebase-cfg";
+import { auth, fireStore } from "../../../../Firebase/firebase-cfg";
 import { signInWithEmailAndPassword } from "firebase/auth";
+import { doc, getDoc } from "firebase/firestore";
 
 //import validadtion and firebase methods
 import { useFormik} from "formik";
@@ -28,12 +29,17 @@ export const FormLogin = () => {
 
     const navigate = useNavigate();
     
-    const user = auth.currentUser;
+    async function getUserDocument(id: any) {
+        const userDoc = await getDoc(doc(fireStore, 'users', id));
+        const userData = userDoc.data(); 
+        console.log(userData);
+    }
 
     const loginUser = ({email, password} : loginValues) => {
         signInWithEmailAndPassword(auth, email, password).
         then(() => {
-            console.log("Logado com sucesso " + user?.displayName);
+        const userId = auth.currentUser?.uid; //take user id
+            getUserDocument(userId);    
             navigate("/menu");
         })
         .catch((error) => {
