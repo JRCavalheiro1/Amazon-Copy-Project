@@ -1,5 +1,5 @@
 import { Container } from "./style";
-import { Local, Search, User, Ordered, CartComponent} from "./components/Index";
+import { Local, Search, User, Ordered, CartComponent } from "./components/Index";
 import logoMenu from "../../../../images/logo-menu.png";
 import { useState } from "react";
 

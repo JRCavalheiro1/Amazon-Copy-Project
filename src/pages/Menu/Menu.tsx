@@ -1,6 +1,6 @@
 import { Container } from "./style";
 import { Header } from "./components/Header/Header";
-
+import { Sugestions } from "./components/Sugestions/Sugestions";
 import { doc, getDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { auth, fireStore } from "../../Firebase/firebase-cfg";
@@ -25,7 +25,8 @@ export const Menu = ()=> {
     return (
         <Container>
             <Header name={nameUser}/>
-
+            <Sugestions/>
+            
             {/*Content
                 -hero
                 -main
