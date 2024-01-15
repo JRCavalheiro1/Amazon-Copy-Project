@@ -4,6 +4,7 @@ export const Container = styled.div`
     .nav-ordered {
         display: flex;
         height: 100%;
+        width: 8.114rem;
         padding: 9px 10px 9px 10px;
         margin-left: 0.5rem;
         border: 1px solid transparent;

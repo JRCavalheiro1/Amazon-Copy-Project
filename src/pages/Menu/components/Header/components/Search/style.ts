@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 //1000px
 
 export const Container = styled.div`
-  width: 1080px;
+    width: 1080px;
   .nav-search {
         display: flex;
         align-items: center;
@@ -16,6 +16,7 @@ export const Container = styled.div`
 
     .input-search {
             width: 100%;
+            min-width: 190px;
             outline: none;
         }
        

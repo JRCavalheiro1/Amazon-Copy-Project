@@ -3,7 +3,6 @@ import cart from "../../../../../../images/cart.svg";
 
 export const CartComponent = ()=> {
     return (
-
     
     <Container>
         <div className="nav-cart-section">

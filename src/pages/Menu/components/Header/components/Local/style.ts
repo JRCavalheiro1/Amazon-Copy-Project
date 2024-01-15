@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
      .nav-local {
-        position: static;
+        width: 26.58rem;
         display: flex;
         cursor: pointer;
-        margin-left: 1.4rem;
-        margin-right: 1.4rem;
-        padding: 10px 10px 10px 10px;
+        padding: 8px;
         border: 1px solid transparent;
         border-radius: 2px;
+        margin-right: 20px;
+        margin-left: 7px;
 
         span {
             display: block;

@@ -9,10 +9,10 @@ export const Container = styled.div`
     height: 5.9rem;
       
     .logo {
-        margin-left: 1rem;
-        padding-top: 1rem;
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;  
+        width: 15.964rem;
+        padding-top: 10px;
+        padding-right: 5px;
+        padding-left: 5px;  
         cursor: pointer;
         border: 1px solid transparent;
         border-radius: 2px;

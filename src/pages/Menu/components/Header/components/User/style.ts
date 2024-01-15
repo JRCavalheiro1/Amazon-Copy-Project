@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 export const Container = styled.div`
     .nav-user {
         height: 100%;
+        width: 12.814rem;
         cursor: pointer;
         border: 1px solid transparent;
         border-radius: 2px;

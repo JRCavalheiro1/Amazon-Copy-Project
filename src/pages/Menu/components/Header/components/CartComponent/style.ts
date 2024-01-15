@@ -5,10 +5,11 @@ export const Container = styled.div`
         display: flex;
         cursor: pointer;
         height: 100%;
+        width: 11.317;
         border: 1px solid transparent;
         border-radius: 2px;
-        padding: 5px 5px 5px 5px;
-        margin-left: 1rem;
+        padding: 5px;
+        margin-left: 10px;
     }
     
     .nav-link-cart-section:hover {
