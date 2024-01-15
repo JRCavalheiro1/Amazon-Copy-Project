@@ -9,8 +9,13 @@ export const Container = styled.div`
         border-radius: 2px;
         padding: 9px 10px 9px 10px;
     }
+
     .nav-user:hover {
         border-color: #ffffff;
+        .triangle-modal {
+            display: block;
+        }
+        
     }
     span {
         display: block;
@@ -22,4 +27,33 @@ export const Container = styled.div`
         font-weight: 600;
         display: inline;
     }
+//1113px
+    .triangle-modal {
+        display: none;
+        position: absolute;
+        right: 110px;
+        width: 44.1rem;
+        span {
+            margin-left: 296px;
+            margin-bottom: 0px;
+            right: -100px;
+            height: 1rem;
+            width: 1.2rem;
+            background: #fff;
+        }
+
+    }
+
+    @media (max-width: 1113px){
+            .triangle-modal {
+                position: static;
+                
+            }        
+        }
+    .modal {
+        background: #fff;
+        height: 50rem;
+        width: 100%;
+    }
 `;
+

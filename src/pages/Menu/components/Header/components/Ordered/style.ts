@@ -20,4 +20,36 @@ export const Container = styled.div`
     .nav-ordered:hover {
         border-color: #ffffff;
     }
+    
 `;
+
+
+export const ContainerModal = styled.div`
+    display: block;
+    
+    .point-modal {
+            width: 44.1rem;
+            cursor: default;
+            position: absolute;
+            top: -5px;
+            left: 632.547px;
+            border: 1px solid red;
+            
+            span {
+                position: relative;
+                left: 200px;
+                height: 1rem;
+                background: #ffffff;
+                border: 1px solid red;
+                width: 10px;
+            }
+            .modal {
+                background: #ffffff;
+                height: 50rem;
+                width: 44.1rem;
+                cursor: default;
+            }
+        }
+            
+    
+`; 
