@@ -64,9 +64,14 @@ export const Content = styled.div`
             margin-bottom: 0.3rem; 
         }
 
+        
         a {
             text-decoration: none;
             color: var(--link-color);
-        } 
+        }
+        a:hover {
+            color: var(--link-color-hover);
+            text-decoration: underline;
+            }
        
 `;

@@ -18,7 +18,7 @@ export const Register = () => {
                         <Form/>
                         <ConditionsText/>
                         <hr className='line'/>
-                        <p className='login-acc'>Você já tem uma conta? <Link to="/signin">Fazer login</Link></p>   
+                        <p className='login-acc'>Você já tem uma conta? <a><Link to="/signin">Fazer login</Link></a></p>   
                 </Content>
             </Centralize>
                 <Footer/>

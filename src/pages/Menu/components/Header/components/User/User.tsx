@@ -16,15 +16,12 @@ export const User = ({ name } : UserProps) => {
     
     return (
         <Container>
-            <div className="nav-user"
-                
-            >
+            <div className="nav-user">
                <a className="nav-user-link"> 
                     <span>Olá, {name}</span>
                     <span>Contas e Listas </span> <img src={arrow}/>
                 </a>
-                <UserModal/>
-
+                <UserModal/> 
             </div>
         </Container>
     )
