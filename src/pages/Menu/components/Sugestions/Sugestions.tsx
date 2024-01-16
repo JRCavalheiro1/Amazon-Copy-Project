@@ -1,5 +1,12 @@
 import { Container } from "./styles";
 import menuIcon from "../../../../images/menuIcon.svg";
+
+
+
+
+
+
+
 export const Sugestions = () => {
     return (
         <Container>
@@ -20,11 +27,12 @@ export const Sugestions = () => {
                         <li><a>Novidades na Amazon</a></li>
                         <li><a>Eletrônicos</a></li>
                         <li><a>Computadores</a></li>
-                        <li><a>Histórico de Navegação</a></li>
                         <li><a>Casa</a></li>
                         <li><a>Games</a></li>
                         <li><a>Beleza</a></li>
+                        
                     </ul>
+                    <a className="nav-sugest-title"><h1>Tudo para lista escolar</h1></a>   
                 </div>
             </div>
 

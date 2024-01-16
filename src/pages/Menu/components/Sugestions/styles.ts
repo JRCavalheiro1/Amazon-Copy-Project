@@ -7,7 +7,7 @@ export const Container = styled.div`
         height: 3.8rem;
         background: #232f3e;
         color: #ffffff;
-        font-size: 1.34rem;
+        font-size: 1.33rem;
     }
 
     .all-sugestions-btn {
@@ -25,22 +25,34 @@ export const Container = styled.div`
     .all-sugestions-btn:hover, li:hover {
         border-color: #ffffff;
     }
-
+//1652px
     .nav-sugestions-bar {
         display: flex;
         justify-content: center;
+        align-items: center;
+        gap: 340px;
     }
-    
+
     ul {
         display: flex;
         list-style: none;
-        gap: 1.2rem;
     }
 
     li {
         padding: 0.8rem 0.9rem;
+        border-radius: 3px;
         border: 1px solid transparent;
         cursor: pointer;
+    }
+
+    .nav-sugest-title {
+        font-size: 1.2rem;
+        padding: 0px 10px 0px 10px; 
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+    .nav-sugest-title:hover {
+        border-color: #ffffff;
     }
 `;
 

@@ -25,7 +25,7 @@ export const Menu = ()=> {
     return (
         <Container>
             <Header name={nameUser}/>
-            
+            <Sugestions/>
             
             {/*Content
                 -hero
