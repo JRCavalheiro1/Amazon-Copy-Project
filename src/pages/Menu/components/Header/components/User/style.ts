@@ -28,7 +28,6 @@ export const Container = styled.div`
         font-weight: 600;
         display: inline;
     }
-//1113px
     .triangle-modal {
         display: none;
         position: absolute;
@@ -60,14 +59,16 @@ export const Container = styled.div`
 
 
     .modal-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        display: block;
+        text-align: center;
         
+        Button {
+            margin-bottom: 5px;
+        } 
+
         p {
+            display: inline;
             color: #747475;
-            padding-top: 5px;
             font-size: 1rem;
         }
         
@@ -77,10 +78,69 @@ export const Container = styled.div`
             text-decoration: none;
         }
         
-        
         a:hover {
             color: var(--link-color-hover);
             text-decoration: underline;
+        }
+
+        .horizontal-line {
+            width: 90%;
+            margin-left: 25px;
+            margin-top: 1rem;
+            border: none;
+            height: 1px;
+            background: #e6e6e6;
+        }
+
+        .list, .list-tools {
+            color: #000000;
+        }
+
+        .account-pref {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;    
+            text-align: start;
+            margin-top: 10px;
+        }
+        .list {
+            margin-right: 90px;
+            a {
+                font-size: 1.2rem;
+            }
+        }
+        .list-tools {
+            h2, ul {
+                display: block;
+            }
+
+            ul {
+                list-style: none;
+                line-height: 2;
+                li:nth-child(8), li:nth-child(11) {
+                    line-height: 1;
+                }
+                a {
+                    font-size: 1.3rem;
+                }
+                
+            }
+        }
+        .link-modal {
+            font-weight: 400;
+            font-size: 1.1rem;
+            color: #6f777c;
+        }
+
+        .link-modal:hover {
+            color: var(--link-color-hover);
+        }
+
+        .vertical-line {
+            width: 1px;
+            height: 100%;
+            border-left: 1px solid;
+            border-top-color: transparent;
         }
     }
 `;
