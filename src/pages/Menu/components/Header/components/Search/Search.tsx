@@ -6,7 +6,6 @@ export const Search = () => {
     return (
         <Container>
            <div className="nav-search">
-                        
                         <select className="select-search" name="todos">
                             <option>Todos</option>
                         </select>
@@ -15,7 +14,6 @@ export const Search = () => {
                             <input className="input-submit" type="submit" value="" />
                             <img className="glass-logo" src={glassLogo}/>
                         </div>
-                        
                  </div>
         </Container>
     )

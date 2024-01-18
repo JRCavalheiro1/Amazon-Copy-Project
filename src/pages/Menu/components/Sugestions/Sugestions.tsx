@@ -11,11 +11,10 @@ export const Sugestions = () => {
     return (
         <Container>
             <div className="nav-sugestions">
-                <div className="all-sugestions-btn">
-                    <img src={menuIcon}/> <a>Todos</a>
-                </div>
-
                 <div className="nav-sugestions-bar">
+                    <div className="all-sugestions-btn">
+                        <img src={menuIcon}/> <a>Todos</a>
+                    </div>
                     <ul>
                         <li><a>Venda na Amazon</a></li>
                         <li><a>Mais Vendidos</a></li>
@@ -32,7 +31,10 @@ export const Sugestions = () => {
                         <li><a>Beleza</a></li>
                         
                     </ul>
-                    <a className="nav-sugest-title"><h1>Tudo para lista escolar</h1></a>   
+                </div>
+
+                <div className="nav-sugest-title">
+                    <a><h1>Tudo para lista escolar</h1></a>   
                 </div>
             </div>
 

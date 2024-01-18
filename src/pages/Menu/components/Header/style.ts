@@ -23,4 +23,9 @@ export const Container = styled.div`
         border-color: #ffffff;
     }
     
+    @media(max-width: 1012px) {
+        width: 1012px;
+    }
+
+    
 `;
