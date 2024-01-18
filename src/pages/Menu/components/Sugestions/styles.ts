@@ -1,7 +1,9 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
+    
     .nav-sugestions {
+        width: 100%;
         display: flex;
         align-items: center;
         height: 3.8rem;
