@@ -4,8 +4,7 @@ import { Sugestions } from "./components/Sugestions/Sugestions";
 import { doc, getDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { auth, fireStore } from "../../Firebase/firebase-cfg";
-
-
+import { userLocation } from "./components/Header/components/Index";
 
 export const Menu = ()=> {
     const [nameUser, setNameUser] = useState('');
@@ -13,8 +12,9 @@ export const Menu = ()=> {
     useEffect(()=> {
         const userId = auth.currentUser?.uid;
         getUserDocument(userId);
+        userLocation();
 
-    }, [getUserDocument, nameUser])
+    }, [getUserDocument, nameUser, userLocation])
 
     async function getUserDocument(id: any) {
         const userDoc = await getDoc(doc(fireStore, 'users', id));

@@ -2,11 +2,6 @@ import { Container } from "./styles";
 import menuIcon from "../../../../images/menuIcon.svg";
 
 
-
-
-
-
-
 export const Sugestions = () => {
     return (
         <Container>
