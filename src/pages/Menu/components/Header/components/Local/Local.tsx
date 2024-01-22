@@ -1,21 +1,13 @@
 import localLogo from "../../../../../../images/local.svg"
 import { useState } from "react";
 import { Container } from "./style"
+import { AddLocalModal } from "./AddLocalModal";
 
-
-export const userLocation = () => {
-    if ("geolocation" in navigator) {
-        const geolocation = navigator.geolocation;
-        const position = geolocation.getCurrentPosition((pos)=> {
-            console.log(pos.coords.latitude, pos.coords.longitude);
-        });
-
-    } else {
-        console.log("Vaitefude");
-    }
+interface localProps {
+    name: string
 }
 
-export const Local = ()=> {
+export const Local = ({name}: localProps)=> {
     const [locationUser, setLocationUser] = useState("");
     
     return (
@@ -25,10 +17,12 @@ export const Local = ()=> {
                         <img src={localLogo}/>
                     </div>
                     <div className="span-msg">
-                        <span id="s1">A entrega será feita em Torres 95560000</span>
-                        <span id="s2">Atualizar local</span>
+                        <span id="s1">Enviar para {name}</span>
+                        <span id="s2">Torres 000000</span>
                     </div>
                 </a>
+
+                <AddLocalModal/>
         </Container>
     )
 }

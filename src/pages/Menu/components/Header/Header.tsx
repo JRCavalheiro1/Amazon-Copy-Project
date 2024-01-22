@@ -13,7 +13,7 @@ export const Header = ({name}: HeaderProps) => {
                 <div className="logo">
                     <img src={logoMenu}/>
                 </div>
-                <Local/>
+                <Local name={name !== '' ? name : ''}/>
                 <Search/>
                 <User name={ name !== '' ? name : 'faça seu login'} />
                 <Ordered/>

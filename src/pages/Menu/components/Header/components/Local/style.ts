@@ -28,9 +28,53 @@ export const Container = styled.div`
             padding-right: 0.5rem;
         }
     }
-
     .nav-local:hover {
         border-color: #ffffff;
-
     }
+
+    .nav-local-modal {
+        display: flex;
+        right: 40%;
+        top: 39%;
+        flex-direction: column;
+        position: absolute;
+        border: 1px solid #cccccc;
+        border-radius: 8px;
+        width: 37.5rem;
+        color: #000;
+    }      
+
+    .header-local-modal {
+        display: flex;
+        align-items: center;
+        height: 5.7rem;
+        background: #f0f2f2;
+        color: #000000;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom: 1px solid #cccccc;
+        padding: 24px;
+        font-size: 1.1rem;
+    }
+
+    .body-local-modal{
+        height: 18.1rem;
+        background: #ffffff;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+
+        .cep-span {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            color: #cccccc;
+        }
+        .cep-span::before, .cep-span::after {
+            content: "";
+            height: 1px;
+            background-color: #cccccc;
+            display: block;
+        }
+    }
+
 `;

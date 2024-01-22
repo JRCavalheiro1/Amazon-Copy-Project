@@ -4,22 +4,26 @@ import { Sugestions } from "./components/Sugestions/Sugestions";
 import { doc, getDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { auth, fireStore } from "../../Firebase/firebase-cfg";
-import { userLocation } from "./components/Header/components/Index";
+
+
+{/*
+    verificar usuário logado
+    -criar um ciclo de vida toda vez que iniciar a aplicação    
+
+*/}
 
 export const Menu = ()=> {
     const [nameUser, setNameUser] = useState('');
-
+    const userId = auth.currentUser?.uid;
+    
     useEffect(()=> {
-        const userId = auth.currentUser?.uid;
         getUserDocument(userId);
-        userLocation();
-
-    }, [getUserDocument, nameUser, userLocation])
+    }, [getUserDocument, nameUser])
 
     async function getUserDocument(id: any) {
-        const userDoc = await getDoc(doc(fireStore, 'users', id));
-        const userDocName = userDoc.get('name');
-        setNameUser(userDocName);
+            const userDoc = await getDoc(doc(fireStore, 'users', id));
+            const userDocName = userDoc.get('name');
+            setNameUser(userDocName);
     }
 
     return (
