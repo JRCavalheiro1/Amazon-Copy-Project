@@ -28,3 +28,9 @@ export const validationSigninSchema = Yup.object({
     .email("Digite seu e-mail ou número de telefone")
     .required("Digite seu e-mail ou número de telefone")
 })
+
+export const validationCepSchema = Yup.object({
+  name: Yup.string()
+    .strict(true)
+    .required("Insira um CEP válido")
+})

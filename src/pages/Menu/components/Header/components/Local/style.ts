@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+//================ Local style ========================================     
      .nav-local {
         width: 26.58rem;
         display: flex;
@@ -30,8 +31,9 @@ export const Container = styled.div`
     }
     .nav-local:hover {
         border-color: #ffffff;
-    }
 
+    }
+//====================== Modal style ===================================
     .nav-local-modal {
         display: flex;
         right: 40%;
@@ -54,27 +56,60 @@ export const Container = styled.div`
         border-top-left-radius: 8px;
         border-bottom: 1px solid #cccccc;
         padding: 24px;
-        font-size: 1.1rem;
+        font-size: 1.12rem;
     }
 
     .body-local-modal{
         height: 18.1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         background: #ffffff;
         border-bottom-right-radius: 8px;
         border-bottom-left-radius: 8px;
+        
+        .options-span {
+            color: #767979;
+            margin-top: 15px;
+            font-size: 1.17rem;
+        }
 
         .cep-span {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             align-items: center;
-            color: #cccccc;
+            color: #767979;
+            margin-top: 30px;
         }
         .cep-span::before, .cep-span::after {
             content: "";
+            margin-left: 14px;
             height: 1px;
-            background-color: #cccccc;
+            width: 90px;
+            background-color: #9d9f9f;
             display: block;
         }
     }
 
+    .input-local-modal {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 2px ;
+    }
+
+    label {
+        margin-bottom: -15px;
+        color: #9d9f9f;
+    }
+
+    .city-local, .cep-local {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .span-hyp {
+        padding-top: 20px;
+        font-size: 1.6rem;
+    }
 `;

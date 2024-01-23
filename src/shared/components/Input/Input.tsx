@@ -2,7 +2,7 @@ import { CSSProperties } from "react";
 import { InputStyle } from "./styles"
 
 interface inputProps {
-    label: string,
+    label?: string,
     placeholder?: string,
     type?: string,
     name: string,

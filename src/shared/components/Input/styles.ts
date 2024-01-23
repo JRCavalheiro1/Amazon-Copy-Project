@@ -16,7 +16,6 @@ export const InputStyle = styled.div`
   }
    label {
         display: inline-block;
-        
         margin-bottom: -1rem;
         margin-top: 1rem;
         font-weight: 600;
