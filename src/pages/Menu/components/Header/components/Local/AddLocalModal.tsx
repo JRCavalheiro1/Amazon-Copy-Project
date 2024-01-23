@@ -4,9 +4,12 @@ import { useState } from "react";
 
 
 interface modalProps {
-    
+    childToParent: (e: any, y: any) => void;
 }
-export const AddLocalModal = ({  } : modalProps) => {
+
+export const AddLocalModal = ({ childToParent } : modalProps) => {
+    const [city, setCity] = useState("");
+    const [cep, setCep] = useState("");
     
     return (
         <div className="nav-local-modal">
@@ -23,7 +26,8 @@ export const AddLocalModal = ({  } : modalProps) => {
                             <Input
                                 name="city"
                                 type="text"
-                                value={""}
+                                value={city}
+                                onChange={(e)=> setCity(e.target.value)}
                                 style={{width: '120px'}}
                             /> 
                         </div>
@@ -34,12 +38,14 @@ export const AddLocalModal = ({  } : modalProps) => {
                             <Input
                                 name="cep"
                                 type="text"
-                                value={""}
+                                value={cep}
+                                onChange={(e)=> setCep(e.target.value)}
                                 style={{width: '80px'}}
                             />
                         </div>
 
                         <Button
+                            onClick={()=> childToParent(city, cep)}
                             children="Confirmar"
                             type="button"
                             style={{

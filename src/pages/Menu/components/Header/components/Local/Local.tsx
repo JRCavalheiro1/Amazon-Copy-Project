@@ -12,6 +12,10 @@ export const Local = ({name}: localProps)=> {
     const [cityName, setCityName] = useState("");
     const [cep, setCep] = useState("");
 
+
+    const childToParent = () => {
+
+    }
     const handleClick = () => {
         if(showLocalModal == false) {
             setShowLocalModal(true);
@@ -33,7 +37,7 @@ export const Local = ({name}: localProps)=> {
                         <span id="s2">Torres 000000</span>
                     </div>
                 </a>
-                { showLocalModal == true ? <AddLocalModal/> : undefined }
+                { showLocalModal == true ? <AddLocalModal childToParent={childToParent}/> : undefined }
                 
         </Container>
     )
