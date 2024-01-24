@@ -4,7 +4,7 @@ import { useState } from "react";
 
 
 interface modalProps {
-    childToParent: (e: any, y: any) => void;
+    childToParent: (e: string, y: string) => void;
 }
 
 export const AddLocalModal = ({ childToParent } : modalProps) => {
@@ -47,7 +47,7 @@ export const AddLocalModal = ({ childToParent } : modalProps) => {
                         <Button
                             onClick={()=> childToParent(city, cep)}
                             children="Confirmar"
-                            type="button"
+                            type="submit"
                             style={{
                                 background: 'transparent',
                                 border: '1px solid #ccc',

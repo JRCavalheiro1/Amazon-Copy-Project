@@ -13,7 +13,9 @@ export const Local = ({name}: localProps)=> {
     const [cep, setCep] = useState("");
 
 
-    const childToParent = () => {
+    const childToParent = (dataCity: string, dataCep: string) => {
+        setCityName(dataCity);
+        setCep(dataCep);
 
     }
     const handleClick = () => {
@@ -34,10 +36,10 @@ export const Local = ({name}: localProps)=> {
                     </div>
                     <div className="span-msg">
                         <span id="s1">Enviar para {name}</span>
-                        <span id="s2">Torres 000000</span>
+                        <span id="s2">{cityName && cep != null ? cityName && cep : "Atualizar local" }</span>
                     </div>
                 </a>
-                { showLocalModal == true ? <AddLocalModal childToParent={childToParent}/> : undefined }
+                { showLocalModal == true ? <AddLocalModal childToParent={()=> childToParent}/> : undefined }
                 
         </Container>
     )
