@@ -4,10 +4,9 @@ import { useState } from "react";
 
 
 interface modalProps {
-    childToParent: (e: string, y: string) => void;
+    setLocalText: (e: any, i: any)=> void;
 }
-
-export const AddLocalModal = ({ childToParent } : modalProps) => {
+export const AddLocalModal = ({setLocalText}: modalProps) => {
     const [city, setCity] = useState("");
     const [cep, setCep] = useState("");
     
@@ -44,17 +43,11 @@ export const AddLocalModal = ({ childToParent } : modalProps) => {
                             />
                         </div>
 
-                        <Button
-                            onClick={()=> childToParent(city, cep)}
-                            children="Confirmar"
-                            type="submit"
-                            style={{
-                                background: 'transparent',
-                                border: '1px solid #ccc',
-                                width: '100px',
-                                boxShadow: 'none',
-                            }}
-                        />
+                       <button
+                            onClick={()=> setLocalText(city, cep)}
+                            >
+                                Confirmar
+                        </button>
                                       
                     </div>
                 </div>

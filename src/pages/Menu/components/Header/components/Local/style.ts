@@ -44,6 +44,7 @@ export const Container = styled.div`
         border-radius: 8px;
         width: 37.5rem;
         color: #000;
+        z-index: 2;
     }      
 
     .header-local-modal {
@@ -111,5 +112,23 @@ export const Container = styled.div`
     .span-hyp {
         padding-top: 20px;
         font-size: 1.6rem;
+    }
+
+    button {
+        background: transparent;
+        border: 1px solid #ccc;
+        width: 100px;
+        box-shadow: none;
+        padding: 4px;
+        margin-top: 15px;
+        border-radius: 8px;
+        cursor: pointer;
+
+        box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.12);
+        -webkit-box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.12);
+        -moz-box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.12);
+    }
+    button:hover {
+        filter: brightness(0.5);
     }
 `;

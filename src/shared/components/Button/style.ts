@@ -14,7 +14,6 @@ export const ButtonStyle = styled.div`
             padding: 0.5rem;
             border-radius: 8px;
             cursor: pointer;
-
             background: var(--btn-color);
             box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.12);
             -webkit-box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.12);
