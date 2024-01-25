@@ -7,6 +7,7 @@ import { Alert, Alert2 } from "../../../../shared/components/Alert/Alert";
 import { validationSchema } from "../../Validation";
 import { Input } from "../../../../shared/components/Input/Input";
 import { Button } from "../../../../shared/components/Button/Button";
+import iconAlert2 from "../../../../images/alert2.png";
 
 //import validation, firebase & other methods
 import { useFormik} from "formik";
@@ -68,7 +69,6 @@ export const Form = () => {
     
     return (
         <ContainerForm>
-                    
                     <form onSubmit={formik.handleSubmit}>
                         <h1>Criar conta</h1>
                         <Input
@@ -80,7 +80,7 @@ export const Form = () => {
                             onChange={formik.handleChange}
                             style={{border: formik.errors.name && formik.touched.name ? "2px solid #CC0C39" : undefined}}
                         />
-                        {formik.errors.name && formik.touched.name && <Alert2 message={formik.errors.name}/>}
+                        {formik.errors.name && formik.touched.name && <Alert2 message={formik.errors.name} icon={iconAlert2}/>}
                         
                         <Input
                             label={"Número de celular ou e-mail"}
@@ -90,7 +90,7 @@ export const Form = () => {
                             onChange={formik.handleChange}
                             style={{border: formik.errors.email && formik.touched.email ? "2px solid #CC0C39" : undefined}}
                         />
-                        {formik.errors.email && formik.touched.email && <Alert2 message={formik.errors.email}/>}
+                        {formik.errors.email && formik.touched.email && <Alert2 message={formik.errors.email} icon={iconAlert2}/>}
 
                         <Input
                             label={"Senha"}
@@ -101,7 +101,7 @@ export const Form = () => {
                             onChange={formik.handleChange}
                             style={{border: formik.errors.password && formik.touched.password ? "2px solid #CC0C39" : undefined}}
                         />
-                        {formik.errors.password && formik.touched.password && <Alert2 message={formik.errors.password}/> || <Alert/>}    
+                        {formik.errors.password && formik.touched.password && <Alert2 message={formik.errors.password} icon={iconAlert2}/> || <Alert/>}    
 
                        <Input
                             label={"Insira a senha nova mais uma vez"}
@@ -111,8 +111,8 @@ export const Form = () => {
                             onChange={formik.handleChange}
                             style={{border: formik.errors.confirmPassword && formik.touched.confirmPassword ? "2px solid #CC0C39" : undefined}}
                         />
-                        {confirmPassword != password && <Alert2 message="As senhas não são iguais"/>}
-                        { formik.errors.confirmPassword && formik.touched.confirmPassword && <Alert2 message={formik.errors.confirmPassword}/>}
+                        {confirmPassword != password && <Alert2 message="As senhas não são iguais" icon={iconAlert2}/>}
+                        { formik.errors.confirmPassword && formik.touched.confirmPassword && <Alert2 message={formik.errors.confirmPassword} icon={iconAlert2}/>}
                         
                         <Button 
                             type={"submit"}

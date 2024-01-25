@@ -131,4 +131,10 @@ export const Container = styled.div`
     button:hover {
         filter: brightness(0.5);
     }
+
+    .local-modal-error {
+        display: flex;
+        align-self: start;
+        margin-left: 20px;
+    }
 `;

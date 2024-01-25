@@ -1,6 +1,6 @@
 import { AlertContainer } from './style';
 import iconAlert from "../../../images/umapoha.png";
-import iconAlert2 from "../../../images/alert2.png";
+
 
 export const Alert = () => {
     return (
@@ -14,11 +14,13 @@ export const Alert = () => {
 
 interface alert2Props {
     message: string | undefined;
+    icon: any
 }
-export const Alert2 = ({message} : alert2Props) => {
+export const Alert2 = ({message, icon} : alert2Props) => {
     return ( 
         <AlertContainer>
-            <img className='alert2' src={iconAlert2} /> <p id='p2'>{message}</p> 
+            <img className='alert2' src={icon} /> <p id='p2'>{message}</p> 
         </AlertContainer>
     )
 }
+

@@ -19,7 +19,6 @@ export const Local = ({name}: localProps)=> {
         setShowLocalModal(!showLocalModal);
     }
    
-
     return (
         <Container>
             <a className="nav-local" 

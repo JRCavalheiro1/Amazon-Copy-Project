@@ -5,7 +5,8 @@ import { Help } from "../Help/Help";
 import { Container } from "./style";
 import { auth, fireStore } from "../../../../Firebase/firebase-cfg";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { doc, getDoc } from "firebase/firestore";
+import iconAlert2 from "../../../../images/alert2.png";
+
 
 //import validadtion and firebase methods
 import { useFormik} from "formik";
@@ -69,7 +70,7 @@ export const FormLogin = () => {
                         onInput={(e)=> setEmailData(e.target.value)} //capta o valor do campo do input
                         style={{border: formik.errors.email && formik.touched.email ? "2px solid #CC0C39" : undefined}}
                     />
-                    {formik.errors.email && formik.touched.email && <Alert2 message={formik.errors.email}/>}
+                    {formik.errors.email && formik.touched.email && <Alert2 message={formik.errors.email} icon={iconAlert2 }/>}
                 </div>
                 
                 <div className="password-content">
@@ -83,7 +84,7 @@ export const FormLogin = () => {
                         onChange={formik.handleChange}
                         style={{border: formik.errors.password && formik.touched.password ? "2px solid #CC0C39" : undefined}}
                     />
-                        {formik.errors.password && formik.touched.password && <Alert2 message={formik.errors.password}/>}
+                        {formik.errors.password && formik.touched.password && <Alert2 message={formik.errors.password} icon={iconAlert2 }/>}
                 </div>
 
                 <Button type={"submit"}>Continuar</Button>
