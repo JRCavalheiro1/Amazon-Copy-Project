@@ -1,7 +1,8 @@
 import { styled } from "styled-components";
 
 interface overlayProps {
-    onClick: () => void;
+    onClick?: () => void,
+    onMouseEnter?: ()=> void,
 }
 export const Overlay = styled.div<overlayProps>`
     position: fixed;
@@ -11,4 +12,5 @@ export const Overlay = styled.div<overlayProps>`
     left: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
+    cursor: default;
 `;

@@ -8,7 +8,6 @@ import iconAlert3 from "../../../../../../images/alertIcon3.svg";
 interface modalProps {
     setLocalText: (e: any, i: any)=> void;
 }
-
 interface values {
     city_name: string;
     cep_numb: string
@@ -18,9 +17,8 @@ const initialValues: values = {
     cep_numb: ""
 }
 
-const onSubmit = () => {
+const onSubmit = () => {}
 
-}
 export const AddLocalModal = ({setLocalText}: modalProps) => {
     
     const formik = useFormik<values>({
@@ -28,6 +26,7 @@ export const AddLocalModal = ({setLocalText}: modalProps) => {
         initialValues,
         onSubmit
     });
+
     return (
         <form onSubmit={formik.handleSubmit}>
         <div className="nav-local-modal">

@@ -1,10 +1,16 @@
-import { Container } from "./style"
-
 import { Button } from "../../../../../../shared/components/Index" 
 import { Link } from "react-router-dom"
-export const UserModal = () => {
+import { CSSProperties } from "react";
+import { Container } from "./style";
+
+type modalProps = {
+    style?: CSSProperties | undefined;
+}
+
+export const UserModal = ({style}: modalProps) => {
     return (
-            <div className="triangle-modal">
+        <Container>
+            <div className="triangle-modal" style={style}>
                 <div className="arrow-up"></div>
                 <div className="modal">
 
@@ -45,9 +51,9 @@ export const UserModal = () => {
                                     </ul>
                                 </div>
                             </div>
-                            
                     </div>
                 </div>
             </div>
+            </Container>
     )
 }

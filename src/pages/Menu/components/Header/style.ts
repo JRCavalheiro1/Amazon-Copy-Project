@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
+   .nav-header {
     width: 100%;
     display: flex;
     align-items: center;
@@ -8,7 +9,7 @@ export const Container = styled.div`
     background: #131921;
     color: #fff;
     height: 5.9rem;
-      
+}
     .logo {
         width: 15.964rem;
         padding-top: 10px;
