@@ -1,6 +1,5 @@
 import  { Container } from "./style"; 
 import { UserModal } from "../UserModal/UserModal";
-import { Overlay } from "../../../../../../shared/components/Overlay/Overlay";
 import arrow from "../../../../../../images/arrow.svg";
 
 import { auth, fireStore } from "../../../../../../Firebase/firebase-cfg";
@@ -12,11 +11,9 @@ interface UserProps {
     name: string,
     onMouseEnter: ()=> void,
     onMouseLeave: ()=> void,
+    openModal: any,
 }
-export const User = ({ name, onMouseEnter, onMouseLeave} : UserProps) => {
-    const [showModal, setShowModal] = useState(false);
-    const [dataToHeader, setDataToHeader] = useState(false);
-
+export const User = ({ name, onMouseEnter, onMouseLeave, openModal} : UserProps) => {
     return (
         <Container>
             <div className="nav-user" 
@@ -27,12 +24,10 @@ export const User = ({ name, onMouseEnter, onMouseLeave} : UserProps) => {
                <a className="nav-user-link"> 
                     <span>Olá, {name}</span>
                     <span>Contas e Listas </span> <img src={arrow}/>
-
                 </a>
-                <UserModal/>
-                
-                {showModal == true ? <Overlay /> : undefined}  
-                
+                <div>
+                    {openModal}
+                </div>
             </div>
         </Container>
     )

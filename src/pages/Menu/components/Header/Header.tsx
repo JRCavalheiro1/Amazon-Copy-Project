@@ -3,14 +3,13 @@ import { Local, Search, User, Ordered, CartComponent } from "./components/Index"
 import logoMenu from "../../../../images/logo-menu.png";
 import { useState } from "react";
 import { UserModal } from "./components/UserModal/UserModal";
+import { Overlay } from "../../../../shared/components/Overlay/Overlay";
 
 interface HeaderProps {
     name: string,
 }
 export const Header = ({name}: HeaderProps) => {
-    const [modalOpen, setModalOpen] = useState(false);
-
-   
+    const [modalIsOpen, setModalIsOpen] = useState(false);
 
     return (
         <Container>
@@ -22,9 +21,9 @@ export const Header = ({name}: HeaderProps) => {
                 <Search/>
                 <User 
                     name={ name !== '' ? name : 'faça seu login'}
-                    onMouseEnter={()=> console.log("aaa")}    
-                    onMouseLeave={()=> console.log("aaa")}/>
-                
+                    onMouseEnter={()=> setModalIsOpen(!modalIsOpen)}    
+                    onMouseLeave={()=> setModalIsOpen(!modalIsOpen)}
+                    openModal={modalIsOpen == true ? <UserModal/> : undefined}/>
                 <Ordered/>
                 <CartComponent/>
             </div>
