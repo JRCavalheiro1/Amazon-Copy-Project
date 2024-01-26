@@ -7,15 +7,16 @@ interface buttonProps {
     children: string
     style?: CSSProperties | undefined
 }
-export const Button = (props : buttonProps) => {
+export const Button = ({style, children, type, onClick}: buttonProps) => {
     return (
         <ButtonStyle>
              <div className="register-btn">
                 <button
-                    type={props.type}
-                    style={props.style}
+                    onClick={onClick}
+                    type={type}
+                    style={style}
                 >
-                    {props.children}
+                    {children}
                 </button>
              </div>
         </ButtonStyle>

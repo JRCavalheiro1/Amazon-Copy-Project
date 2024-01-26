@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-interface containerProps {
+type containerProps = {
     send: boolean
 }
 
@@ -30,10 +30,10 @@ export const Container = styled.div<containerProps>`
     }
 
     .login-content {
-        display: ${(props)=> props.send == true ? `none` : `block`}
+        display: ${props=> props.send == false ? "block" : "none"}
     }
     .password-content {
-        display: ${(props)=> props.send == true ? `block` : `none`};
+        display: ${props=> props.send == true ? "block" : "none"};
     }
    
 `;

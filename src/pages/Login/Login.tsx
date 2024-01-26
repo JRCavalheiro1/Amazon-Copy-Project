@@ -7,7 +7,7 @@ import { Footer } from "../../shared/components/Footer/Footer";
 import img from "../../images/icon2.png";
 
 
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 
 
 export const Login = () => {
@@ -23,9 +23,7 @@ export const Login = () => {
             
             <Centralize>
                 <Content>
-                    
                     <FormLogin/>
-                    
                 </Content>
 
                 <h5>Novo no Amazon?</h5>

@@ -1,9 +1,9 @@
 //import components
-import { Input, Button, Alert, Alert2, ConditionsText} from "../../../../shared/components/Index";
+import { Input, Button, Alert2, ConditionsText} from "../../../../shared/components/Index";
 import { validationSigninSchema as validationSchema } from "../../../Register/Validation";
 import { Help } from "../Help/Help";
 import { Container } from "./style";
-import { auth, fireStore } from "../../../../Firebase/firebase-cfg";
+import { auth } from "../../../../Firebase/firebase-cfg";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import iconAlert2 from "../../../../images/alert2.png";
 
@@ -87,7 +87,9 @@ export const FormLogin = () => {
                         {formik.errors.password && formik.touched.password && <Alert2 message={formik.errors.password} icon={iconAlert2 }/>}
                 </div>
 
-                <Button type={"submit"}>Continuar</Button>
+                <Button type={"submit"}>
+                    Continuar
+                </Button>
             </form>
 
             <div className="login-content">
