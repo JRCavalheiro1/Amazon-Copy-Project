@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-import ReactDOM  from "react";
 
 //import components and styles
 import { ContainerForm } from "./style"
@@ -13,7 +11,7 @@ import iconAlert2 from "../../../../images/alert2.png";
 import { useFormik} from "formik";
 import { auth, fireStore} from "../../../../Firebase/firebase-cfg";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { doc, setDoc, getDoc} from "firebase/firestore";
+import { doc, setDoc} from "firebase/firestore";
 import { useNavigate} from "react-router-dom";
 
 interface formValues {
