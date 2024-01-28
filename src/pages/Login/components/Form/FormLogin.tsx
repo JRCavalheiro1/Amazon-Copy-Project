@@ -87,7 +87,7 @@ export const FormLogin = () => {
                         {formik.errors.password && formik.touched.password && <Alert2 message={formik.errors.password} icon={iconAlert2 }/>}
                 </div>
 
-                <Button type={"submit"}>
+                <Button type={"submit"} onClick={()=> setEmailLogged(!emailLogged)}>
                     Continuar
                 </Button>
             </form>

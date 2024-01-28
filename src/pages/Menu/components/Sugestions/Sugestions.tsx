@@ -24,7 +24,6 @@ export const Sugestions = () => {
                         <li><a>Casa</a></li>
                         <li><a>Games</a></li>
                         <li><a>Beleza</a></li>
-                        
                     </ul>
                 </div>
 
@@ -32,7 +31,6 @@ export const Sugestions = () => {
                     <a><h1>Tudo para lista escolar</h1></a>   
                 </div>
             </div>
-
         </Container>
     )
 }
