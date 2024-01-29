@@ -15,6 +15,8 @@ import { Overlay } from "../../shared/components/Overlay/Overlay";
 
 export const Menu = ()=> {
     const [nameUser, setNameUser] = useState('');
+    const [openModal, setOpenModal] = useState(false);
+
     const userId = auth.currentUser?.uid;
     
     useEffect(()=> {
@@ -30,8 +32,11 @@ export const Menu = ()=> {
     return (
         <Container>
             <Header name={nameUser}/>
-            <Sugestions children={<SugestionsModal/>}/>
-            <Overlay/>
+            <Sugestions 
+                onClick={()=> setOpenModal(!openModal)} 
+                children={openModal ? <SugestionsModal name={nameUser} onClick={()=> setOpenModal(!openModal)}/> : undefined}/>
+                {openModal ? <Overlay onClick={()=> setOpenModal(!openModal)}/> : undefined }
+            
             
             {/*Content
                 -hero

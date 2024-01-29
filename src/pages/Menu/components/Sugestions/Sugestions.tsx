@@ -3,31 +3,32 @@ import menuIcon from "../../../../images/menuIcon.svg";
 
 type sugestionsProps = {
     children: any;
+    onClick: ()=> void
 }
 
-export const Sugestions = ({children} : sugestionsProps) => {
+export const Sugestions = ({children, onClick} : sugestionsProps) => {
     return (
         <Container>
             <div className="nav-sugestions">
                 <div className="nav-sugestions-bar">
-                    <div className="all-sugestions-btn">
+                    <div className="all-sugestions-btn" onClick={onClick}>
                         <img src={menuIcon}/> <a>Todos</a>
                         {children}
                     </div>
-                    <ul>
-                        <li><a>Venda na Amazon</a></li>
-                        <li><a>Mais Vendidos</a></li>
-                        <li><a>Ofertas do Dia</a></li>
-                        <li><a>Prime</a></li>
-                        <li><a>Livros</a></li>
-                        <li><a>Ideias de Presente</a></li>
-                        <li><a>Música</a></li>
-                        <li><a>Novidades na Amazon</a></li>
-                        <li><a>Eletrônicos</a></li>
-                        <li><a>Computadores</a></li>
-                        <li><a>Casa</a></li>
-                        <li><a>Games</a></li>
-                        <li><a>Beleza</a></li>
+                    <ul className="list-body">
+                        <li className="list-sugest"><a>Venda na Amazon</a></li>
+                        <li className="list-sugest"><a>Mais Vendidos</a></li>
+                        <li className="list-sugest"><a>Ofertas do Dia</a></li>
+                        <li className="list-sugest"><a>Prime</a></li>
+                        <li className="list-sugest"><a>Livros</a></li>
+                        <li className="list-sugest"><a>Ideias de Presente</a></li>
+                        <li className="list-sugest"><a>Música</a></li>
+                        <li className="list-sugest"><a>Novidades na Amazon</a></li>
+                        <li className="list-sugest"><a>Eletrônicos</a></li>
+                        <li className="list-sugest"><a>Computadores</a></li>
+                        <li className="list-sugest"><a>Casa</a></li>
+                        <li className="list-sugest"><a>Games</a></li>
+                        <li className="list-sugest"><a>Beleza</a></li>
                     </ul>
                 </div>
 

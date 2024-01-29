@@ -34,12 +34,12 @@ export const Container = styled.div`
         align-items: center;
     }
 
-    ul {
+    .list-body {
         display: flex;
         list-style: none;
     }
 
-    li {
+    .list-sugest {
         white-space:nowrap;
         position: static;
         padding: 8px 9px;

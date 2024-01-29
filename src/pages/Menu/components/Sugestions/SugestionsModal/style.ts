@@ -5,6 +5,22 @@ export const Container = styled.div`
     top: 0;
     left: 0;
     z-index: 2;
+    cursor: default;
+    
+    //======== HEADER MODAL PART============
+    .sugest-close-modal {
+        img {
+            cursor: pointer;
+        }
+    }
+
+    .horizontal-line {
+        height: 1px;
+        width: 100%;
+        border: none;
+        background: #e6e6e6;
+    }
+
     .sugest-close-modal {
         position: absolute;
         right: -35px;
@@ -12,7 +28,6 @@ export const Container = styled.div`
     }
 
     .nav-sugest-modal {
-        z-index: 1;
         width: 36.5rem;
         
     }
@@ -32,8 +47,34 @@ export const Container = styled.div`
         margin-left: 10px;
     }
 
+    //=========BODY MODAL PART===========
+
     .nav-modal-content {
         height: 90.3rem;
         background: #ffffff;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    h3{
+        margin-top: 10px;
+        font-size: 1.7rem;
+    }
+
+    .list-modal-sugest, h3 {
+        padding: 13px 20px 13px 36px;
+        color: black;
+        line-height: 1.3;
+    }
+    
+    .list-modal-sugest{
+        font-weight: 400;
+        font-size: 1.32rem;
+        color: #595a5a;
+        cursor: pointer;
+    }
+
+    .list-modal-sugest:hover {
+        background: #eaeded;
     }
 `;
