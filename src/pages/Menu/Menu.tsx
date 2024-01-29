@@ -4,7 +4,8 @@ import { Sugestions } from "./components/Sugestions/Sugestions";
 import { doc, getDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { auth, fireStore } from "../../Firebase/firebase-cfg";
-
+import { SugestionsModal} from "./components/Sugestions/SugestionsModal/SugestionsModal";
+import { Overlay } from "../../shared/components/Overlay/Overlay";
 
 {/*
     verificar usuário logado
@@ -29,7 +30,8 @@ export const Menu = ()=> {
     return (
         <Container>
             <Header name={nameUser}/>
-            <Sugestions/>
+            <Sugestions children={<SugestionsModal/>}/>
+            <Overlay/>
             
             {/*Content
                 -hero

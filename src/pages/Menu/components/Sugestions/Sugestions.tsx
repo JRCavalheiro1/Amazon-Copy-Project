@@ -1,14 +1,18 @@
 import { Container } from "./styles";
 import menuIcon from "../../../../images/menuIcon.svg";
 
+type sugestionsProps = {
+    children: any;
+}
 
-export const Sugestions = () => {
+export const Sugestions = ({children} : sugestionsProps) => {
     return (
         <Container>
             <div className="nav-sugestions">
                 <div className="nav-sugestions-bar">
                     <div className="all-sugestions-btn">
                         <img src={menuIcon}/> <a>Todos</a>
+                        {children}
                     </div>
                     <ul>
                         <li><a>Venda na Amazon</a></li>

@@ -3,7 +3,6 @@ import { Local, Search, User, Ordered, CartComponent } from "./components/Index"
 import logoMenu from "../../../../images/logo-menu.png";
 import { useState } from "react";
 import { UserModal } from "./components/UserModal/UserModal";
-import { Overlay } from "../../../../shared/components/Overlay/Overlay";
 
 interface HeaderProps {
     name: string,
