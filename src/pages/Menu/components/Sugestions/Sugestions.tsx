@@ -1,10 +1,11 @@
 import { Container } from "./styles";
 import menuIcon from "../../../../images/menuIcon.svg";
-import { SugestionsModal } from "./SugestionsModal/SugestionsModal";
+import { ContentModal } from "./SugestionsModal/ContentModal/ContentModal";
 import { CloseModal } from "./SugestionsModal/CloseModal/CloseModal";
 import { useState } from "react";
 import { Overlay } from "../../../../shared/components/Overlay/Overlay";
 import { motion } from "framer-motion";
+import { SugestionsModal } from "./SugestionsModal/SugestionsModal";
 
 
 
@@ -44,9 +45,9 @@ export const Sugestions = ({name }: sugestionProps) => {
                 </div>
             </div>
 
-            {openModal ? <SugestionsModal name={name} isOpen={openModal}/> : undefined}
-            {openModal ? <CloseModal onClick={()=> setOpenModal(!openModal)}/> : undefined}
-            {openModal ? <Overlay onClick={()=> setOpenModal(!openModal)}/> : undefined} 
+            {openModal && <SugestionsModal name={name} isOpen={openModal} onClick={()=> setOpenModal(!openModal)}/>}
+            {openModal && <CloseModal onClick={()=> setOpenModal(!openModal)}/>}
+            {openModal && <Overlay onClick={()=> setOpenModal(!openModal)}/>} 
         </Container>
     
     )
