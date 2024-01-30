@@ -1,7 +1,6 @@
 import { Container } from "./style";
 import userIconModal from "../../../../../../images/userModalicon.svg";
 
-import { motion, AnimatePresence } from "framer-motion";
 
 type modalProps = {
     name: string,

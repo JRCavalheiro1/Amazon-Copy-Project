@@ -1,12 +1,10 @@
-import { Container } from "./styles";
 import menuIcon from "../../../../images/menuIcon.svg";
-import { ContentModal } from "./SugestionsModal/ContentModal/ContentModal";
+import { Container } from "./styles";
 import { CloseModal } from "./SugestionsModal/CloseModal/CloseModal";
 import { useState } from "react";
 import { Overlay } from "../../../../shared/components/Overlay/Overlay";
-import { motion } from "framer-motion";
 import { SugestionsModal } from "./SugestionsModal/SugestionsModal";
-
+import { useEffect } from "react";
 
 
 type sugestionProps = {
@@ -16,6 +14,9 @@ type sugestionProps = {
 export const Sugestions = ({name }: sugestionProps) => {
     const [openModal, setOpenModal] = useState(true);
     
+    useEffect(()=> {
+        setOpenModal(false);
+    }, [setOpenModal])
     return (
         <Container>
             <div className="nav-sugestions">
@@ -45,8 +46,7 @@ export const Sugestions = ({name }: sugestionProps) => {
                 </div>
             </div>
 
-            {openModal && <SugestionsModal name={name} isOpen={openModal} onClick={()=> setOpenModal(!openModal)}/>}
-            {openModal && <CloseModal onClick={()=> setOpenModal(!openModal)}/>}
+            {openModal && <SugestionsModal key={name} name={name} isOpen={openModal} onClick={()=> setOpenModal(!openModal)}/>}
             {openModal && <Overlay onClick={()=> setOpenModal(!openModal)}/>} 
         </Container>
     

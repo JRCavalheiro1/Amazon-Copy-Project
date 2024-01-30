@@ -1,9 +1,12 @@
 import { styled } from "styled-components";
 
+
 interface overlayProps {
     onClick?: () => void,
     onMouseEnter?: ()=> void,
 }
+
+
 export const Overlay = styled.div<overlayProps>`
     position: fixed;
     top: 0;

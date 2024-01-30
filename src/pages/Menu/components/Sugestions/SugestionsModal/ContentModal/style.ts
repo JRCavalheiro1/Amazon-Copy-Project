@@ -1,14 +1,9 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
-    position: absolute;
-    top: 0;
-    left: 0;
     cursor: default;
-    z-index: 2;
     
     //======== HEADER MODAL PART============
-
     .horizontal-line {
         height: 1px;
         width: 100%;
