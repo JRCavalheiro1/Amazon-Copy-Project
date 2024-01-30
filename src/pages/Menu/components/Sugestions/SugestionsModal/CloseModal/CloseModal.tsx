@@ -1,5 +1,5 @@
-import closeIconModal from "../../../../../images/closeModalicon.svg";
-import { Container } from "./style";
+import closeIconModal from "../../../../../../images/closeModalicon.svg";
+import { Container } from "./styles";
 type closeProps = {
     onClick: () => void
 }

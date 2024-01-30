@@ -8,14 +8,6 @@ export const Container = styled.div`
     z-index: 2;
     
     //======== HEADER MODAL PART============
-    .sugest-close-modal {
-        margin-left: 100%;
-        top: 50%;
-
-        img {
-            cursor: pointer;
-        }
-    }
 
     .horizontal-line {
         height: 1px;
@@ -41,6 +33,7 @@ export const Container = styled.div`
     a { 
         font-size: 1.8rem;
         margin-left: 10px;
+        color: #ffffff;
     }
 
     //=========BODY MODAL PART===========
