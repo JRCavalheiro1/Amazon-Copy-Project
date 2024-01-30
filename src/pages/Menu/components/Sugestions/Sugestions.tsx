@@ -1,19 +1,20 @@
 import { Container } from "./styles";
 import menuIcon from "../../../../images/menuIcon.svg";
+import { SugestionsModal } from "./SugestionsModal/SugestionsModal";
+import { CloseModal } from "./SugestionsModal/CloseModal";
+import { useState } from "react";
 
-type sugestionsProps = {
-    children: any;
-    onClick: ()=> void
-}
-
-export const Sugestions = ({children, onClick} : sugestionsProps) => {
+type sugestionProps = {
+    name: string
+ }
+export const Sugestions = ({name }: sugestionProps) => {
+    const [openModal, setOpenModal] = useState(false);
     return (
         <Container>
             <div className="nav-sugestions">
                 <div className="nav-sugestions-bar">
-                    <div className="all-sugestions-btn" onClick={onClick}>
+                    <div className="all-sugestions-btn" onClick={()=> setOpenModal(!openModal)}>
                         <img src={menuIcon}/> <a>Todos</a>
-                        {children}
                     </div>
                     <ul className="list-body">
                         <li className="list-sugest"><a>Venda na Amazon</a></li>
@@ -36,6 +37,9 @@ export const Sugestions = ({children, onClick} : sugestionsProps) => {
                     <a><h1>Tudo para lista escolar</h1></a>   
                 </div>
             </div>
+
+            {openModal ? <SugestionsModal name={name}/> : undefined}
+            {openModal ? <CloseModal onClick={()=> setOpenModal(!openModal)}/> : undefined} 
         </Container>
     )
 }

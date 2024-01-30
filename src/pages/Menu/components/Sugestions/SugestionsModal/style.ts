@@ -4,11 +4,14 @@ export const Container = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
     cursor: default;
+    z-index: 2;
     
     //======== HEADER MODAL PART============
     .sugest-close-modal {
+        margin-left: 100%;
+        top: 50%;
+
         img {
             cursor: pointer;
         }
@@ -21,15 +24,8 @@ export const Container = styled.div`
         background: #e6e6e6;
     }
 
-    .sugest-close-modal {
-        position: absolute;
-        right: -35px;
-        top: 13px;
-    }
-
     .nav-sugest-modal {
         width: 36.5rem;
-        
     }
     .sugest-modal-name {
         height: 5rem;

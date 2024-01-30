@@ -32,10 +32,9 @@ export const Menu = ()=> {
     return (
         <Container>
             <Header name={nameUser}/>
-            <Sugestions 
-                onClick={()=> setOpenModal(!openModal)} 
-                children={openModal ? <SugestionsModal name={nameUser} onClick={()=> setOpenModal(!openModal)}/> : undefined}/>
-                {openModal ? <Overlay onClick={()=> setOpenModal(!openModal)}/> : undefined }
+            <Sugestions name={nameUser}/>
+                
+                
             
             
             {/*Content

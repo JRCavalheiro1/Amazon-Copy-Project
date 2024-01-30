@@ -1,22 +1,17 @@
 import { Container } from "./style";
 import userIconModal from "../../../../../images/userModalicon.svg";
-import closeIconModal from "../../../../../images/closeModalicon.svg"
+
 
 type modalProps = {
     name: string,
-    onClick: ()=> void
 }
 
-export const SugestionsModal = ({name, onClick} : modalProps) => {
+export const SugestionsModal = ({name } : modalProps) => {
     return (
         <Container>
-            <div className="sugest-close-modal">
-                <img src={closeIconModal} onClick={onClick}/>
-            </div>
-
             <div className="nav-sugest-modal">
                 <div className="sugest-modal-name">
-                    <img src={userIconModal}/> <a>{name ? name : "Olá, faça seu login"}</a> 
+                    <img src={userIconModal}/> <a>{name ? name : "Olá, faça seu login"}</a>
                 </div>
                 
                 <div className="nav-modal-content">
@@ -86,7 +81,6 @@ export const SugestionsModal = ({name, onClick} : modalProps) => {
 
                 </div>
             </div>
-            
         </Container>
     )
 }
