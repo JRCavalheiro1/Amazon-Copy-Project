@@ -1,13 +1,24 @@
 import { Container } from "./style";
 import userIconModal from "../../../../../images/userModalicon.svg";
 
+import { motion } from "framer-motion";
 
 type modalProps = {
     name: string,
+    isOpen: boolean
 }
-
-export const SugestionsModal = ({name } : modalProps) => {
+const variants = {
+    open: {x: 0},
+    closed: {x: "-100%"}
+}
+export const SugestionsModal = ({name, isOpen} : modalProps) => {
     return (
+        <motion.nav
+        animate= {isOpen ? "open" : "closed"}
+        transition={{duration: 0.6}}
+        variants={variants}
+        
+        >   
         <Container>
             <div className="nav-sugest-modal">
                 <div className="sugest-modal-name">
@@ -82,5 +93,6 @@ export const SugestionsModal = ({name } : modalProps) => {
                 </div>
             </div>
         </Container>
+        </motion.nav>
     )
 }

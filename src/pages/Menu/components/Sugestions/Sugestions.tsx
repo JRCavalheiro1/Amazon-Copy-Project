@@ -4,12 +4,17 @@ import { SugestionsModal } from "./SugestionsModal/SugestionsModal";
 import { CloseModal } from "./SugestionsModal/CloseModal/CloseModal";
 import { useState } from "react";
 import { Overlay } from "../../../../shared/components/Overlay/Overlay";
+import { motion } from "framer-motion";
+
+
 
 type sugestionProps = {
     name: string
  }
+
 export const Sugestions = ({name }: sugestionProps) => {
-    const [openModal, setOpenModal] = useState(false);
+    const [openModal, setOpenModal] = useState(true);
+    
     return (
         <Container>
             <div className="nav-sugestions">
@@ -39,9 +44,10 @@ export const Sugestions = ({name }: sugestionProps) => {
                 </div>
             </div>
 
-            {openModal ? <SugestionsModal name={name}/> : undefined}
+            {openModal ? <SugestionsModal name={name} isOpen={openModal}/> : undefined}
             {openModal ? <CloseModal onClick={()=> setOpenModal(!openModal)}/> : undefined}
             {openModal ? <Overlay onClick={()=> setOpenModal(!openModal)}/> : undefined} 
         </Container>
+    
     )
 }
