@@ -16,7 +16,7 @@ const variants = {
     exit: {x: "-100vh", opacity: 0}
     
 }
-export const SugestionsModal = ({name, isOpen, onClick, key}: modalProps) => {
+export const SugestionsModal = ({name, isOpen, onClick}: modalProps) => {
     return (
         <AnimatePresence>
             {isOpen && (

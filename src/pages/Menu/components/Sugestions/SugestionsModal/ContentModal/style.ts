@@ -34,7 +34,7 @@ export const Container = styled.div`
     //=========BODY MODAL PART===========
 
     .nav-modal-content {
-        height: 90.3rem;
+        height: 100vh;
         background: #ffffff;
         overflow: hidden;
         overflow-y: scroll;

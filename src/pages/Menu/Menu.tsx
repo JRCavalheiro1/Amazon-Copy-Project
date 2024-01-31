@@ -4,7 +4,6 @@ import { Sugestions } from "./components/Sugestions/Sugestions";
 import { doc, getDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { auth, fireStore } from "../../Firebase/firebase-cfg";
-import { Overlay } from "../../shared/components/Overlay/Overlay";
 
 {/*
     verificar usuário logado
@@ -14,7 +13,6 @@ import { Overlay } from "../../shared/components/Overlay/Overlay";
 
 export const Menu = ()=> {
     const [nameUser, setNameUser] = useState('');
-    const [openModal, setOpenModal] = useState(false);
 
     const userId = auth.currentUser?.uid;
     

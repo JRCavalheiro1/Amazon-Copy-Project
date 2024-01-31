@@ -33,8 +33,8 @@ export const Local = ({name}: localProps)=> {
                        
                     </div>
                 </a>
-                {showLocalModal == true ? <AddLocalModal setLocalText={setLocalText}/> : undefined} 
-                {showLocalModal == true ? <Overlay onClick={()=> setShowLocalModal(!showLocalModal)}/> : undefined}
+                {showLocalModal && <AddLocalModal setLocalText={setLocalText}/>} 
+                {showLocalModal && <Overlay onClick={()=> setShowLocalModal(!showLocalModal)}/>}
         </Container>
     )
 }

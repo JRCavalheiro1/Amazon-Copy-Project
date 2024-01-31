@@ -1,10 +1,8 @@
 import menuIcon from "../../../../images/menuIcon.svg";
 import { Container } from "./styles";
 import { useState } from "react";
-import { Overlay } from "../../../../shared/components/Overlay/Overlay";
+import { Overlay} from "../../../../shared/components/Overlay/Overlay";
 import { SugestionsModal } from "./SugestionsModal/SugestionsModal";
-import { useEffect } from "react";
-import { AnimatePresence } from "framer-motion";
 
 type sugestionProps = {
     name: string
