@@ -1,6 +1,7 @@
 import { Container } from "./style";
 import { Header } from "./components/Header/Header";
 import { Sugestions } from "./components/Sugestions/Sugestions";
+import { Hero } from "./components/Hero/Hero";
 import { doc, getDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { auth, fireStore } from "../../Firebase/firebase-cfg";
@@ -30,15 +31,8 @@ export const Menu = ()=> {
         <Container>
             <Header name={nameUser}/>
             <Sugestions name={nameUser}/>
-                
-                
+            <Hero/>    
             
-            
-            {/*Content
-                -hero
-                -main
-                Isso aqui vai ser dificil pra kralho
-                */}
 
             {/*Footer*/}
         </Container>
