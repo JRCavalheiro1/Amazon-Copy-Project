@@ -1,22 +1,19 @@
 import menuIcon from "../../../../images/menuIcon.svg";
 import { Container } from "./styles";
-import { CloseModal } from "./SugestionsModal/CloseModal/CloseModal";
 import { useState } from "react";
 import { Overlay } from "../../../../shared/components/Overlay/Overlay";
 import { SugestionsModal } from "./SugestionsModal/SugestionsModal";
 import { useEffect } from "react";
-
+import { AnimatePresence } from "framer-motion";
 
 type sugestionProps = {
     name: string
  }
 
 export const Sugestions = ({name }: sugestionProps) => {
-    const [openModal, setOpenModal] = useState(true);
+    const [openModal, setOpenModal] = useState(false);
     
-    useEffect(()=> {
-        setOpenModal(false);
-    }, [setOpenModal])
+   
     return (
         <Container>
             <div className="nav-sugestions">
@@ -45,8 +42,7 @@ export const Sugestions = ({name }: sugestionProps) => {
                     <a><h1>Tudo para lista escolar</h1></a>   
                 </div>
             </div>
-
-            {openModal && <SugestionsModal key={name} name={name} isOpen={openModal} onClick={()=> setOpenModal(!openModal)}/>}
+            <SugestionsModal name={name} isOpen={openModal} onClick={()=> setOpenModal(!openModal)}/>
             {openModal && <Overlay onClick={()=> setOpenModal(!openModal)}/>} 
         </Container>
     

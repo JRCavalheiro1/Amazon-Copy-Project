@@ -6,7 +6,6 @@ interface overlayProps {
     onMouseEnter?: ()=> void,
 }
 
-
 export const Overlay = styled.div<overlayProps>`
     position: fixed;
     top: 0;
