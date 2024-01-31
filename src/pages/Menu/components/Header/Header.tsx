@@ -9,7 +9,7 @@ interface HeaderProps {
 }
 export const Header = ({name}: HeaderProps) => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
-
+   
     return (
         <Container>
             <div className="nav-header">

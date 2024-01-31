@@ -11,7 +11,7 @@ export const Overlay = ({onClick, onMouseEnter}: overlayProps) => {
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
                 transition={{duration: 0.4}}
-                style={{
+                style={ {
                     position: "fixed",
                     top: 0,
                     bottom: 0,

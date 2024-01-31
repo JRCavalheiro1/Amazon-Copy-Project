@@ -10,7 +10,7 @@ export const Container = styled.div`
     }   
    
    select, input {
-        padding: 1rem;
+        padding: 0.8rem;
         border: none;
     }
 
@@ -26,8 +26,8 @@ export const Container = styled.div`
             cursor: pointer;
             background: #e6e6e6;
             font-size: 1rem;
-            padding-top: 1.2rem;
-            padding-bottom: 1.1rem;
+            padding-top: 1rem;
+            padding-bottom: 0.9rem;
             color: #596068;
             border-top-left-radius: 0.5rem;
             border-bottom-left-radius: 0.5rem;
@@ -49,6 +49,22 @@ export const Container = styled.div`
                 background: #febd69;
             }
         }
+
+        .input-search{
+            border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+        }
+        .input-submit{
+            border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            border-right: 3px solid transparent;
+        }
+        select {
+            border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            border-left: 3px solid transparent;
+        }
+
 
         select:hover {
             filter: brightness(0.9);
