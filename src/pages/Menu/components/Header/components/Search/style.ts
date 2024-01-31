@@ -3,10 +3,11 @@ import { styled } from "styled-components";
 
 export const Container = styled.div`
     width: 1080px;
-  .nav-search {
+    .nav-search {
         display: flex;
         align-items: center;
         padding: 0px 25px 0px 4px;
+        position: relative;
     }   
    
    select, input {

@@ -9,7 +9,7 @@ export const Search = () => {
 
     return (
         <Container>
-           <div className="nav-search">
+           <div className="nav-search" style={isClicked ? {zIndex: 2} : undefined}>
                         <select className="select-search" name="todos"
                         style={isClicked ? 
                               {borderTopColor:"#ff9900", borderBottomColor: "#ff9900", borderLeftColor: "#ff9900"} : undefined}
@@ -20,14 +20,14 @@ export const Search = () => {
                             className="input-search" 
                             type="text" 
                             placeholder="Pesquisa Amazon.com.br"
-                            onFocus={()=> setIsClicked(!isClicked)}
+                            onClick={()=> setIsClicked(true )}
                             style={isClicked ? {borderTopColor:"#ff9900", borderBottomColor: "#ff9900"} : undefined}
                             />
                             
-                        <div className="submit">
+                        <div className="submit" >
                             <input className="input-submit" type="submit" value="" 
                                 style={isClicked ? 
-                                      {borderTopColor:"#ff9900", borderBottomColor: "#ff9900", borderRightColor: "#ff9900"} : undefined}
+                                    {borderTopColor:"#ff9900", borderBottomColor: "#ff9900", borderRightColor: "#ff9900"} : undefined}
                             />
                             <img className="glass-logo" src={glassLogo}/>
                         </div>
