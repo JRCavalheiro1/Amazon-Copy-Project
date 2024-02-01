@@ -2,7 +2,8 @@ import { styled } from "styled-components";
 
 
 export const Container = styled.div`
-    .triangle-modal {
+
+.triangle-modal {
         display: block;
         position: absolute;
         right: -120px;

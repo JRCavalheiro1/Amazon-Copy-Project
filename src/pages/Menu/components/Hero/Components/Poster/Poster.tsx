@@ -26,11 +26,6 @@ export const Poster = ({image} : posterProps) => {
                         </div>
                 </div>
 
-                    <div className="card-poster">
-                        <Card/>
-                        <Card/>
-                    </div>
-
             </div>
 
             

@@ -22,6 +22,7 @@ export const Header = ({name}: HeaderProps) => {
                     name={ name !== '' ? name : 'faça seu login'}
                     onMouseEnter={()=> setModalIsOpen(!modalIsOpen)}    
                     onMouseLeave={()=> setModalIsOpen(!modalIsOpen)}
+                    isOpen={modalIsOpen}
                     openModal={modalIsOpen && <UserModal/>}/>
                 <Ordered/>
                 <CartComponent/>
