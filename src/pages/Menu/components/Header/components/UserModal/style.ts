@@ -28,6 +28,7 @@ export const Container = styled.div`
         border-right: 1px solid #cccccc;
         border-bottom: 1px solid #cccccc;
         border-radius: 3px;
+        z-index: 2;
     }
 
     .modal-content {
