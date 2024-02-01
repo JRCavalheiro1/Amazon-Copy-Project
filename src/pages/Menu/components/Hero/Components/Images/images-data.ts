@@ -1,6 +1,6 @@
 export const images = [
-    "file:///C:/Users/julio/Desktop/61q5MU4wpHL._SX3000_.jpg",
-    "file:///C:/Users/julio/Desktop/61YRFvniq5L._SX3000_.jpg",
-    "file:///C:/Users/julio/Desktop/71EZ06iK3JL._SX3000_.jpg",
-    "file:///C:/Users/julio/Desktop/primevideo.jpg"
+    "https://m.media-amazon.com/images/I/61PrOzkSSSL._SX3000_.jpg",
+    "https://m.media-amazon.com/images/I/71TfxpJI-nL._SX3000_.jpg",
+    "https://m.media-amazon.com/images/I/61XsDA-Bv2L._SX3000_.jpg",
+    "https://m.media-amazon.com/images/I/71dSE2uObYL._SX3000_.jpg"
 ]
