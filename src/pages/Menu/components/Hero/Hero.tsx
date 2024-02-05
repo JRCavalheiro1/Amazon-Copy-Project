@@ -6,7 +6,7 @@ import primeVideoImg from "./Components/Images/primevideo.jpg"
 export const Hero = () => { 
     return (
         <Container>
-            <Poster image={primeVideoImg}/>
+            <Poster/>
             {/*
                 -componente cartaz com imagem
                     -componente card de opções

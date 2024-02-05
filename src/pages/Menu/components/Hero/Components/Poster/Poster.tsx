@@ -1,90 +1,79 @@
 import { Container } from "./styles"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 import { Card } from "../Card/Card"
 import nextIcon from "../../../../../../images/next.svg";
 import prevIcon from "../../../../../../images/prev.svg";
 import { images } from "../Images/images-data";
 import { useState } from "react";
-import { wrap } from "popmotion";
 
-type posterProps = {
-    image: string
-}
+
+let controler = 0;
 
 const variants = {
-   enter: (direction: number) => {
-        return {
-            x: direction > 0 ? 1000 : -1000,
-        }
-   },
-   center: {
-        zIndex: 1,
-        x: 0,
-   },
+    enter : {
+        x: `0%`
+    },
 
-   exit: (direction: number)=> {
+    exit: (direction: number) => {
         return {
-            zIndex: 1,
-            x: direction < 0 ? 1000 : -1000,
+            x: `${controler}%` }
+    },
+    
+    center: (direction: number)=> {
+        return {
+            x: `${controler}%` //0%, 100%, 200%, 300%
         }
-   }
+    }
 }
 
-const swipeConfidenceThreshold = 10000;
-const swipePower = (offset: number, velocity: number) => {
-    return Math.abs(offset) * velocity;
-}
-
-
-export const Poster = ({image} : posterProps) => {
+export const Poster = () => {
     const [[page, direction], setPage] = useState([0, 0]);
     
-    const imageIndex = wrap(0, images.length, page);
+    const paginate = (newDirection: number)=> {
+        setPage([page + newDirection, newDirection])
+        
+        if(newDirection == 1) {
+            controler += 100
+            if(controler > 0) controler = -300
 
-    const paginate = (newDirection: number) => {
-        setPage([page + newDirection, direction]);
-    }
+        } else if (newDirection == -1) {
+            controler -= 100
+            if(controler < -300) controler = 0;
+        }
+    }    
 
     return (
         <Container>
-            <div className="slide-show">
-                <AnimatePresence initial={false} custom={direction}>
-                    <div className="image">
-                        <motion.img
-                            key={page}
-                            src={images[imageIndex]}
-                            custom={direction}
-                            variants={variants}
-                            initial="enter"
-                            animate="center"
-                            exit="exit"
-                           
-                            drag="x"
-                            onDragEnd={(e, {offset, velocity}) => {
-                                const swipe = swipePower(offset.x, velocity.x);
-                                 
-                                if (swipe > -swipeConfidenceThreshold) {
-                                    paginate(1);
-                                } else if (swipe < swipeConfidenceThreshold) {
-                                    paginate(-1);
-                                }
-
-                            }}
-                            style={{maxWidth: "1500px"}}
-                        />
-                            <div className="direction">
-                                <div className="prev-button" onClick={()=> paginate(-1)}>
-                                    <img src={prevIcon}/>
-                                </div>
-                                <div className="next-button" onClick={()=> paginate(1)}>
-                                    <img src={nextIcon}/>
-                                </div>
-                            </div>
+           <div className="slide"> 
+                <motion.div
+                
+                className="inner-slide">
+                    {images.map((item) => {
+                        return (
+                            <motion.div
+                                custom={direction} 
+                                variants={variants}
+                                initial="enter"
+                                animate="center"
+                                exit="exit"
+                                transition={{ type: "spring", duration: 0.37, bounce: 0}}
+                                key={item.id}
+                                className="image-item">
+                                    <img src={item.image} className="image"/>
+                            </motion.div>
+                        )
+                    })}
+                
+                </motion.div>
+                <div className="buttons">
+                    <div className="prev-button" onClick={()=> paginate(1)}>
+                        <img src={prevIcon}/>
                     </div>
-                </AnimatePresence>
-            </div>
-
-            
+                    <div className="next-button" onClick={()=> paginate(-1)}>
+                        <img src={nextIcon}/>
+                    </div>
+                </div>
+           </div>
         </Container>
     )
 } 

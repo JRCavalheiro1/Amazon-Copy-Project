@@ -2,26 +2,35 @@ import { styled } from "styled-components";
 
 
 export const Container = styled.div`
-   .slide-show {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .image {
-          display: block;
+    display: flex;
+     justify-content: center;
+    .slide {
+          width: 1500px;
           position: relative;
           cursor: pointer;
+          overflow: hidden;
      }
-     .direction {
+
+
+    .inner-slide {
+          width: 1500px;
+          height: 600px;
+          display: flex;
+    }
+    
+    .image {
+          width: 1500px;
+    }
+
+     .buttons {
           position: absolute;
           display: flex;
-          top: 0;
+          top: 0%;
           gap: 1340px;
      }
      
      .prev-button , .next-button {
-          box-shadow: inset 0 0 0 2px #FFF, inset 0 0 0 4px #008296;
+          
           border-radius: 5px;
           width: 80px;
           height: 250px;
@@ -32,6 +41,13 @@ export const Container = styled.div`
           }
      }
      
+     .prev-button:hover {
+          box-shadow: inset 0 0 0 2px #FFF, inset 0 0 0 4px #008296;
+     }
+     
+     .next-button:focus {
+          box-shadow: inset 0 0 0 2px #FFF, inset 0 0 0 4px #008296;
+     }
    
      
     
