@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 export const Container = styled.div`
     .card {
         display: flex;
+        align-items: center;
         width: 34.567rem;
         height: 42rem;
         padding: 20px 15px;
@@ -13,6 +14,10 @@ export const Container = styled.div`
         cursor: default;
     }
 
+    .card-image {
+        margin-left: 5px;
+    }
+
     h1 {
         padding-left: 10px;
         margin-bottom: -20px;
@@ -20,9 +25,6 @@ export const Container = styled.div`
 
     img {
         padding-top: 20px;
-        margin-left: 10px;
-        width: 140px;
-        height: 120px;
         cursor: pointer;
     }
 
@@ -40,6 +42,7 @@ export const Container = styled.div`
         padding-left: 10px;
         color: #288798;
         text-decoration: none;
+        cursor: pointer;
     }
 
     a:hover {

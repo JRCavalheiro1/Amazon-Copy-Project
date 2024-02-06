@@ -5,7 +5,7 @@ import nextIcon from "../../../../../../images/next.svg";
 import prevIcon from "../../../../../../images/prev.svg";
 import { images } from "../Images/images-data";
 import { useState } from "react";
-import { card1Data } from "../Poster/Card/Card-data";
+import { cardsData } from "../Poster/Card/Card-data";
 
 let controler = 0;
 
@@ -76,8 +76,20 @@ export const Poster = () => {
                    <CardDiff 
                         h1="Veja Echo e Fire TV com Alexa"
                         a="Confira tudo em Dispositivos Amazon" 
-                        href="#"   
+                        href="#" 
+                        width="140px"
+                        height="120px"  
+                    />
+                    {cardsData.map((card)=> (
+                        <Card 
+                            key={card.id} 
+                            h1={card.h1}
+                            src={card.url}
+                            a={card.a}
+                            width={card.width}
+                            height={card.height}
                         />
+                    ))}    
 
                 </div>
            </div>

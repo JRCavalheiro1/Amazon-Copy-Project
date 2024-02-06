@@ -11,32 +11,33 @@ type cardProps = {
     href?: string
 
 }
-export const Card = ({src, p, h1, a, href}: cardProps)=> {
+export const Card = ({src, p, h1, a, href, width, height}: cardProps)=> {
     return (
         <Container>
             <div className="card">
                     <h1>{h1}</h1>
-                    <img src={src}/>
-                    <p>{p}</p>
+                    <img className="card-image" style={{width: width, height: height}} src={src}/>
                     <a href={href}>{a}</a>
             </div>
         </Container>
     )
 }
 
-export const CardDiff = ({h1, a, href}: cardProps) => {
+export const CardDiff = ({h1, a, href, width, height}: cardProps) => {
     return (        
         <Container>
             <div className="card ">
-            <h1>{h1}</h1>
-         {card1Data.map((card)=> (
-                <div key={card.id}>
-                    <img src={card.url}/>
-                    <p>{card.name}</p>        
-                </div>
-                ))}
-            <a href={href}>{a}</a>
-         </div>       
+                <h1>{h1}</h1>
+            
+                {card1Data.map((card)=> (
+                    <div key={card.id}>
+                        <img style={{width: width, height: height}} src={card.url}/>
+                        <p>{card.name}</p>        
+                    </div>
+                    ))}
+
+                <a href={href}>{a}</a>
+            </div>       
         </Container>
     )
 }

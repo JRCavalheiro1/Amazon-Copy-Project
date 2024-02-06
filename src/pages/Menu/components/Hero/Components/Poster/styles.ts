@@ -43,6 +43,7 @@ export const Container = styled.div`
           }
      }
      
+     /*
      .prev-button:hover {
           box-shadow: inset 0 0 0 2px #FFF, inset 0 0 0 4px #008296;
      }
@@ -50,6 +51,8 @@ export const Container = styled.div`
      .next-button:focus {
           box-shadow: inset 0 0 0 2px #FFF, inset 0 0 0 4px #008296;
      }
+     */
+     
    
 
     .cards {
