@@ -1,28 +1,42 @@
 import { Container } from "./styles";
-
+import { card1Data } from "../../../Components/Poster/Card/Card-data";
 
 type cardProps = {
     width?: string,
     height?: string,
     src?: string,
-    src2?: string,
-    src3?: string,
-    src4?: string,
     p?: string,
     h1?: string
-    map: any
+    a?: string
+    href?: string
 
 }
-export const Card = ({map}: cardProps)=> {
+export const Card = ({src, p, h1, a, href}: cardProps)=> {
     return (
         <Container>
             <div className="card">
-                    <h1>{map}</h1>
-                    <img src={map}/>
-                    
-                    <p>{map}</p>
-                    
+                    <h1>{h1}</h1>
+                    <img src={src}/>
+                    <p>{p}</p>
+                    <a href={href}>{a}</a>
             </div>
+        </Container>
+    )
+}
+
+export const CardDiff = ({h1, a, href}: cardProps) => {
+    return (        
+        <Container>
+            <div className="card ">
+            <h1>{h1}</h1>
+         {card1Data.map((card)=> (
+                <div key={card.id}>
+                    <img src={card.url}/>
+                    <p>{card.name}</p>        
+                </div>
+                ))}
+            <a href={href}>{a}</a>
+         </div>       
         </Container>
     )
 }

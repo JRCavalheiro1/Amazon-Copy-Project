@@ -1,6 +1,6 @@
 import { Container } from "./styles"
 import { motion } from "framer-motion"
-import { Card } from "./Card/Card"
+import { Card, CardDiff } from "./Card/Card"
 import nextIcon from "../../../../../../images/next.svg";
 import prevIcon from "../../../../../../images/prev.svg";
 import { images } from "../Images/images-data";
@@ -73,8 +73,12 @@ export const Poster = () => {
                 </div>
                 
                 <div className="cards">
-                   
-                   
+                   <CardDiff 
+                        h1="Veja Echo e Fire TV com Alexa"
+                        a="Confira tudo em Dispositivos Amazon" 
+                        href="#"   
+                        />
+
                 </div>
            </div>
         </Container>

@@ -1,11 +1,10 @@
 
 
 export const card1Data = [
-    {id: "1"},
-    {name:"ecoPop" ,url: "https://images-na.ssl-images-amazon.com/images/G/32/kindle/journeys/E9XbtL9RfzDlDqvf/ZTJjMTI4MjUt-w186._SY116_CB571044438_.jpg"},
-    {name:"ecoDot", url: "https://images-na.ssl-images-amazon.com/images/G/32/kindle/journeys/E9XbtL9RfzDlDqvf/ZmFjYWUxM2It-w186._SY116_CB585932120_.jpg"},
-    {name:"Fire TV Stick Lite" ,url: "https://images-na.ssl-images-amazon.com/images/G/32/kindle/journeys/E9XbtL9RfzDlDqvf/OGJmZmNmNzQt-w186._SY116_CB571044438_.jpg"},
-    {name:"Fire Tv Stick" , url: "https://images-na.ssl-images-amazon.com/images/G/32/kindle/journeys/E9XbtL9RfzDlDqvf/MTcyZWUyMjIt-w186._SY116_CB571044438_.jpg"},
+    {id: "1", name:"ecoPop" ,url: "https://images-na.ssl-images-amazon.com/images/G/32/kindle/journeys/E9XbtL9RfzDlDqvf/ZTJjMTI4MjUt-w186._SY116_CB571044438_.jpg"},
+    {id: "2", name:"ecoDot", url: "https://images-na.ssl-images-amazon.com/images/G/32/kindle/journeys/E9XbtL9RfzDlDqvf/ZmFjYWUxM2It-w186._SY116_CB585932120_.jpg"},
+    {id: "3", name:"Fire TV Stick Lite" ,url: "https://images-na.ssl-images-amazon.com/images/G/32/kindle/journeys/E9XbtL9RfzDlDqvf/OGJmZmNmNzQt-w186._SY116_CB571044438_.jpg"},
+    {id: "4", name:"Fire Tv Stick" , url: "https://images-na.ssl-images-amazon.com/images/G/32/kindle/journeys/E9XbtL9RfzDlDqvf/MTcyZWUyMjIt-w186._SY116_CB571044438_.jpg"},
 ]
 
 export const cardsData = [
