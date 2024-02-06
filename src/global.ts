@@ -21,4 +21,8 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         font-family: var(--font-text);
     }
+
+    body, html {
+        height: 100%;
+    }
 `;

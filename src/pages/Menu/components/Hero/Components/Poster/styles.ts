@@ -2,13 +2,13 @@ import { styled } from "styled-components";
 
 
 export const Container = styled.div`
-    display: flex;
+     display: flex;
      justify-content: center;
+    
     .slide {
           width: 1500px;
           position: relative;
           cursor: pointer;
-          overflow: hidden;
      }
 
 
@@ -16,12 +16,14 @@ export const Container = styled.div`
           width: 1500px;
           height: 600px;
           display: flex;
+          overflow: hidden;
     }
     
     .image {
           width: 1500px;
     }
 
+   
      .buttons {
           position: absolute;
           display: flex;
@@ -49,10 +51,12 @@ export const Container = styled.div`
           box-shadow: inset 0 0 0 2px #FFF, inset 0 0 0 4px #008296;
      }
    
-     
-    
 
-     .card-poster {
-        display: flex;
-   }
+    .cards {
+          width: 100%;
+          display: flex;
+          position: absolute;
+          top: 42%;
+    }
+
 `;

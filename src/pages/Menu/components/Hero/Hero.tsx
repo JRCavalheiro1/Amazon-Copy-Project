@@ -1,7 +1,6 @@
 import { Container } from "./style";
 
 import { Poster } from "./Index";
-import primeVideoImg from "./Components/Images/primevideo.jpg"
 
 export const Hero = () => { 
     return (

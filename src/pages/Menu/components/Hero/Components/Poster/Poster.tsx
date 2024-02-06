@@ -1,11 +1,11 @@
 import { Container } from "./styles"
 import { motion } from "framer-motion"
-import { Card } from "../Card/Card"
+import { Card } from "./Card/Card"
 import nextIcon from "../../../../../../images/next.svg";
 import prevIcon from "../../../../../../images/prev.svg";
 import { images } from "../Images/images-data";
 import { useState } from "react";
-
+import { card1Data } from "../Poster/Card/Card-data";
 
 let controler = 0;
 
@@ -45,9 +45,7 @@ export const Poster = () => {
     return (
         <Container>
            <div className="slide"> 
-                <motion.div
-                
-                className="inner-slide">
+                <motion.div className="inner-slide">
                     {images.map((item) => {
                         return (
                             <motion.div
@@ -56,7 +54,7 @@ export const Poster = () => {
                                 initial="enter"
                                 animate="center"
                                 exit="exit"
-                                transition={{ type: "spring", duration: 0.37, bounce: 0}}
+                                transition={{ type: "spring", duration: 0.35, bounce: 0}}
                                 key={item.id}
                                 className="image-item">
                                     <img src={item.image} className="image"/>
@@ -72,6 +70,11 @@ export const Poster = () => {
                     <div className="next-button" onClick={()=> paginate(-1)}>
                         <img src={nextIcon}/>
                     </div>
+                </div>
+                
+                <div className="cards">
+                   
+                   
                 </div>
            </div>
         </Container>
