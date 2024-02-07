@@ -36,6 +36,14 @@ export const Container = styled.div`
         line-height: 1;
     }
 
+    .card-paragraph {
+        font-size: 1.3rem;
+        margin-top: 15px;
+        margin-bottom: -20px;
+        line-height: 1.5;
+        cursor: default;
+    }
+
     a {
         padding-top: 30px;
         font-size: 1.2rem;

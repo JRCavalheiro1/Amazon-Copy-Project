@@ -53,11 +53,10 @@ export const Container = styled.div`
      }
      */
      
-   
 
     .cards {
-          width: 100%;
           display: flex;
+          flex-wrap: wrap;
           position: absolute;
           top: 42%;
     }

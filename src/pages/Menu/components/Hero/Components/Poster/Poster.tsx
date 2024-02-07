@@ -77,17 +77,22 @@ export const Poster = () => {
                         h1="Veja Echo e Fire TV com Alexa"
                         a="Confira tudo em Dispositivos Amazon" 
                         href="#" 
-                        width="140px"
-                        height="120px"  
+                        widthImg="140px"
+                        heightImg="120px"  
                     />
                     {cardsData.map((card)=> (
                         <Card 
                             key={card.id} 
                             h1={card.h1}
+                            p={card.p}
                             src={card.url}
                             a={card.a}
-                            width={card.width}
-                            height={card.height}
+                            widthImg={card.width}
+                            heightImg={card.height}
+                            heightCard={card.heightCard}
+                            style={{
+                                height: card.heightCard,
+                            }}
                         />
                     ))}    
 
