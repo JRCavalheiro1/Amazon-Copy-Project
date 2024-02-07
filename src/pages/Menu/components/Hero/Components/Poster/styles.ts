@@ -5,21 +5,20 @@ export const Container = styled.div`
      display: flex;
      justify-content: center;
     
-    .slide {
-          width: 1500px;
+     .slide {
+          width: 100%;
           position: relative;
           cursor: pointer;
      }
 
 
     .inner-slide {
-          width: 1500px;
           height: 600px;
           display: flex;
           overflow: hidden;
     }
     
-    .image {
+    img {
           width: 1500px;
     }
 
@@ -55,6 +54,7 @@ export const Container = styled.div`
      
 
     .cards {
+          width: 100%;
           display: flex;
           flex-wrap: wrap;
           position: absolute;

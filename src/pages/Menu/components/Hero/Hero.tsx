@@ -1,11 +1,15 @@
 import { Container } from "./style";
 
-import { Poster } from "./Index";
+import { Poster, Carrosel } from "./Index";
+import { DataItem, DataCategory } from "./Components/Data/Data"; 
 
 export const Hero = () => { 
     return (
         <Container>
             <Poster/>
+            <Carrosel/>
+            
+            
             {/*
                 -componente cartaz com imagem
                     -componente card de opções
