@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 export const Container = styled.div`
      display: flex;
      justify-content: center;
-    
+     width: 1500px;
      .slide {
           width: 100%;
           position: relative;
