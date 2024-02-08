@@ -1,13 +1,13 @@
 import { Container } from "./style";
 
 import { Poster, Carrosel } from "./Index";
-import { DataItem, DataCategory } from "./Components/Data/Data"; 
+import { DataNavItemsAZ, DataCategory } from "./Components/Data/Data"; 
 
 export const Hero = () => { 
     return (
         <Container>
             <Poster/>
-            <Carrosel/>
+            <Carrosel h1="Navegue pelas categorias, de A a Z" data={DataNavItemsAZ} />
             
             
             {/*

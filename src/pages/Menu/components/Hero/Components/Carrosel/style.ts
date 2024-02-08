@@ -5,32 +5,32 @@ export const Container = styled.div`
     justify-content: center;
     width: 1500px;
 
-    .carrosel {
+    .carrousel {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
         margin-top: 100px;
+        border: 20px solid #ffffff;
         width: 100vw;
-        height: 28.1rem;
-        background: #ffffff;
         position: relative;
-    }
-
-    .inner-carrosel {
-        display: flex;
+        background: #ffffff;
         overflow: hidden;
 
     }
-
-    h1 {
-        border: 1px solid blue;
-        width: 100px;
+    .inner-carrosel {
+        display: flex;
+        gap: 10px;
     }
+
+
+   h1 {
+    white-space:nowrap;
+   }
 
     .buttons {
         display: flex;
         width: 100%;
         justify-content: space-between;
-        padding: 10px;
         position: absolute;
 
     }
@@ -43,7 +43,6 @@ export const Container = styled.div`
         height: 100px;
         background: #ffffff;
         border-radius: 3px;
-        
         cursor: pointer;
 
         img {
@@ -59,8 +58,6 @@ export const Container = styled.div`
 
     .next-button {
         box-shadow: -2px 1px 3px 0px rgba(0,0,0,0.3);
-
-
     }
 
 

@@ -5,20 +5,21 @@ import nextBtn from "../../../../../../images/next-btn.svg";
 
 
 type carroselProps = {
-    data?: Array<any> | undefined
+    data?: Array<any> | undefined,
+    h1?: string
 }
 
-export const Carrosel = ({data} : carroselProps) => {
+export const Carrosel = ({data, h1} : carroselProps) => {
     return (
         <Container>
-            <div className="carrosel">
-                <div className="inner-carrosel">
-                    <motion.div>
-                        {data?.map((item: any)=> {
+            <div className="carrousel">
+                <h1>{h1}</h1>
+                    <motion.div className="inner-carrosel">
+                        {data?.map((data: any)=> {
                             return (
-                                <div>
-                                    <h1>{item.h1}</h1>
-                                </div>
+                                <motion.div key={data.item.id} className="carrosel-item">
+                                    <img src={data.item.url} width={data.item.width}/>
+                                </motion.div>
                             )
                         })} 
                 </motion.div>    
@@ -29,7 +30,6 @@ export const Carrosel = ({data} : carroselProps) => {
                     <div className="next-button">
                         <img src={nextBtn}/>  
                     </div>
-                </div>
                 </div>
             </div>
         </Container>
