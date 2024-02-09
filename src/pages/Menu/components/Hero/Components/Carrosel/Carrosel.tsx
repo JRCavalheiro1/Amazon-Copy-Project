@@ -9,29 +9,36 @@ type carroselProps = {
     h1?: string
 }
 
-export const Carrosel = ({data, h1} : carroselProps) => {
+export const Carrosel = ({h1, data} : carroselProps) => {
     return (
         <Container>
-            <div className="carrousel">
+              <div className="external-carrousel">
                 <h1>{h1}</h1>
-                    <motion.div className="inner-carrosel">
-                        {data?.map((data: any)=> {
-                            return (
-                                <motion.div key={data.item.id} className="carrosel-item">
-                                    <img src={data.item.url} width={data.item.width}/>
-                                </motion.div>
-                            )
-                        })} 
-                </motion.div>    
-                <div className="buttons">
-                    <div className="prev-button">
-                        <img src={prevBtn}/>
-                    </div>
-                    <div className="next-button">
-                        <img src={nextBtn}/>  
-                    </div>
+                <div className="prev-button">
+                    <img src={prevBtn}/>
                 </div>
-            </div>
+                <div className="next-button">
+                    <img src={nextBtn}/>
+                </div>
+
+                <div className="carrousel">
+                    <motion.div className="inner-carrousel">
+                            {data?.map((data: any)=> {
+                                return (
+                                    <motion.div key={data.item.id} className="carrousel-item">
+                                        <img src={data.item.url} width={data.item.width}/>
+                                    </motion.div>
+                                )
+                            })} 
+                    </motion.div> 
+                </div>
+                
+                <div className="drag-section">
+                    <motion.div className="drag-bar">
+                    </motion.div>
+                </div>
+              </div>
+                
         </Container>
     )
 }

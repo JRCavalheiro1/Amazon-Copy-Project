@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import { card1Data } from "../../../Components/Poster/Card/Card-data";
+import { card1Data } from "./Card-data";
 import { CSSProperties } from "react";
 
 type cardProps = {

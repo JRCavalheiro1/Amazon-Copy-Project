@@ -5,40 +5,22 @@ export const Container = styled.div`
     justify-content: center;
     width: 1500px;
 
-    .carrousel {
+    .external-carrousel {
+        width: 100%;
+        margin-top: 100px;
+        background: #ffffff;
+        position: relative;
+        padding: 10px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 100px;
-        border: 20px solid #ffffff;
-        width: 100vw;
-        position: relative;
-        background: #ffffff;
-        overflow: hidden;
-
-    }
-    .inner-carrosel {
-        display: flex;
-        gap: 10px;
-    }
-
-
-   h1 {
-    white-space:nowrap;
-   }
-
-    .buttons {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        position: absolute;
-
     }
 
     .prev-button, .next-button {
         display: flex;
         align-items: center;
         justify-content: center;
+        position: absolute;
         width: 45px;
         height: 100px;
         background: #ffffff;
@@ -58,8 +40,38 @@ export const Container = styled.div`
 
     .next-button {
         box-shadow: -2px 1px 3px 0px rgba(0,0,0,0.3);
+        left: 96%;
     }
 
+
+    .carrousel {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .inner-carrousel {
+        display: flex;
+    }
+   
+
+    .drag-section {
+        width: 100%;
+        height: 0.6rem;
+    }
+
+    .drag-bar {
+        width: 30%;
+        height: 0.6rem;
+        border-radius: 7px;
+        cursor: pointer;
+        margin-top: 10px;
+        background: #888888;
+
+    }
+
+   
 
 
 `;

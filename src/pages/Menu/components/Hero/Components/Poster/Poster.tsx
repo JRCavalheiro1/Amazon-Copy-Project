@@ -1,6 +1,6 @@
 import { Container } from "./styles"
 import { motion } from "framer-motion"
-import { Card, CardDiff } from "./Card/Card"
+import { Card, CardDiff } from "../Poster/Card/Card"
 import nextIcon from "../../../../../../images/next.svg";
 import prevIcon from "../../../../../../images/prev.svg";
 import { images } from "../Images/images-data";
@@ -80,7 +80,7 @@ export const Poster = () => {
                         widthImg="140px"
                         heightImg="120px"  
                     />
-                    {cardsData.map((card)=> (
+                    {cardsData.map((card:any)=> (
                         <Card 
                             key={card.id} 
                             h1={card.h1}
