@@ -22,7 +22,6 @@ export const GlobalStyle = createGlobalStyle`
         font-family: var(--font-text);
     }
 
-    body, html {
-        
+    body {
     }
 `;
