@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useTransform, useScroll } from "framer-motion";
 import { Container } from "./style";
 import prevBtn from "../../../../../../images/prev-btn.svg";
 import nextBtn from "../../../../../../images/next-btn.svg";
@@ -11,34 +11,33 @@ type carroselProps = {
 }
 
 
-const variants = {
-    enter: {
-        x: 0,
-    }
-}
 
+
+//x 0 - -3140
 export const Carrosel = ({h1, data} : carroselProps) => {
     const control = useDragControls();
-    const scrollBarRef = useRef(null);
-    const [counter, setCounter] = useState(0);
+    const scrollBarRef = useRef<HTMLDivElement | null>(null);
+    const targetRef = useRef<HTMLDivElement | null>(null);
 
-    console.log(counter);
+   const {scrollY} = useScroll({
+    target: scrollBarRef,
+   })
+
+   const x = useTransform(scrollY, [0, 1],  ["0", "-3140"]);
+
+
+
+    
     return (
         <Container>
-              <div className="external-carrousel">
+              <div className="external-carrousel" >
                 <h1>{h1}</h1>
-                <div className="prev-button">
-                    <img src={prevBtn}/>
-                </div>
-                <div className="next-button">
-                    <img src={nextBtn}/>
-                </div>
+                
 
                 <div className="carrousel">
                     <motion.div
-                        variants={variants}
-                        initial="enter"
-                         //x 0 - -3140
+                        ref={targetRef}
+                        style={{ x}}
                         className="inner-carrousel">
                             {data?.map((data: any)=> {
                                 return (
@@ -50,18 +49,13 @@ export const Carrosel = ({h1, data} : carroselProps) => {
                             })} 
                     </motion.div> 
                 </div>
-                
-                <div className="drag-section" ref={scrollBarRef}>
-                    <motion.div
-                        drag="x"
-                        dragConstraints={scrollBarRef}
-                        dragElastic={0}
-                        dragMomentum={false}
-                        className="drag-bar"
-                        onDrag={()=> setCounter(counter + 1)}
-                        >
-                    </motion.div>
+                <div className="prev-button">
+                    <img src={prevBtn}/>
                 </div>
+                <div className="next-button" >
+                    <img src={nextBtn}/>
+                </div>
+                
               </div>
                 
         </Container>
