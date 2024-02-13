@@ -3,7 +3,7 @@ import { Container } from "./style";
 import prevBtn from "../../../../../../images/prev-btn.svg";
 import nextBtn from "../../../../../../images/next-btn.svg";
 import { useDragControls } from "framer-motion"; 
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 type carroselProps = {
     data?: Array<any> | undefined,
@@ -11,23 +11,40 @@ type carroselProps = {
 }
 
 
+const variants = {
+    inital: {
+        x: 0
+    },
+    animate: (direction: number)=> {
+        return { 
+            x: -direction
+        }
+    },
+    exit: (direction: number)=> {
+        return { 
+            x: -direction
+        }
+    }
 
+}
 
 //x 0 - -3140
 export const Carrosel = ({h1, data} : carroselProps) => {
-    const control = useDragControls();
-    const scrollBarRef = useRef<HTMLDivElement | null>(null);
-    const targetRef = useRef<HTMLDivElement | null>(null);
+    const [control, setControl] = useState(0);
+    const carouselRef = useRef<HTMLDivElement | null>(null);
+    const [width, setWidth] = useState(0);
+    const [id, setId] = useState(0);
 
-   const {scrollY} = useScroll({
-    target: scrollBarRef,
-   })
+    const sizes = [1250, 1250, 800];
 
-   const x = useTransform(scrollY, [0, 1],  ["0", "-3140"]);
+    const directions = (newDirection: number) => {
+        setControl(control + newDirection);
+        
+        console.log(control);
+        console.log(id)
+        console.log(sizes[id])
+    }
 
-
-
-    
     return (
         <Container>
               <div className="external-carrousel" >
@@ -36,8 +53,12 @@ export const Carrosel = ({h1, data} : carroselProps) => {
 
                 <div className="carrousel">
                     <motion.div
-                        ref={targetRef}
-                        style={{ x}}
+                        ref={carouselRef}
+                        variants={variants}
+                        custom={control}
+                        initial="inital"
+                        animate="animate"
+                        exit="exit"
                         className="inner-carrousel">
                             {data?.map((data: any)=> {
                                 return (
@@ -49,10 +70,10 @@ export const Carrosel = ({h1, data} : carroselProps) => {
                             })} 
                     </motion.div> 
                 </div>
-                <div className="prev-button">
+                <div className="prev-button" onClick={()=> (setId(id-1), directions(-sizes[id]))}>
                     <img src={prevBtn}/>
                 </div>
-                <div className="next-button" >
+                <div className="next-button" onClick={()=> (setId(id+1), directions(+sizes[id]))} >
                     <img src={nextBtn}/>
                 </div>
                 

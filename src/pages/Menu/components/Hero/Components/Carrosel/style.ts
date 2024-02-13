@@ -65,7 +65,7 @@ export const Container = styled.div`
 
     .inner-carrousel {
         display: flex;
-        
+        gap: 10px;
     }
    
 
