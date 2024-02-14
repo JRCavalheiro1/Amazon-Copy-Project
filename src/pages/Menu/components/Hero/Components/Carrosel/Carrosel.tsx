@@ -1,8 +1,7 @@
-import { motion, useTransform, useScroll } from "framer-motion";
+import { motion, useTransform, useMotionValue, clamp } from "framer-motion";
 import { Container } from "./style";
 import prevBtn from "../../../../../../images/prev-btn.svg";
 import nextBtn from "../../../../../../images/next-btn.svg";
-import { useDragControls } from "framer-motion"; 
 import { useRef, useState, useEffect } from "react";
 
 type carroselProps = {
@@ -25,26 +24,35 @@ const variants = {
             x: -direction
         }
     }
-
 }
+
+
 
 //x 0 - -3140
 export const Carrosel = ({h1, data} : carroselProps) => {
     const [control, setControl] = useState(0);
-    const carouselRef = useRef<HTMLDivElement | null>(null);
+    const carouselRef = useRef<HTMLDivElement>(null);
+    //const refWidth = carouselRef.current?.clientWidth;
     const [width, setWidth] = useState(0);
     const [id, setId] = useState(0);
 
     const sizes = [1250, 1250, 800];
 
-    const directions = (newDirection: number) => {
-        setControl(control + newDirection);
-        
-        console.log(control);
-        console.log(id)
-        console.log(sizes[id])
-    }
 
+    const directions = (newDirection: number) => {
+        setControl(control + newDirection)
+    }
+    
+    const paginate = (newId: number) => {
+        setId(id + newId);
+        if(newId < sizes.length ) {
+            directions(+sizes[id]);
+        } else if (newId >= sizes.length) {
+            directions(-sizes[id])
+        }
+
+        console.log(id);
+    }
     return (
         <Container>
               <div className="external-carrousel" >
@@ -70,10 +78,10 @@ export const Carrosel = ({h1, data} : carroselProps) => {
                             })} 
                     </motion.div> 
                 </div>
-                <div className="prev-button" onClick={()=> (setId(id-1), directions(-sizes[id]))}>
+                <div className="prev-button" onClick={()=> paginate(-1)}>
                     <img src={prevBtn}/>
                 </div>
-                <div className="next-button" onClick={()=> (setId(id+1), directions(+sizes[id]))} >
+                <div className="next-button" onClick={()=> paginate(+1)} >
                     <img src={nextBtn}/>
                 </div>
                 
