@@ -1,4 +1,4 @@
-import { motion, useTransform, useMotionValue, clamp } from "framer-motion";
+import { motion, useTransform, useMotionValue } from "framer-motion";
 import { Container } from "./style";
 import prevBtn from "../../../../../../images/prev-btn.svg";
 import nextBtn from "../../../../../../images/next-btn.svg";
@@ -16,14 +16,10 @@ const variants = {
     },
     animate: (direction: number)=> {
         return { 
-            x: -direction
+            x: direction
         }
     },
-    exit: (direction: number)=> {
-        return { 
-            x: -direction
-        }
-    }
+   
 }
 
 
@@ -32,27 +28,22 @@ const variants = {
 export const Carrosel = ({h1, data} : carroselProps) => {
     const [control, setControl] = useState(0);
     const carouselRef = useRef<HTMLDivElement>(null);
-    //const refWidth = carouselRef.current?.clientWidth;
-    const [width, setWidth] = useState(0);
-    const [id, setId] = useState(0);
 
     const sizes = [1250, 1250, 800];
-
-
-    const directions = (newDirection: number) => {
-        setControl(control + newDirection)
+    const refWidth = carouselRef.current?.clientWidth;
+    const nextRef = useRef<HTMLDivElement>(null);
+    const prevRef = useRef<HTMLDivElement>(null);
+    
+    
+    const next = (e: any) => {
+        setControl(control + 1250);
+        console.log(e);
+        
+    }   
+    const prev = (e: any) => {
+        setControl(control - 1250);
     }
     
-    const paginate = (newId: number) => {
-        setId(id + newId);
-        if(newId < sizes.length ) {
-            directions(+sizes[id]);
-        } else if (newId >= sizes.length) {
-            directions(-sizes[id])
-        }
-
-        console.log(id);
-    }
     return (
         <Container>
               <div className="external-carrousel" >
@@ -63,7 +54,7 @@ export const Carrosel = ({h1, data} : carroselProps) => {
                     <motion.div
                         ref={carouselRef}
                         variants={variants}
-                        custom={control}
+                        custom={-control}
                         initial="inital"
                         animate="animate"
                         exit="exit"
@@ -78,10 +69,10 @@ export const Carrosel = ({h1, data} : carroselProps) => {
                             })} 
                     </motion.div> 
                 </div>
-                <div className="prev-button" onClick={()=> paginate(-1)}>
+                <div className="prev-button" onClick={(e)=> prev(e.currentTarget.id)}>
                     <img src={prevBtn}/>
                 </div>
-                <div className="next-button" onClick={()=> paginate(+1)} >
+                <div className="next-button"  onClick={(e)=> next(e.currentTarget.id)}>
                     <img src={nextBtn}/>
                 </div>
                 
