@@ -49,19 +49,22 @@ export const Container = styled.div`
         display: flex;
         align-items: center;
         overflow: hidden;
-        overflow-x: scroll ;
+        //overflow-x: scroll ;
     }
 
+ /*
+    
+ .carrousel::-webkit-scrollbar {
+     height: 6px;
+ }
 
-    .carrousel::-webkit-scrollbar {
-        height: 6px;
-    }
-
-    .carrousel::-webkit-scrollbar-thumb {
-        width: 20px;
-        background-color: red;
-        border-radius: 8px;
-    }
+ .carrousel::-webkit-scrollbar-thumb {
+     width: 20px;
+     background-color: red;
+     border-radius: 8px;
+ }
+ 
+ */
 
     .inner-carrousel {
         display: flex;
