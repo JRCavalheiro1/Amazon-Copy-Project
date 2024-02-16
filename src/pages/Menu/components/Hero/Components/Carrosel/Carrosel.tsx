@@ -22,29 +22,12 @@ const variants = {
     },
 }
 
-const variantsDragBar = {
-    initial: {
-        x: 0,
-    },
-    animate: (direction: number) => {
-        return {
-            x: direction
-        }
-    }
-}
-
-
 
 
 //x 0 - -3140
 export const Carrosel = ({h1, data} : carroselProps) => {
     const [control, setControl] = useState(0);
-    const [isDrag, setIsDrag] = useState(false);
-    const [dragDirection, setDragDirection] = useState(0);    
-
     const carouselref = React.createRef<HTMLDivElement>();
-    const carouselWidth = carouselref.current?.offsetWidth;
-
     const scrollBarRef = useRef<HTMLDivElement>(null);
 
     const next = () => {
@@ -61,28 +44,10 @@ export const Carrosel = ({h1, data} : carroselProps) => {
         }
     }
     
-
-    const onDragStart = () => {
-        setControl(control);
-        setIsDrag(true)
-    }
-    const onDraggin = (e: any) => {
-       isDrag ? setControl((e.clientX * 0.25)) : undefined
-       if(control >=  (carouselref.current ? carouselref.current.offsetWidth : 0)){
-        setControl(3300);
-       }
-    }
-    
-    const onDragEnd = () => {
-        setControl(control)
-        setIsDrag(false)
-    }
-    
     return (
         <Container>
               <div className="external-carrousel" >
                 <h1>{h1}</h1>
-                
 
                 <div className="carrousel" ref={carouselref}>
                     <motion.div
@@ -109,23 +74,16 @@ export const Carrosel = ({h1, data} : carroselProps) => {
                 <div className="next-button"  onClick={()=> next()}>
                     <img src={nextBtn}/>
                 </div>
-                
 
-<div className="drag-section" ref={scrollBarRef}>
+                
+                <div className="drag-section" ref={scrollBarRef}>
                     <motion.div
-                        drag="x"
-                        variants={variantsDragBar}
-                        animate="animate"
+                        animate={{x: control / 3}}
                         transition={{spring: 0, duration: 0.35}}
                         dragConstraints={scrollBarRef}
                         dragElastic={0}
                         dragMomentum={false}
-                        className="drag-bar"
-                        draggable
-                        onDragStart={()=> onDragStart()}
-                        onDrag={(e)=> onDraggin(e)}
-                        onDragEnd={()=> onDragEnd()}
-                        >
+                        className="drag-bar">
                     </motion.div>
                 </div>
               </div>
