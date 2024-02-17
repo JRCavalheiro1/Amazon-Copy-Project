@@ -304,19 +304,5 @@ type petshopType = {
 }
 
 
-export const DataCategory = [
-    {
-        h1: "Tfiklhooo"
-    },
-    {
-        h1: "dadafkhe"
-    },
-    {
-        h1: "Teadf1223a"
-    },
-    {
-        h1: "Fu32434"
-    },
-]
 
 
