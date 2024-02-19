@@ -1,10 +1,128 @@
+type amazonType = {
+    id: string,
+    url: string,
+    width: string,
+    height: string,
+    href: string
+}
+type bookType = {
+    id: string,
+    url: string,
+    width: string,
+    height: string
+}
+type eBookType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type computerType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type selfCareType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type gamesType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type chickenType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type toysType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type babyType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type paperType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type foodType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type eletronicType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type toolsType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type houseType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type beautyType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type drinkType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type gardenType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type inteliHouseType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type cdType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type fashionType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type sportsType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type autoType = {
+    id: string,
+    url: string,
+    width: string,
+}
+type petshopType = {
+    id: string,
+    url: string,
+    width: string,
+}
 export const DataNavItemsAZ = [
     {
         item: <amazonType> {
             id: "1", 
             url: "https://images-na.ssl-images-amazon.com/images/G/32/kindle/devices/2023/Update/Bubbler/Desktop--Bubbler_Shoveler-CH_FTV_KINDLE-400x400._CB588547262_.jpg",
             width: "200px",
-
+            href: ""
         }
     }, 
 
@@ -164,144 +282,6 @@ export const DataNavItemsAZ = [
     },
 ]
 
-type amazonType = {
-    id: string,
-    url: string,
-    width: string,
-    height: string
-}
-
-type bookType = {
-    id: string,
-    url: string,
-    width: string,
-    height: string
-}
-
-type eBookType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type computerType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type selfCareType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type gamesType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type chickenType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type toysType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type babyType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type paperType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type foodType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type eletronicType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type toolsType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type houseType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type beautyType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type drinkType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type gardenType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type inteliHouseType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type cdType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type fashionType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type sportsType = {
-    id: string,
-    url: string,
-    width: string,
-}
-
-type autoType = {
-    id: string,
-    url: string,
-    width: string,
-}
-type petshopType = {
-    id: string,
-    url: string,
-    width: string,
-}
 
 
 

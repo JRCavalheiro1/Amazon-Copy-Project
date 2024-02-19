@@ -5,6 +5,7 @@ import { Hero } from "./components/Hero/Hero";
 import { doc, getDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { auth, fireStore } from "../../Firebase/firebase-cfg";
+import { Outlet } from "react-router-dom";
 
 {/*
     verificar usuário logado
@@ -31,12 +32,10 @@ export const Menu = ()=> {
         <Container>
             <Header name={nameUser}/>
             <Sugestions name={nameUser}/>
-
             <div className="hero">
-                <Hero/>    
-            </div>
-            
 
+            <Outlet/>
+            </div>
             {/*Footer*/}
         </Container>
     )
