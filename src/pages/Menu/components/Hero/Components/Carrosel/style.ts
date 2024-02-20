@@ -71,6 +71,7 @@ export const Container = styled.div`
         gap: 10px;
         img{ 
             cursor: pointer;
+            width: 200px;
         }
     }
    

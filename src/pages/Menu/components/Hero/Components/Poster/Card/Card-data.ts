@@ -37,6 +37,7 @@ export const cardsData = [
         p: "Alexa torna sua vida mais fácil, conveniente e divertida, transformando seu dia a dia.", 
         a: "Descubra tudo oque ela pode fazer",
         url: "",
+        width: "",
         heightCard: "150px"
     },
 ]

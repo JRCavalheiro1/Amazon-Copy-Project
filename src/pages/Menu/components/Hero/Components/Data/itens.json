@@ -1,0 +1,484 @@
+
+[
+    {
+        "id": "1",
+        "category": "amazon dispositive",
+        "title": "Echo Pop | Smart speaker compacto com som envolvente e Alexa | Cor Preta",
+        "image": "https://m.media-amazon.com/images/I/51UfG+CTu7L.AC_SX250.jpg",
+        "price": "322,10",
+        "description": ""
+    },
+    {
+        "id": "2",
+        "category": "amazon dispositive",
+        "title": "Echo Dot 5ª geração | O Echo Dot com o melhor som já lançado | Cor Preta",
+        "image": "https://m.media-amazon.com/images/I/51lUym-OXcL.AC_SX250.jpg",
+        "price": "386,10",
+        "description": ""
+    },
+    {
+        "id": "3",
+        "category": "amazon dispositive",
+        "title": "Echo Dot 5ª geração com Relógio | Smart speaker com Alexa | Display de LED ainda melhor | Cor Branca",
+        "image": "https://m.media-amazon.com/images/I/515fr5lzCUL.AC_SX250.jpg",
+        "price": "476,10",
+        "description": ""
+    },
+    {
+        "id": "4",
+        "category": "amazon dispositive",
+        "title": "Fire TV Stick Lite | Streaming em Full HD com Alexa | Com Controle Remoto Lite por Voz com Alexa (sem controles de TV)",
+        "image": "https://m.media-amazon.com/images/I/31wNMATD32L.AC_SX250.jpg",
+        "price": "269,10",
+        "description": ""
+    },
+    {
+        "id": "5",
+        "category": "amazon dispositive",
+        "title": "Novo Echo Show 5 (3ª geração - 2023) | Smart display com Alexa, graves 2x mais potentes e som mais nítido | Cor Preta",
+        "image": "https://m.media-amazon.com/images/I/41hSYszb8EL.AC_SX250.jpg",
+        "price": "584,10",
+        "description": ""
+    },
+    {
+        "id": "6",
+        "category": "",
+        "title": "Echo Show 8 (2ª Geração): Tela Inteligente HD de 8' com Alexa e câmera de 13 MP - Cor Preta",
+        "image": "https://m.media-amazon.com/images/I/41jtAqy1XpL.AC_SX250.jpg",
+        "price": "899,10",
+        "description": ""
+    },
+
+
+
+    {
+        "id": "7",
+        "category": "books",
+        "title": "Meditações de Marco Aurélio - Edição de Luxo Almofadada",
+        "image": "https://m.media-amazon.com/images/I/41dSunJl10L.AC_SX250.jpg", 
+        "price": "29,90",
+        "description": ""
+    },
+    {
+        "id": "8",
+        "category": "books",
+        "title": "Biblioteca Estoica - Box com 3 Livros - Edição de Luxo Almofadada ",
+        "image": "https://m.media-amazon.com/images/I/81gCVkoH4aL._SY466_.jpg", 
+        "price": "90,90",
+        "description": ""
+    },
+    {
+        "id": "9",
+        "category": "books",
+        "title": "Box Trilogia O Senhor dos Anéis Capa dura",
+        "image": "https://m.media-amazon.com/images/I/41omIYtLS1L._SX342_SY445_.jpg", 
+        "price": "152,90",
+        "description": ""
+    },
+    {
+        "id": "10",
+        "category": "books",
+        "title": "O Hobbit + pôster ",
+        "image": "https://m.media-amazon.com/images/I/511+-lOOtsL._SY445_SX342_.jpg", 
+        "price": "58,57",
+        "description": ""
+    },
+    {
+        "id": "11",
+        "category": "books",
+        "title": "Box As Crônicas de Gelo e Fogo - 5 Volumes",
+        "image": "https://m.media-amazon.com/images/I/61Bdsd91xAL._SY466_.jpg", 
+        "price": "220,00",
+        "description": ""
+    },
+    {
+        "id": "12",
+        "category": "books",
+        "title": "A Vida Intelectual ",
+        "image": "https://m.media-amazon.com/images/I/31IE4k9OzeS._SY445_SX342_.jpg", 
+        "price": "48,87",
+        "description": ""
+    },
+
+
+
+    {
+        "id": "13",
+        "category": "ebooks",
+        "title": "A Crise do Mundo Moderno",
+        "image": "https://m.media-amazon.com/images/I/31PuDe1AmpS._PJku-sticker-v7,TopRight,0,-50._SY420_.jpg", 
+        "price": "0,00",
+        "description": ""
+    },
+    {
+        "id": "14",
+        "category": "ebooks",
+        "title": "Como chegar ao sim: Como negociar acordos sem fazer concessões",
+        "image": "https://m.media-amazon.com/images/I/41SzR-5b8kL._SY420_.jpg", 
+        "price": "0,00",
+        "description": ""
+    },
+    {
+        "id": "15",
+        "category": "ebooks",
+        "title": "Didascalicon: Sobre a arte de ler",
+        "image": "https://m.media-amazon.com/images/I/514JvyjoU6L._PJprime-reading2,TopRight,0,-50._SY420_.jpg", 
+        "price": "0,00",
+        "description": ""
+    },
+    {
+        "id": "16",
+        "category": "ebooks",
+        "title": "O homem eterno (Clássicos MC)",
+        "image": "https://m.media-amazon.com/images/I/41iB3FaDK1L._PJku-sticker-v7,TopRight,0,-50._SY420_.jpg", 
+        "price": "0,00",
+        "description": ""
+    },
+    {
+        "id": "17",
+        "category": "ebooks",
+        "title": "Alexandre e César (Clássicos Ilustrados)",
+        "image": "https://m.media-amazon.com/images/I/91l8+F9yj1L._SY466_.jpg", 
+        "price": "0,00",
+        "description": ""
+    },
+    {
+        "id": "18",
+        "category": "ebooks",
+        "title": "A consolação da Filosofia (Translated)",
+        "image": "https://m.media-amazon.com/images/I/41+tsWIjzaL._PJku-sticker-v7,TopRight,0,-50._SY420_.jpg", 
+        "price": "0,00",
+        "description": ""
+    },
+
+
+
+
+    {
+        "id": "19",
+        "category": "computer and information",
+        "title": "Samsung Book Core i5-1135G7, 8G, 512GB SSD, Iris Xe, 15.6' FHD, W11 Cinza",
+        "image": "https://m.media-amazon.com/images/I/51vLIXjlTvL._AC_SX679_.jpg", 
+        "price": "3.099", 
+        "description": ""
+    },
+    {
+        "id": "20",
+        "category": "computer and information",
+        "title": "Monitor Gamer AOC Hero 24' 144Hz IPS 1ms AMD FreeSync 24G2, COR PRETA/VERMELHA",
+        "image": "https://m.media-amazon.com/images/I/51W-OQsqiTL._AC_SX522_.jpg", 
+        "price": "918,00", 
+        "description": ""
+    },
+    {
+        "id": "21",
+        "category": "computer and information",
+        "title": "Mouse gamer Razer DeathAdder Essential: Sensor óptico 6400 DPI - 5 botões programáveis -Preto clássico",
+        "image": "https://m.media-amazon.com/images/I/514v0B0UQ6L._AC_SX522_.jpg", 
+        "price": "121,99", 
+        "description": ""
+    },
+    {
+        "id": "22",
+        "category": "computer and information",
+        "title": "PlayStation®5 Slim Edição Digital",
+        "image": "https://m.media-amazon.com/images/I/51SM5xU-M1L._AC_SX679_.jpg", 
+        "price": "3.799", 
+        "description": ""
+    },
+    {
+        "id": "23",
+        "category": "computer and information",
+        "title": "Notebook Gamer Acer nitro 5 AN515-57-59HT Intel Core I5 11º 8GB RAM 512GB SSD (GTX 1650) 15.6' LED Full HD IPS 144hz Retro iluminado W11H",
+        "image": "https://m.media-amazon.com/images/I/61PX3D9di5L._AC_SX679_.jpg", 
+        "price": "4.199", 
+        "description": ""
+    },
+    {
+        "id": "24",
+        "category": "computer and information",
+        "title": "Notebook Acer AN515-58-54UH i5 8GB 512 SSD W11H NH.QJCAL.004",
+        "image": "https://m.media-amazon.com/images/I/61NRR-gkkmL.__AC_SX300_SY300_QL70_ML2_.jpg", 
+        "price": "4.799", 
+        "description": ""
+    },
+
+
+
+
+
+    {
+        "id": "25",
+        "category": "self care",
+        "title": "Cotonetes Hastes Flexíveis,300un",
+        "image": "https://m.media-amazon.com/images/I/61T7hq+GE0L._AC_SX679_.jpg", 
+        "price": "17,00", 
+        "description": ""
+    },
+    {
+        "id": "26",
+        "category": "self care",
+        "title": "Dove Máscara De Tratamento Nutrição 270G",
+        "image": "https://m.media-amazon.com/images/I/51ZBpvhhF3L._AC_SX522_.jpg", 
+        "price": "49,00", 
+        "description": ""
+    },
+    {
+        "id": "27",
+        "category": "self care",
+        "title": "W Vegan Rice Protein 660G Sabor Baunilha",
+        "image": "https://m.media-amazon.com/images/I/51zUxanEFpL._AC_SX679_.jpg", 
+        "price": "62,20", 
+        "description": ""
+    },
+    {
+        "id": "28",
+        "category": "self care",
+        "title": "Veja Limpador Multiuso Gold Original 750Ml Embalagem Econômica",
+        "image": "https://m.media-amazon.com/images/I/61WhKWj0FEL._AC_SX679_.jpg", 
+        "price": "6,79", 
+        "description": ""
+    },
+    {
+        "id": "29",
+        "category": "self care",
+        "title": "Vitafor - Aminovita - 240g - Maracujá",
+        "image": "https://m.media-amazon.com/images/I/51vEzzoSM4L._AC_SX679_.jpg", 
+        "price": "128,30", 
+        "description": ""
+    },
+    
+    {
+        "id": "30",
+        "category": "self care",
+        "title": "Vitafor - SIMFORT 30 SACHÊS DE 2g",
+        "image": "https://m.media-amazon.com/images/I/51y+7ULqZ-L._AC_SX679_.jpg", 
+        "price": "58,40", 
+        "description": ""
+    },
+
+
+
+
+
+    {
+        "id": "31",
+        "category": "games",
+        "title": "Console Xbox Series S",
+        "image": "https://m.media-amazon.com/images/I/81Z1xBs6GoL._AC_SX679_.jpg", 
+        "price": "2.401", 
+        "description": ""
+    },
+
+    {
+        "id": "32",
+        "category": "games",
+        "title": "Console Nintendo Switch Joy-Con + Mario Kart 8 Digital + 3 Meses Assinatura Nintendo Switch Online",
+        "image": "https://m.media-amazon.com/images/I/61qK-bHdzLL._AC_SX679_.jpg", 
+        "price": "1.950", 
+        "description": ""
+    },
+
+    {
+        "id": "33",
+        "category": "games",
+        "title": "Controle Sem Fio Xbox + Cabo USB",
+        "image": "https://m.media-amazon.com/images/I/71ySRL7ReuL._AC_SX679_.jpg", 
+        "price": "399,00", 
+        "description": ""
+    },
+
+    {
+        "id": "34",
+        "category": "games",
+        "title": "Base De Carregamento Do Dualsense - Padrão - PlayStation 5",
+        "image": "https://m.media-amazon.com/images/I/31yTg41R9GL._AC_SX679_.jpg", 
+        "price": "184,90", 
+        "description": ""
+    },
+
+    {
+        "id": "35",
+        "category": "games",
+        "title": "PlayStation®5 Slim Edição Digital",
+        "image": "https://m.media-amazon.com/images/I/51SM5xU-M1L._AC_SX679_.jpg", 
+        "price": "3.799", 
+        "description": ""
+    },
+
+    {
+        "id": "36",
+        "category": "games",
+        "title": "GameSir X2 Pro-Xbox Mobile Game Controller para Android Tipo-C (100-179 mm), controlador de telefone para xCloud, Stadia, Luna - 1 mês Xbox Game Pass Ultimate - Carregamento de passagem (branco)",
+        "image": "https://m.media-amazon.com/images/I/61zSVI3n51L._AC_SX679_.jpg", 
+        "price": "315,00", 
+        "description": ""
+    },
+
+
+
+
+
+
+    {
+        "id": "35",
+        "category": "chicken",
+        "title": "Fritadeira Sem Óleo Air fryer Eos Chef Gourmet 4 Litros Preto Eaf40p 110v",
+        "image": "https://m.media-amazon.com/images/I/51g77tf5ePL._AC_SX679_.jpg", 
+        "price": "199,00", 
+        "description": ""
+    },
+    {
+        "id": "36",
+        "category": "chicken",
+        "title": "Forno Micro-ondas 20L Preto Midea 220V MRAS22",
+        "image": "https://m.media-amazon.com/images/I/61WCAF-fvSS._AC_SX679_.jpg", 
+        "price": "299,00", 
+        "description": ""
+    },
+    {
+        "id": "37",
+        "category": "chicken",
+        "title": "Brinox Pipoqueira Pic Poc, Especiarias, 5.5L, Cereja",
+        "image": "https://m.media-amazon.com/images/I/71-EIPUATPL._AC_SX679_.jpg", 
+        "price": "119,00", 
+        "description": ""
+    },
+    {
+        "id": "38",
+        "category": "chicken",
+        "title": "TACA DE VINHO BOHEMIA 580ML 56077 / UN/CRYSTALITE",
+        "image": "https://m.media-amazon.com/images/I/51tchFTIjVL._AC_SX679_.jpg", 
+        "price": "135,00", 
+        "description": ""
+    },
+    {
+        "id": "39",
+        "category": "chicken",
+        "title": "Faqueiro Lyon, 36 peças, Aço Inox, Brinox",
+        "image": "https://m.media-amazon.com/images/I/61ixS-k9hnL._AC_SX679_.jpg", 
+        "price": "136,86", 
+        "description": ""
+    },
+    {
+        "id": "40",
+        "category": "chicken",
+        "title": "Kit de 6 Taças de Acrílico para vinho 350 ml",
+        "image": "https://m.media-amazon.com/images/I/51rF2lZvXLL._AC_SX679_.jpg", 
+        "price": "78,99", 
+        "description": ""
+    },
+
+
+
+
+
+
+    {
+        "id": "41",
+        "category": "toys",
+        "title": "LEGO® City Estação de Trem 60335 Kit de construção (907 peças)",
+        "image": "https://m.media-amazon.com/images/I/81R+3EXRXZL._AC_SX679_.jpg", 
+        "price": "899,99", 
+        "description": ""
+    },
+    {
+        "id": "42",
+        "category": "toys",
+        "title": "D&D: Icons of the Realms - Guildmasters' Guide to Ravnica, Galápagos Jogos, White (Booster Brick)",
+        "image": "https://m.media-amazon.com/images/I/71F776EuSvL._AC_SX679_.jpg", 
+        "price": "126,12", 
+        "description": ""
+    },
+    {
+        "id": "43",
+        "category": "toys",
+        "title": "Boneco Marvel X-men '97 - Figura de 10 cm com acessórios - Ciclope - F8124 - Hasbro",
+        "image": "https://m.media-amazon.com/images/I/71YG7FR6npL._AC_SX679_.jpg", 
+        "price": "53,89", 
+        "description": ""
+    },
+    {
+        "id": "44",
+        "category": "toys",
+        "title": "SUNNY, Pokémon, Figura De Luxo, Chama e Vôo do Charizard",
+        "image": "https://m.media-amazon.com/images/I/71Xfr1eX2gL._AC_SX679_.jpg", 
+        "price": "199,90", 
+        "description": ""
+    },
+    {
+        "id": "45",
+        "category": "toys",
+        "title": "Box Yu-Gi-Oh! Coleção Lendária Legendary Collection 25th Anniversary Edition! Yugioh 25 anos aniversário cards cartas em português konami oficial",
+        "image": "https://m.media-amazon.com/images/I/71rOKG2b2CL._AC_SX679_.jpg", 
+        "price": "195,90", 
+        "description": ""
+    },
+    {
+        "id": "46",
+        "category": "toys",
+        "title": "UNO Original",
+        "image": "https://m.media-amazon.com/images/I/81kTVgT-W5L._AC_SY879_.jpg", 
+        "price": "27,12", 
+        "description": ""
+    },
+
+
+    
+
+    {
+        "id": "46",
+        "category": "baby",
+        "title": "MamyPoko Lenços Umedecidos Toque Suave 200 Unidades",
+        "image": "https://m.media-amazon.com/images/I/71rBeZ58DyL._AC_SX679_.jpg", 
+        "price": "23,00", 
+        "description": ""
+    }, 
+    {
+        "id": "47",
+        "category": "baby",
+        "title": "Cosco Travel System Reverse - Preto Rajado",
+        "image": "https://m.media-amazon.com/images/I/61xsfXHEmmL._AC_SX679_.jpg", 
+        "price": "704,89", 
+        "description": ""
+    }, 
+    {
+        "id": "48",
+        "category": "baby",
+        "title": "Cadeirinha Tour, 9 a 36 Kg, Cosco, Cinza e Preto",
+        "image": "https://m.media-amazon.com/images/I/51DF4CDW1HL._AC_SX679_.jpg", 
+        "price": "599,00", 
+        "description": ""
+    }, 
+    {
+        "id": "49",
+        "category": "baby",
+        "title": "Copo 360 Antivazamento Transição Introdução Alimentar Copo Infantil de Treinamento Bebe Mágico com Alça Marca Myfound (Azul)",
+        "image": "https://m.media-amazon.com/images/I/413Np8hMc6L._AC_SX679_.jpg", 
+        "price": "14,20", 
+        "description": ""
+    }, 
+    {
+        "id": "50",
+        "category": "baby",
+        "title": "2 Latas- Aptanutri Profutura 3- Fórmula infantil em pó Danone -800 gr",
+        "image": "https://m.media-amazon.com/images/I/61QlkMoZbNL._AC_SX679_.jpg", 
+        "price": "161,90", 
+        "description": ""
+    }, 
+    {
+        "id": "51",
+        "category": "baby",
+        "title": "Burigotto Cadeira De Refeição Poke Preto Night Sky",
+        "image": "https://m.media-amazon.com/images/I/61vr3P7a+JL._AC_SX679_.jpg", 
+        "price": "244,99", 
+        "description": ""
+    }
+
+
+
+
+
+   
+]
+

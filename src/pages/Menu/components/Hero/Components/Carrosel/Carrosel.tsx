@@ -5,6 +5,7 @@ import nextBtn from "../../../../../../images/next-btn.svg";
 import { useRef, useState, useEffect } from "react";
 import React from "react";
 import { useNavigate } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 
 
 type carroselProps = {
@@ -64,8 +65,8 @@ export const Carrosel = ({h1, data} : carroselProps) => {
                             {data?.map((data: any)=> {
                                 return (
                                     <motion.div 
-                                        key={data.item.id} className="carrousel-item">
-                                        <img src={data.item.url} width={data.item.width} onClick={()=> navigate("item")}/>
+                                        key={data.carouselItem.id} className="carrousel-item">
+                                        <a> <Link to="painel-items"> <img src={data.carouselItem.thumbnailImage}/> </Link> </a>
                                     </motion.div>
                                 )
                             })} 
