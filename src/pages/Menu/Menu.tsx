@@ -32,10 +32,7 @@ export const Menu = ()=> {
         <Container>
             <Header name={nameUser}/>
             <Sugestions name={nameUser}/>
-            <div className="hero">
-
             <Outlet/>
-            </div>
             {/*Footer*/}
         </Container>
     )

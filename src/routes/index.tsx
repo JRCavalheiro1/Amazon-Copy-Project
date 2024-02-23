@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes as Switch, Navigate } from "react-router-dom"
-import {Login, Register, Menu, PainelItems} from "../pages/index";
+import {Login, Register, Menu, Painel} from "../pages/index";
 import { Hero } from "../pages/Menu/components/Hero/Hero";
 
 
@@ -11,7 +11,7 @@ export const Routes = () => {
                 <Route path="/signin" element={<Login/>}/>
                 <Route path="/menu" element={<Menu/>}> 
                     <Route path="/menu" element={<Hero/>}/>
-                    <Route path="painel-items" element={<PainelItems/>}/> 
+                    <Route path="painel-items" element={<Painel/>}/> 
                        
                 </Route>
                 

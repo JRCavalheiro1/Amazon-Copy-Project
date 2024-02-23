@@ -6,8 +6,10 @@ import { DataNavcarouselItemsAZ} from "./Components/Data/Data";
 export const Hero = () => { 
     return (
         <Container>
-            <Poster/>
-            <Carrosel h1="Navegue pelas categorias, de A a Z" data={DataNavcarouselItemsAZ}/>
+            <div className="hero">
+                <Poster/>
+                <Carrosel h1="Navegue pelas categorias, de A a Z" data={DataNavcarouselItemsAZ}/>
+            </div>
             
             
             {/*
