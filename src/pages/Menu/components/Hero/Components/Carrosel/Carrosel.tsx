@@ -66,7 +66,7 @@ export const Carrosel = ({h1, data} : carroselProps) => {
                                 return (
                                     <motion.div 
                                         key={data.carouselItem.id} className="carrousel-item">
-                                        <a> <Link to="painel-items" state={data.carouselItem.categoryName}> <img src={data.carouselItem.thumbnailImage}/> </Link> </a>
+                                        <Link to="painel-items" state={data.carouselItem.categoryName}> <img src={data.carouselItem.thumbnailImage}/></Link>
                                     </motion.div>
                                 )
                             })} 

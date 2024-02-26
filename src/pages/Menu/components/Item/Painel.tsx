@@ -3,25 +3,20 @@ import { Container } from "./styles";
 import productData from "../Hero/Components/Data/itens.json";
 import { useLocation } from "react-router-dom";
 
-export const Painel = ( ) => {
+export const Painel = () => {
     const {state} = useLocation();
 
-    const filterProdutc = (productCategory: string | undefined) => {
-        return (productData.filter((product) => product.category === productCategory ))
+    const filterProduct = (productCategory: string | undefined) => {
+        return (productData.filter((product) => product.category === productCategory)) //filter the products according to the category
     }
     return (
         <Container>
             <div className="product">
-                {filterProdutc(state).map((product: any) => {
+                {filterProduct(state).map((product: any) => {
                     return (
-                        <Product 
-                            key={product.id} 
-                            productImage={product.image}
-                            productPrice={product.price}
-                            productTitle={product.title}
-                        />
+                        <Product key={product.id} product={product}/>
                     )
-                } )}
+                })}
             </div>
         </Container>
     )

@@ -1,22 +1,21 @@
 import { Container } from "./style" 
 
 type itemProps = {
-    productImage?: string,
-    productPrice?: string,
-    productTitle?: string
+    product?: any
+    
 }
 
 
-export const Product = ({productImage, productPrice, productTitle} : itemProps) => {
+export const Product = ({product} : itemProps) => {
     return (
         <Container>
             <div className="product">
                 <div className="product-image">
-                    <img src={productImage} width="200px" height="190px"/>
+                    <img src={product.image} width="200px" height="190px"/>
                 </div>
-                    <p>{productTitle}</p>
+                    <p>{product.title}</p>
                 <div className="price">
-                    <span>R$</span><h2>{productPrice}</h2>
+                    <span>R$</span><h2>{product.title}</h2>
                 </div>
             </div>
         </Container>
