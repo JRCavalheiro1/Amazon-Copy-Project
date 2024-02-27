@@ -19,7 +19,6 @@ export const Painel = () => {
                             <Product key={product.id} product={product}/>
                         )
                     })}
-
                 </div>
             </div>
         </Container>

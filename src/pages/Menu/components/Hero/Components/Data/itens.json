@@ -2,7 +2,7 @@
 [
     {
         "id": "1",
-        "category": "amazon dispositive",
+        "category": "Dispositivos Amazon",
         "title": "Echo Pop | Smart speaker compacto com som envolvente e Alexa | Cor Preta",
         "image": "https://m.media-amazon.com/images/I/51UfG+CTu7L.AC_SX250.jpg",
         "price": "322,10",
@@ -12,7 +12,7 @@
     },
     {
         "id": "2",
-        "category": "amazon dispositive",
+        "category": "Dispositivos Amazon",
         "title": "Echo Dot 5ª geração | O Echo Dot com o melhor som já lançado | Cor Preta",
         "image": "https://m.media-amazon.com/images/I/51lUym-OXcL.AC_SX250.jpg",
         "price": "386,10",
@@ -22,7 +22,7 @@
     },
     {
         "id": "3",
-        "category": "amazon dispositive",
+        "category": "Dispositivos Amazon",
         "title": "Echo Dot 5ª geração com Relógio | Smart speaker com Alexa | Display de LED ainda melhor | Cor Branca",
         "image": "https://m.media-amazon.com/images/I/515fr5lzCUL.AC_SX250.jpg",
         "price": "476,10",
@@ -32,7 +32,7 @@
     },
     {
         "id": "4",
-        "category": "amazon dispositive",
+        "category": "Dispositivos Amazon",
         "title": "Echo com Alexa (4ª Geração): Com som premium e hub Zigbee de casa inteligente - Cor Preta",
         "image": "https://m.media-amazon.com/images/I/71JB6hM6Z6L._AC_SY450_.jpg",
         "price": "674,10",
@@ -42,7 +42,7 @@
     },
     {
         "id": "5",
-        "category": "amazon dispositive",
+        "category": "Dispositivos Amazon",
         "title": "Novo Echo Show 5 (3ª geração - 2023) | Smart display com Alexa, graves 2x mais potentes e som mais nítido | Cor Preta",
         "image": "https://m.media-amazon.com/images/I/41hSYszb8EL.AC_SX250.jpg",
         "price": "584,10",
@@ -52,7 +52,7 @@
     },
     {
         "id": "6",
-        "category": "amazon dispositive",
+        "category": "Dispositivos Amazon",
         "title": "Echo Show 8 (2ª Geração): Tela Inteligente HD de 8' com Alexa e câmera de 13 MP - Cor Preta",
         "image": "https://m.media-amazon.com/images/I/41jtAqy1XpL.AC_SX250.jpg",
         "price": "899,10",
@@ -62,7 +62,7 @@
     },
     {
         "id": "7",
-        "category": "books",
+        "category": "Livros",
         "title": "Meditações de Marco Aurélio - Edição de Luxo Almofadada",
         "image": "https://m.media-amazon.com/images/I/41dSunJl10L.AC_SX250.jpg", 
         "price": "29,90",
@@ -72,7 +72,7 @@
     },
     {
         "id": "8",
-        "category": "books",
+        "category": "Livros",
         "title": "Os Estoicos",
         "image": "https://m.media-amazon.com/images/I/41tQC4QXh4L._SY445_SX342_.jpg", 
         "price": "86,14",
@@ -82,7 +82,7 @@
     },
     {
         "id": "9",
-        "category": "books",
+        "category": "Livros",
         "title": "O Hobbit + pôster ",
         "image": "https://m.media-amazon.com/images/I/511+-lOOtsL._SY445_SX342_.jpg", 
         "price": "58,57",
@@ -92,7 +92,7 @@
     },
     {
         "id": "10",
-        "category": "books",
+        "category": "Livros",
         "title": "A Vida Intelectual ",
         "image": "https://m.media-amazon.com/images/I/31IE4k9OzeS._SY445_SX342_.jpg", 
         "price": "48,87",
@@ -102,7 +102,7 @@
     }, 
     {
         "id": "11",
-        "category": "books",
+        "category": "Livros",
         "title": "Box Trilogia O Senhor dos Anéis Capa dura",
         "image": "https://m.media-amazon.com/images/I/41omIYtLS1L._SX342_SY445_.jpg", 
         "price": "152,90",
@@ -113,7 +113,7 @@
   
     {
         "id": "12",
-        "category": "books",
+        "category": "Livros",
         "title": "Box As Crônicas de Gelo e Fogo - 5 Volumes",
         "image": "https://m.media-amazon.com/images/I/61Bdsd91xAL._SY466_.jpg", 
         "price": "220,00",
@@ -124,7 +124,7 @@
       
     {
         "id": "13",
-        "category": "ebooks",
+        "category": "eBooks",
         "title": "A Crise do Mundo Moderno",
         "image": "https://m.media-amazon.com/images/I/31PuDe1AmpS._PJku-sticker-v7,TopRight,0,-50._SY420_.jpg", 
         "price": "0,00",
@@ -134,7 +134,7 @@
     },
     {
         "id": "14",
-        "category": "ebooks",
+        "category": "eBooks",
         "title": "Como chegar ao sim: Como negociar acordos sem fazer concessões",
         "image": "https://m.media-amazon.com/images/I/41SzR-5b8kL._SY420_.jpg", 
         "price": "0,00",
@@ -144,7 +144,7 @@
     },
     {
         "id": "15",
-        "category": "ebooks",
+        "category": "eBooks",
         "title": "Didascalicon: Sobre a arte de ler",
         "image": "https://m.media-amazon.com/images/I/514JvyjoU6L._PJprime-reading2,TopRight,0,-50._SY420_.jpg", 
         "price": "0,00",
@@ -154,7 +154,7 @@
     },
     {
         "id": "16",
-        "category": "ebooks",
+        "category": "eBooks",
         "title": "O homem eterno (Clássicos MC)",
         "image": "https://m.media-amazon.com/images/I/41iB3FaDK1L._PJku-sticker-v7,TopRight,0,-50._SY420_.jpg", 
         "price": "0,00",
@@ -164,7 +164,7 @@
     },
     {
         "id": "17",
-        "category": "ebooks",
+        "category": "eBooks",
         "title": "Alexandre e César (Clássicos Ilustrados)",
         "image": "https://m.media-amazon.com/images/I/91l8+F9yj1L._SY466_.jpg",
         "price": "0,00",
@@ -174,7 +174,7 @@
     },
     {
         "id": "18",
-        "category": "ebooks",
+        "category": "eBooks",
         "title": "A consolação da Filosofia (Translated)",
         "image": "https://m.media-amazon.com/images/I/41+tsWIjzaL._PJku-sticker-v7,TopRight,0,-50._SY420_.jpg", 
         "price": "0,00",
@@ -185,7 +185,7 @@
 
     {
         "id": "19",
-        "category": "computer and information",
+        "category": "Computadores e Informática",
         "title": "Samsung Book Core i5-1135G7, 8G, 512GB SSD, Iris Xe, 15.6' FHD, W11 Cinza",
         "image": "https://m.media-amazon.com/images/I/51vLIXjlTvL._AC_SX679_.jpg", 
         "price": "3.099", 
@@ -195,7 +195,7 @@
     },
     {
         "id": "20",
-        "category": "computer and information",
+        "category": "Computadores e Informática",
         "title": "Notebook Gamer Acer nitro 5 AN515-57-59HT Intel Core I5 11º 8GB RAM 512GB SSD (GTX 1650) 15.6' LED Full HD IPS 144hz Retro iluminado W11H",
         "image": "https://m.media-amazon.com/images/I/61PX3D9di5L._AC_SX679_.jpg", 
         "price": "4.199", 
@@ -205,7 +205,7 @@
     },
     {
         "id": "21",
-        "category": "computer and information",
+        "category": "Computadores e Informática",
         "title": "Notebook Acer AN515-58-54UH i5 8GB 512 SSD W11H NH.QJCAL.004",
         "image": "https://m.media-amazon.com/images/I/61NRR-gkkmL.__AC_SX300_SY300_QL70_ML2_.jpg", 
         "price": "4.799", 
@@ -215,7 +215,7 @@
     },
     {
         "id": "22",
-        "category": "computer and information",
+        "category": "Computadores e Informática",
         "title": "Monitor Gamer AOC Hero 24' 144Hz IPS 1ms AMD FreeSync 24G2, COR PRETA/VERMELHA",
         "image": "https://m.media-amazon.com/images/I/51W-OQsqiTL._AC_SX522_.jpg", 
         "price": "918,00", 
@@ -226,7 +226,7 @@
    
     {
         "id": "23",
-        "category": "computer and information",
+        "category": "Computadores e Informática",
         "title": "PlayStation®5 Slim Edição Digital",
         "image": "https://m.media-amazon.com/images/I/51SM5xU-M1L._AC_SX679_.jpg", 
         "price": "3.799", 
@@ -236,7 +236,7 @@
     },
     {
         "id": "24",
-        "category": "computer and information",
+        "category": "Computadores e Informática",
         "title": "Mouse gamer Razer DeathAdder Essential: Sensor óptico 6400 DPI - 5 botões programáveis -Preto clássico",
         "image": "https://m.media-amazon.com/images/I/514v0B0UQ6L._AC_SX522_.jpg", 
         "price": "121,99", 
@@ -247,7 +247,7 @@
   
     {
         "id": "25",
-        "category": "self care",
+        "category": "Cuidados Pessoais",
         "title": "Cotonetes Hastes Flexíveis,300un",
         "image": "https://m.media-amazon.com/images/I/61T7hq+GE0L._AC_SX679_.jpg", 
         "price": "17,00", 
@@ -257,7 +257,7 @@
     },
     {
         "id": "26",
-        "category": "self care",
+        "category": "Cuidados Pessoais",
         "title": "Dove Máscara De Tratamento Nutrição 270G",
         "image": "https://m.media-amazon.com/images/I/51ZBpvhhF3L._AC_SX522_.jpg", 
         "price": "49,00", 
@@ -267,7 +267,7 @@
     },
     {
         "id": "27",
-        "category": "self care",
+        "category": "Cuidados Pessoais",
         "title": "Vitafor - Aminovita - 240g - Maracujá",
         "image": "https://m.media-amazon.com/images/I/51vEzzoSM4L._AC_SX679_.jpg", 
         "price": "128,30", 
@@ -278,7 +278,7 @@
   
     {
         "id": "28",
-        "category": "self care",
+        "category": "Cuidados Pessoais",
         "title": "Veja Limpador Multiuso Gold Original 750Ml Embalagem Econômica",
         "image": "https://m.media-amazon.com/images/I/61WhKWj0FEL._AC_SX679_.jpg", 
         "price": "6,79", 
@@ -288,7 +288,7 @@
     },
     {
         "id": "29",
-        "category": "self care",
+        "category": "Cuidados Pessoais",
         "title": "Vitafor - SIMFORT 30 SACHÊS DE 2g",
         "image": "https://m.media-amazon.com/images/I/51y+7ULqZ-L._AC_SX679_.jpg", 
         "price": "58,40", 
@@ -298,7 +298,7 @@
     },
     {
         "id": "30",
-        "category": "self care",
+        "category": "Cuidados Pessoais",
         "title": "W Vegan Rice Protein 660G Sabor Baunilha",
         "image": "https://m.media-amazon.com/images/I/51zUxanEFpL._AC_SX679_.jpg", 
         "price": "62,20", 
@@ -309,7 +309,7 @@
 
     {
         "id": "31",
-        "category": "games",
+        "category": "Games e Consoles",
         "title": "Console Xbox Series S",
         "image": "https://m.media-amazon.com/images/I/81Z1xBs6GoL._AC_SX679_.jpg", 
         "price": "2.401", 
@@ -321,7 +321,7 @@
 
     {
         "id": "32",
-        "category": "games",
+        "category": "Games e Consoles",
         "title": "Console Nintendo Switch Joy-Con + Mario Kart 8 Digital + 3 Meses Assinatura Nintendo Switch Online",
         "image": "https://m.media-amazon.com/images/I/61qK-bHdzLL._AC_SX679_.jpg", 
         "price": "1.950", 
@@ -332,7 +332,7 @@
 
     {
         "id": "33",
-        "category": "games",
+        "category": "Games e Consoles",
         "title": "Controle Sem Fio Xbox + Cabo USB",
         "image": "https://m.media-amazon.com/images/I/71ySRL7ReuL._AC_SX679_.jpg", 
         "price": "399,00", 
@@ -342,7 +342,7 @@
     },
     {
         "id": "34",
-        "category": "games",
+        "category": "Games e Consoles",
         "title": "Console PlayStation®5 + Marvel's Spider-Man 2",
         "image": "https://m.media-amazon.com/images/I/612SFC+tsbL._AC_SX342_SY445_.jpg", 
         "price": "3.905", 
@@ -352,7 +352,7 @@
     },
     {
         "id": "35",
-        "category": "games",
+        "category": "Games e Consoles",
         "title": "PlayStation®5 Slim Edição Digital",
         "image": "https://m.media-amazon.com/images/I/51SM5xU-M1L._AC_SX679_.jpg", 
         "price": "3.799", 
@@ -363,7 +363,7 @@
    
     {
         "id": "36",
-        "category": "games",
+        "category": "Games e Consoles",
         "title": "Base De Carregamento Do Dualsense - Padrão - PlayStation 5",
         "image": "https://m.media-amazon.com/images/I/31yTg41R9GL._AC_SX679_.jpg", 
         "price": "184,90", 
@@ -374,7 +374,7 @@
 
     {
         "id": "35",
-        "category": "chicken",
+        "category": "Cozinha",
         "title": "Fritadeira Sem Óleo Air fryer Eos Chef Gourmet 4 Litros Preto Eaf40p 110v",
         "image": "https://m.media-amazon.com/images/I/51g77tf5ePL._AC_SX679_.jpg", 
         "price": "199,00", 
@@ -385,7 +385,7 @@
     },
     {
         "id": "36",
-        "category": "chicken",
+        "category": "Cozinha",
         "title": "Forno Micro-ondas 20L Preto Midea 220V MRAS22",
         "image": "https://m.media-amazon.com/images/I/61WCAF-fvSS._AC_SX679_.jpg", 
         "price": "299,00", 
@@ -395,7 +395,7 @@
     },
     {
         "id": "37",
-        "category": "chicken",
+        "category": "Cozinha",
         "title": "Brinox Pipoqueira Pic Poc, Especiarias, 5.5L, Cereja",
         "image": "https://m.media-amazon.com/images/I/71-EIPUATPL._AC_SX679_.jpg", 
         "price": "119,00", 
@@ -405,7 +405,7 @@
     },
     {
         "id": "38",
-        "category": "chicken",
+        "category": "Cozinha",
         "title": "TACA DE VINHO BOHEMIA 580ML 56077 / UN/CRYSTALITE",
         "image": "https://m.media-amazon.com/images/I/51tchFTIjVL._AC_SX679_.jpg", 
         "price": "135,00", 
@@ -415,7 +415,7 @@
     },
     {
         "id": "39",
-        "category": "chicken",
+        "category": "Cozinha",
         "title": "Faqueiro Lyon, 36 peças, Aço Inox, Brinox",
         "image": "https://m.media-amazon.com/images/I/61ixS-k9hnL._AC_SX679_.jpg", 
         "price": "136,86", 
@@ -425,7 +425,7 @@
     },
     {
         "id": "40",
-        "category": "chicken",
+        "category": "Cozinha",
         "title": "Kit de 6 Taças de Acrílico para vinho 350 ml",
         "image": "https://m.media-amazon.com/images/I/51rF2lZvXLL._AC_SX679_.jpg", 
         "price": "78,99", 
@@ -436,7 +436,7 @@
 
     {
         "id": "41",
-        "category": "toys",
+        "category": "Brinquedos e Jogos",
         "title": "LEGO® City Estação de Trem 60335 Kit de construção (907 peças)",
         "image": "https://m.media-amazon.com/images/I/81R+3EXRXZL._AC_SX679_.jpg", 
         "price": "899,99", 
@@ -446,7 +446,7 @@
     },
     {
         "id": "42",
-        "category": "toys",
+        "category": "Brinquedos e Jogos",
         "title": "D&D: Icons of the Realms - Guildmasters' Guide to Ravnica, Galápagos Jogos, White (Booster Brick)",
         "image": "https://m.media-amazon.com/images/I/71F776EuSvL._AC_SX679_.jpg", 
         "price": "126,12", 
@@ -456,7 +456,7 @@
     },
     {
         "id": "43",
-        "category": "toys",
+        "category": "Brinquedos e Jogos",
         "title": "Box Yu-Gi-Oh! Coleção Lendária Legendary Collection 25th Anniversary Edition! Yugioh 25 anos aniversário cards cartas em português konami oficial",
         "image": "https://m.media-amazon.com/images/I/71rOKG2b2CL._AC_SX679_.jpg", 
         "price": "195,90", 
@@ -467,7 +467,7 @@
  
     {
         "id": "44",
-        "category": "toys",
+        "category": "Brinquedos e Jogos",
         "title": "SUNNY, Pokémon, Figura De Luxo, Chama e Vôo do Charizard",
         "image": "https://m.media-amazon.com/images/I/71Xfr1eX2gL._AC_SX679_.jpg", 
         "price": "199,90", 
@@ -478,7 +478,7 @@
     
     {
         "id": "45",
-        "category": "toys",
+        "category": "Brinquedos e Jogos",
         "title": "UNO Original",
         "image": "https://m.media-amazon.com/images/I/81kTVgT-W5L._AC_SY879_.jpg", 
         "price": "27,12", 
@@ -489,7 +489,7 @@
     
     {
         "id": "46",
-        "category": "toys",
+        "category": "Brinquedos e Jogos",
         "title": "Boneco Marvel X-men '97 - Figura de 10 cm com acessórios - Ciclope - F8124 - Hasbro",
         "image": "https://m.media-amazon.com/images/I/71YG7FR6npL._AC_SX679_.jpg", 
         "price": "53,89", 
@@ -500,7 +500,7 @@
 
     {
         "id": "46",
-        "category": "baby",
+        "category": "Bebês",
         "title": "Cadeirinha Tour, 9 a 36 Kg, Cosco, Cinza e Preto",
         "image": "https://m.media-amazon.com/images/I/51DF4CDW1HL._AC_SX679_.jpg", 
         "price": "599,00", 
@@ -511,7 +511,7 @@
     
     {
         "id": "47",
-        "category": "baby",
+        "category": "Bebês",
         "title": "Cosco Travel System Reverse - Preto Rajado",
         "image": "https://m.media-amazon.com/images/I/61xsfXHEmmL._AC_SX679_.jpg", 
         "price": "704,89", 
@@ -521,7 +521,7 @@
     }, 
     {
         "id": "48",
-        "category": "baby",
+        "category": "Bebês",
         "title": "Burigotto Cadeira De Refeição Poke Preto Night Sky",
         "image": "https://m.media-amazon.com/images/I/61vr3P7a+JL._AC_SX679_.jpg", 
         "price": "244,99", 
@@ -532,7 +532,7 @@
    
     {
         "id": "49",
-        "category": "baby",
+        "category": "Bebês",
         "title": "Copo 360 Antivazamento Transição Introdução Alimentar Copo Infantil de Treinamento Bebe Mágico com Alça Marca Myfound (Azul)",
         "image": "https://m.media-amazon.com/images/I/413Np8hMc6L._AC_SX679_.jpg", 
         "price": "14,20", 
@@ -542,7 +542,7 @@
     }, 
     {
         "id": "50",
-        "category": "baby",
+        "category": "Bebês",
         "title": "2 Latas- Aptanutri Profutura 3- Fórmula infantil em pó Danone -800 gr",
         "image": "https://m.media-amazon.com/images/I/61QlkMoZbNL._AC_SX679_.jpg", 
         "price": "161,90", 
@@ -553,7 +553,7 @@
    
     {
         "id": "51",
-        "category": "baby",
+        "category": "Bebês",
         "title": "MamyPoko Lenços Umedecidos Toque Suave 200 Unidades",
         "image": "https://m.media-amazon.com/images/I/71rBeZ58DyL._AC_SX679_.jpg", 
         "price": "23,00", 
@@ -564,7 +564,7 @@
     
     {
         "id": "52",
-        "category": "office",
+        "category": "Papelaria e Escritório",
         "title": "Impressora Multifuncional, Canon, Mega Tank G3110, Tanque de Tinta, Wi-Fi, Preto",
         "image": "https://m.media-amazon.com/images/I/515m44f3CWL._AC_SX679_.jpg", 
         "price": "719,99", 
@@ -575,7 +575,7 @@
     },
     {
         "id": "53",
-        "category": "office",
+        "category": "Papelaria e Escritório",
         "title": "Calculadora Científica, 240 funções, Linha Dupla, Papelaria, Escritório, Engenharia, Escola Engenharia Ferramenta",
         "image": "https://m.media-amazon.com/images/I/61uDa1yQEEL._AC_SX679_.jpg", 
         "price": "37,90", 
@@ -585,7 +585,7 @@
     },
     {
         "id": "54",
-        "category": "office",
+        "category": "Papelaria e Escritório",
         "title": "Tilibra - Neon Caderno Universitário com Espiral e Capa Plástica, Branco, 160 Folhas",
         "image": "https://m.media-amazon.com/images/I/51uikKUKEgL._AC_SX522_.jpg", 
         "price": "41,30", 
@@ -595,7 +595,7 @@
     },
     {
         "id": "55",
-        "category": "office",
+        "category": "Papelaria e Escritório",
         "title": "Caneta Bic 4 Cores – Ponta Esferográfica Retrátil Média de 1.0mm – Corpo Azul Metálico, Pacote com 1 Unidade – Cores Clássicas: Azul, Vermelho, Verde e Preto",
         "image": "https://m.media-amazon.com/images/I/712QxuMHDKL._AC_SY879_.jpg", 
         "price": "15,90", 
@@ -605,7 +605,7 @@
     },
     {
         "id": "56",
-        "category": "office",
+        "category": "Papelaria e Escritório",
         "title": "Caneta Esferográfica Retrátil Trik Grip 1 mm, CIS, Azul, Caixa c/12 unidaes",
         "image": "https://m.media-amazon.com/images/I/616XHPu3h-L._AC_SY879_.jpg", 
         "price": "30,27", 
@@ -615,7 +615,7 @@
     },
     {
         "id": "57",
-        "category": "office",
+        "category": "Papelaria e Escritório",
         "title": "Caneta pincel Pen Brush Aquarelável 568/12 com 12 cores Stabilo",
         "image": "https://m.media-amazon.com/images/I/61-RyQgigHL._AC_SX522_.jpg", 
         "price": "157,41", 
@@ -626,7 +626,7 @@
 
     {
         "id": "58",
-        "category": "food and drinks",
+        "category": "Alimentos e Bebidas",
         "title": "L'OR Café L'Or Cápsula Caramelo - 1 Unidade De 10 Cápsulas",
         "image": "https://m.media-amazon.com/images/I/81x2LyB5ZAL._AC_SY679_.jpg", 
         "price": "23,79", 
@@ -636,7 +636,7 @@
     },
     {
         "id": "59",
-        "category": "food and drinks",
+        "category": "Alimentos e Bebidas",
         "title": "L'OR Café L'Or Cápsula Decaffeinato - 10 Unidades - 52 Gramas",
         "image": "https://m.media-amazon.com/images/I/61msUQ68r+L._AC_SX679_.jpg", 
         "price": "20,90", 
@@ -646,7 +646,7 @@
     },
     {
         "id": "60",
-        "category": "food and drinks",
+        "category": "Alimentos e Bebidas",
         "title": "Sustagen Senior Complemento Alimentar 50+ Sem Sabor Lata 370g",
         "image": "https://m.media-amazon.com/images/I/71kv9tf0DsL._AC_SX679_.jpg", 
         "price": "62,00", 
@@ -656,7 +656,7 @@
     },
     {
         "id": "61",
-        "category": "food and drinks",
+        "category": "Alimentos e Bebidas",
         "title": "Sustagen Kids Chocolate Sachê Leve 700G Pague , Sustagen Kids",
         "image": "https://m.media-amazon.com/images/I/6174Os0O4uL._AC_SX679_.jpg", 
         "price": "42,40", 
@@ -666,7 +666,7 @@
     },
     {
         "id": "62",
-        "category": "food and drinks",
+        "category": "Alimentos e Bebidas",
         "title": "Pronova Coffee Stories Café Especial Frutado em Grãos 250g, 100% Arábica Montanhas do Espírito Santo",
         "image": "https://m.media-amazon.com/images/I/51ZP3rgVfmL._AC_SX679_.jpg", 
         "price": "17,10", 
@@ -676,7 +676,7 @@
     },
     {
         "id": "63",
-        "category": "food and drinks",
+        "category": "Alimentos e Bebidas",
         "title": "Pronova Coffee Stories Café Especial Microlote em Grãos 250g, 100% Arábica Single Origin",
         "image": "https://m.media-amazon.com/images/I/51z-ZTzW4qL._AC_SX679_.jpg", 
         "price": "25,65", 
@@ -687,7 +687,7 @@
 
     {
         "id": "64",
-        "category": "eletronics",
+        "category": "Eletrônicos",
         "title": "Apple iPhone 13 (128 GB) - Meia-noite",
         "image": "https://m.media-amazon.com/images/I/41rfDU6FGqL._AC_SX679_.jpg", 
         "price": "3.849", 
@@ -697,7 +697,7 @@
     },
     {
         "id": "65",
-        "category": "eletronics",
+        "category": "Eletrônicos",
         "title": "Apple iPhone 12 (64 GB) - (PRODUCT) RED",
         "image": "https://m.media-amazon.com/images/I/51NqmMDAHXL._AC_SX679_.jpg", 
         "price": "2.999", 
@@ -707,7 +707,7 @@
     },
     {
         "id": "66",
-        "category": "eletronics",
+        "category": "Eletrônicos",
         "title": "Smartphone Xiaomi Redmi Note 13 8+256G Global Version Powerful Snapdragon® performance 120Hz FHD+ AMOLED display 33W fast charging with 5000mAh battery (Black)",
         "image": "https://m.media-amazon.com/images/I/51pk9ttmZqL._AC_SX679_.jpg", 
         "price": "1.229", 
@@ -717,7 +717,7 @@
     },
     {
         "id": "67",
-        "category": "eletronics",
+        "category": "Eletrônicos",
         "title": "Smartphone Xiaomi Redmi Note 13 8+256G Global Version Powerful Snapdragon® performance 120Hz FHD+ AMOLED display 33W fast charging with 5000mAh battery (Blue)",
         "image": "https://m.media-amazon.com/images/I/51TEjgf8bxL._AC_SX679_.jpg", 
         "price": "1.255", 
@@ -727,7 +727,7 @@
     },
     {
         "id": "68",
-        "category": "eletronics",
+        "category": "Eletrônicos",
         "title": "Smartphone Moto G14 128GB 4GB RAM Grafite",
         "image": "https://m.media-amazon.com/images/I/51aO+pBIwAL._AC_SX679_.jpg", 
         "price": "799,00", 
@@ -737,7 +737,7 @@
     },
     {
         "id": "69",
-        "category": "eletronics",
+        "category": "Eletrônicos",
         "title": "Smartphone Moto G54 5G 256GB 8GB RAM Azul - Vegan Leather",
         "image": "https://m.media-amazon.com/images/I/61jIQOl3vKL._AC_SX679_.jpg", 
         "price": "1.089,00", 
@@ -749,7 +749,7 @@
 
     {
         "id": "70",
-        "category": "tools",
+        "category": "Ferramentas e Construção",
         "title": "Mtx Martelo Unha 450 G Cabeça 27 Mm Magnetica Cabo Em Fibra",
         "image": "https://m.media-amazon.com/images/I/41Q5383CSZL._AC_SX679_.jpg", 
         "price": "25,98", 
@@ -759,7 +759,7 @@
     },
     {
         "id": "71",
-        "category": "tools",
+        "category": "Ferramentas e Construção",
         "title": "Conjunto de chaves de fenda de precisão 115 em 1 kit de ferramentas de reparo com kit de driver magnético",
         "image": "https://m.media-amazon.com/images/I/713vuYqQbsS._AC_SX679_.jpg", 
         "price": "36,00", 
@@ -769,7 +769,7 @@
     },
     {
         "id": "72",
-        "category": "tools",
+        "category": "Ferramentas e Construção",
         "title": "Sparta Maleta de ferramentas kit com 129 peças",
         "image": "https://m.media-amazon.com/images/I/61ZmjmMLsRL._AC_SX679_.jpg", 
         "price": "160,90", 
@@ -779,7 +779,7 @@
     },
     {
         "id": "73",
-        "category": "tools",
+        "category": "Ferramentas e Construção",
         "title": "Kit De Alicate Universal 5 Em 1 Multifuncional Profissional com Cabeça Intercambiável de Aço",
         "image": "https://m.media-amazon.com/images/I/618zpwCChLL._AC_SX679_.jpg", 
         "price": "159,99", 
@@ -789,7 +789,7 @@
     },
     {
         "id": "74",
-        "category": "tools",
+        "category": "Ferramentas e Construção",
         "title": "Wap Maleta De Ferramentas Manuais Wap Mkf132 Kit Completo Com 132 Peças E Uma Maleta Organizadora",
         "image": "https://m.media-amazon.com/images/I/81FGjPnkv6L._AC_SX679_.jpg", 
         "price": "147,62", 
@@ -799,7 +799,7 @@
     },
     {
         "id": "75",
-        "category": "tools",
+        "category": "Ferramentas e Construção",
         "title": "Caixa Plástica VD 4038, com 1 Bandeja, Vonder VDO2677",
         "image": "https://m.media-amazon.com/images/I/517nkcPb3pL._AC_SX679_.jpg", 
         "price": "28,91", 
@@ -810,7 +810,7 @@
 
     {
         "id": "76",
-        "category": "home",
+        "category": "Casa",
         "title": "Ar Condicionado Split Inverter Samsung Windfree Connect 12000 Btus Quente/frio 220v ar12bseaawkxaz",
         "image": "https://m.media-amazon.com/images/I/517O7bEoJlL._AC_SX679_.jpg", 
         "price": "3.599", 
@@ -820,7 +820,7 @@
     },
     {
         "id": "77",
-        "category": "home",
+        "category": "Casa",
         "title": "Ventilador de Mesa 30cm Super Power, Mondial, Preto, 60W, 220V - VSP-30-B",
         "image": "https://m.media-amazon.com/images/I/81e0BpZekHL._AC_SY879_.jpg", 
         "price": "107,90", 
@@ -830,7 +830,7 @@
     },
     {
         "id": "78",
-        "category": "home",
+        "category": "Casa",
         "title": "Black Decker Aspirador de Pó e Àgua, Portátil, Vermelho, Modelo APB3600, Bateria de 3,6V",
         "image": "https://m.media-amazon.com/images/I/41SG119rKDL._AC_SX679_.jpg", 
         "price": "208,57", 
@@ -840,7 +840,7 @@
     },
     {
         "id": "79",
-        "category": "home",
+        "category": "Casa",
         "title": "WAP Extratora Portátil Spot Cleaner W3 1450W de Potência e Vácuo de 110Mbar 3 em 1 Borrifa, Esfrega e Extrai 127V",
         "image": "https://m.media-amazon.com/images/I/71YOp9GJX2L._AC_SX679_.jpg", 
         "price": "782,21", 
@@ -850,7 +850,7 @@
     },
     {
         "id": "80",
-        "category": "home",
+        "category": "Casa",
         "title": "Vassoura Mágica com Cerdas Giratórias, Varre e Recolhe poeira e migalhas, MOP0184, Flash Limp",
         "image": "https://m.media-amazon.com/images/I/71d2v3mEYwL._AC_SX679_.jpg", 
         "price": "91,21", 
@@ -860,7 +860,7 @@
     },
     {
         "id": "81",
-        "category": "home",
+        "category": "Casa",
         "title": "Varal De Chão Com Abas Slim Mor",
         "image": "https://m.media-amazon.com/images/I/51MRcuhxgJL._AC_SX679_.jpg", 
         "price": "87,00", 
@@ -871,7 +871,7 @@
     
     {
         "id": "82",
-        "category": "beauty",
+        "category": "Beleza",
         "title": "NIVEA Gel Corporal Bye Bye Celulite Firmador 201g",
         "image": "https://m.media-amazon.com/images/I/51NaNrcPXGL._AC_SX522_.jpg", 
         "price": "25,99", 
@@ -881,7 +881,7 @@
     },
     {
         "id": "83",
-        "category": "beauty",
+        "category": "Beleza",
         "title": "Dermotivin Benzac Oil Control (Hidratante Matificante) 50G, DERMOTIVIN",
         "image": "https://m.media-amazon.com/images/I/7148aA4TKpL._AC_SX679_.jpg", 
         "price": "48,93", 
@@ -891,7 +891,7 @@
     },
     {
         "id": "84",
-        "category": "beauty",
+        "category": "Beleza",
         "title": "NIVEA Hidratante Facial Acne Control - Ajuda a combater 99% das bactérias causadoras da acne",
         "image": "https://m.media-amazon.com/images/I/61XClDzqQzL._AC_SX522_.jpg", 
         "price": "39,13", 
@@ -901,7 +901,7 @@
     },
     {
         "id": "85",
-        "category": "beauty",
+        "category": "Beleza",
         "title": "NIVEA Hidratante Desodorante Anticelulite Q10 Pernas Renovadas 400ml ",
         "image": "https://m.media-amazon.com/images/I/51bTfligQVL._AC_SX522_.jpg", 
         "price": "25,99", 
@@ -911,7 +911,7 @@
     },
     {
         "id": "86",
-        "category": "beauty",
+        "category": "Beleza",
         "title": "Calvin Klein Ck Be Eau de Toilette, Calvin Klein Ck",
         "image": "https://m.media-amazon.com/images/I/61lXj0Aea7L._AC_SX679_.jpg", 
         "price": "232,99", 
@@ -921,7 +921,7 @@
     },
     {
         "id": "87",
-        "category": "beauty",
+        "category": "Beleza",
         "title": "Hugo Boss Bottled Eau de Toilette, Hugo Boss Boss Bottled",
         "image": "https://m.media-amazon.com/images/I/61v+AZ2MGKL._AC_SX679_.jpg", 
         "price": "320,00", 
@@ -931,7 +931,7 @@
     },
     {
         "id": "88",
-        "category": "alcoolic drinks",
+        "category": "Bebidas Alcoólicas",
         "title": "Vodka Absolut Vanilia - 750 ml",
         "image": "https://m.media-amazon.com/images/I/41P+m3u-6QL._AC_SX522_.jpg", 
         "price": "89,66", 
@@ -941,7 +941,7 @@
     },
     {
         "id": "89",
-        "category": "alcoolic drinks",
+        "category": "Bebidas Alcoólicas",
         "title": "Ballantine's Whisky 12 Anos Blended Escocês - 750 Ml",
         "image": "https://m.media-amazon.com/images/I/51m51MsFT9L._AC_SX522_.jpg", 
         "price": "125,99", 
@@ -951,7 +951,7 @@
     },
     {
         "id": "90",
-        "category": "alcoolic drinks",
+        "category": "Bebidas Alcoólicas",
         "title": "Whisky Jim Beam Bourbon 1L",
         "image": "https://m.media-amazon.com/images/I/51Z5yl3GghS._AC_SX522_.jpg", 
         "price": "106,60", 
@@ -961,7 +961,7 @@
     },
     {
         "id": "91",
-        "category": "alcoolic drinks",
+        "category": "Bebidas Alcoólicas",
         "title": "Whisky Escocês Blended Black Label Johnnie Walker Garrafa 750ml",
         "image": "https://m.media-amazon.com/images/I/61S5PedMY6L._AC_SX522_.jpg", 
         "price": "118,4", 
@@ -971,7 +971,7 @@
     },
     {
         "id": "92",
-        "category": "alcoolic drinks",
+        "category": "Bebidas Alcoólicas",
         "title": "Jack Daniel's Whisky Jack Daniels Fire 1L",
         "image": "https://m.media-amazon.com/images/I/81VZ-vZ2QNL._AC_SY741_.jpg", 
         "price": "138,98", 
@@ -981,7 +981,7 @@
     },
     {
         "id": "93",
-        "category": "alcoolic drinks",
+        "category": "Bebidas Alcoólicas",
         "title": "Jack Daniels - Whisky, 1000 Ml",
         "image": "https://m.media-amazon.com/images/I/81iFMR6PXXL._AC_SX679_.jpg", 
         "price": "145,00", 
@@ -992,7 +992,7 @@
 
     {
         "id": "94",
-        "category": "pets",
+        "category": "Pet Shop",
         "title": "whiskas Ração Úmida Whiskas Sachê Carne Ao Molho Para Gatos Adultos - Leve 12 Pague 10",
         "image": "https://m.media-amazon.com/images/I/613QnG4YvML._AC_SX679_.jpg", 
         "price": "31,41", 
@@ -1003,7 +1003,7 @@
 
     {
         "id": "95",
-        "category": "pets",
+        "category": "Pet Shop",
         "title": "whiskas Ração Whiskas Carne Para Gatos Adultos 10 1 Kg",
         "image": "https://m.media-amazon.com/images/I/81IuLVVQq5L._AC_SY879_.jpg", 
         "price": "171,36", 
@@ -1014,7 +1014,7 @@
 
     {
         "id": "96",
-        "category": "pets",
+        "category": "Pet Shop",
         "title": "Tudo Pet Comedouro E Bebedouro Pesado Filhote Pequeno 450Ml Azul Para Cães",
         "image": "https://m.media-amazon.com/images/I/81fi62Opl0L._AC_SX679_.jpg", 
         "price": "21,26", 
@@ -1025,7 +1025,7 @@
 
     {
         "id": "97",
-        "category": "pets",
+        "category": "Pet Shop",
         "title": "Aparador Maquina de Tosar Pêlos Cães Gato PETs Recarregável Aparar Pêlo Cachorro Dog",
         "image": "https://m.media-amazon.com/images/I/61+HtZqg4bL._AC_SX679_.jpg", 
         "price": "91,88", 
@@ -1036,7 +1036,7 @@
 
     {
         "id": "98",
-        "category": "pets",
+        "category": "Pet Shop",
         "title": "Capa Protetora Carro Pet Impermeável Antiderrapante Resistente ao Desgaste de Banco Traseiro de Carro para Cachorro Cachorro Gato Preto",
         "image": "https://m.media-amazon.com/images/I/51VGi3a3q6L._AC_SX522_.jpg", 
         "price": "57,59", 
@@ -1047,7 +1047,7 @@
 
     {
         "id": "99",
-        "category": "pets",
+        "category": "Pet Shop",
         "title": "Kalimdor Brinquedos interativos de penas de gato, brinquedo retrátil para gatos",
         "image": "https://m.media-amazon.com/images/I/61KfFkdwC4L._AC_SX679_.jpg", 
         "price": "25,00", 
@@ -1058,7 +1058,7 @@
 
     {
         "id": "100",
-        "category": "garden",
+        "category": "Jardim e Piscina",
         "title": "Lavadora de Alta Pressão WAP OUSADA PLUS 2200 1500W 1750 PSI/Libras 342L/h Jato Leque e Concentrado Máquina Voltagem 127 V",
         "image": "https://m.media-amazon.com/images/I/711W3v-nNpL._AC_SX679_.jpg", 
         "price": "477,90", 
@@ -1069,7 +1069,7 @@
 
     {
         "id": "101",
-        "category": "garden",
+        "category": "Jardim e Piscina",
         "title": "Lavadora de Alta pressão Kärcher Compacta 1500 PSI/Libras 1200W 300L/h com Aplicador de Detergente e Lança Regulável 127v",
         "image": "https://m.media-amazon.com/images/I/51S54R9jdeL._AC_SX522_.jpg", 
         "price": "379,05", 
@@ -1080,7 +1080,7 @@
 
     {
         "id": "102",
-        "category": "garden",
+        "category": "Jardim e Piscina",
         "title": "Tramontina, Aparador de grama elétrico, diam. 280mm 1500W 127V",
         "image": "https://m.media-amazon.com/images/I/41K6RMs1paL._AC_SX679_.jpg", 
         "price": "214,90", 
@@ -1091,7 +1091,7 @@
 
     {
         "id": "103",
-        "category": "garden",
+        "category": "Jardim e Piscina",
         "title": "Tramontina, cortador de grama elétrico, 350 mm, coletor rígido e chassi de plástico, 1300W, 220v",
         "image": "https://m.media-amazon.com/images/I/51GT5mqF0nL._AC_SX679_.jpg", 
         "price": "499,90", 
@@ -1102,7 +1102,7 @@
 
     {
         "id": "104",
-        "category": "garden",
+        "category": "Jardim e Piscina",
         "title": "Mangueira Para Jardim 30 Metros Com Esguicho 79172300 TRAMONTINA",
         "image": "https://m.media-amazon.com/images/I/71mPWGPrWxL._AC_SX679_.jpg", 
         "price": "103,25", 
@@ -1113,7 +1113,7 @@
 
     {
         "id": "105",
-        "category": "garden",
+        "category": "Jardim e Piscina",
         "title": "Vasart Sampa Vaso de Flores, Grafite, 25x22cm",
         "image": "https://m.media-amazon.com/images/I/61IQoEA9AnL._AC_SX679_.jpg", 
         "price": "19,49", 
@@ -1124,7 +1124,7 @@
 
     {
         "id": "106",
-        "category": "inteligence house",
+        "category": "Casa Inteligente",
         "title": "Smart Lâmpada Wi-Fi Positivo Casa Inteligente, Iluminação Branca (Quente e Fria) e RGB (Até 16 Milhões de Cores)",
         "image": "https://m.media-amazon.com/images/I/511R3odrRjL._AC_SX679_.jpg", 
         "price": "44,90", 
@@ -1134,7 +1134,7 @@
     },
     {
         "id": "107",
-        "category": "inteligence house",
+        "category": "Casa Inteligente",
         "title": "Lâmpada Inteligente Smart Color 10W Elgin RGB Wifi Compatível com Alexa e Google Home",
         "image": "https://m.media-amazon.com/images/I/61dLgPIgKML._AC_SX679_.jpg", 
         "price": "44,66", 
@@ -1144,7 +1144,7 @@
     },
     {
         "id": "108",
-        "category": "inteligence house",
+        "category": "Casa Inteligente",
         "title": "WAP ROBOT W90 - Aspirador de Pó Robô, Automático 3 em 1 Varre, Aspira, Passa Pano, MOP para Limpeza, 30W, Bateria Recarregável, Bivolt, Preto",
         "image": "https://m.media-amazon.com/images/I/716GA5MQQkL._AC_SX679_.jpg", 
         "price": "374,90", 
@@ -1154,7 +1154,7 @@
     },
     {
         "id": "109",
-        "category": "inteligence house",
+        "category": "Casa Inteligente",
         "title": "Aspirador de Pó Robô Mars Varre + Aspira + Passa Pano Bivolt com 30W e Bateria Recarregável, Vermelho/Preto Multi Home - HO400",
         "image": "https://m.media-amazon.com/images/I/5177K55AKZL._AC_SX679_.jpg", 
         "price": "399,12", 
@@ -1164,7 +1164,7 @@
     },
     {
         "id": "110",
-        "category": "inteligence house",
+        "category": "Casa Inteligente",
         "title": "Câmera Externa Inteligente iM7 Full Color Branco Intelbras",
         "image": "https://m.media-amazon.com/images/I/41cgshAv-4L._AC_SX679_.jpg", 
         "price": "512,99", 
@@ -1174,7 +1174,7 @@
     },
     {
         "id": "111",
-        "category": "inteligence house",
+        "category": "Casa Inteligente",
         "title": "Fechadura Digital Para Uso Interno e Externo FR 10 Preto Intelbras",
         "image": "https://m.media-amazon.com/images/I/516+DoFfgOL._AC_SX679_.jpg", 
         "price": "268,99", 
@@ -1185,7 +1185,7 @@
 
     {
         "id": "112",
-        "category": "cd and vinil",
+        "category": "Cd e Vinil",
         "title": "folklore [Beige 2 LP]",
         "image": "https://m.media-amazon.com/images/I/617oudVIaRL._AC_SX679_.jpg", 
         "price": "314,13", 
@@ -1196,7 +1196,7 @@
     },
     {
         "id": "113",
-        "category": "cd and vinil",
+        "category": "Cd e Vinil",
         "title": "Abbey Road Anniversary [LP]",
         "image": "https://m.media-amazon.com/images/I/81Q7HZYO1rL._AC_SX679_.jpg", 
         "price": "231,02", 
@@ -1206,7 +1206,7 @@
     },
     {
         "id": "114",
-        "category": "cd and vinil",
+        "category": "Cd e Vinil",
         "title": "MY CHEMICAL ROMANCE - THE BLACK PARADE - 0093624442721",
         "image": "https://m.media-amazon.com/images/I/81fNQtNDw8L._AC_SX679_.jpg", 
         "price": "97,01", 
@@ -1216,7 +1216,7 @@
     },
     {
         "id": "115",
-        "category": "cd and vinil",
+        "category": "Cd e Vinil",
         "title": "Thriller [Disco de Vinil]",
         "image": "https://m.media-amazon.com/images/I/81ogsUqshzL._AC_SX679_.jpg", 
         "price": "167,09", 
@@ -1226,7 +1226,7 @@
     },
     {
         "id": "116",
-        "category": "cd and vinil",
+        "category": "Cd e Vinil",
         "title": "Master Of Puppets [Disco de Vinil]",
         "image": "https://m.media-amazon.com/images/I/71YZ3wX0Z+L._AC_SX679_.jpg", 
         "price": "218,08", 
@@ -1236,7 +1236,7 @@
     },
     {
         "id": "117",
-        "category": "cd and vinil",
+        "category": "Cd e Vinil",
         "title": "Blurryface",
         "image": "https://m.media-amazon.com/images/I/71MRKrpsukL._AC_SX522_.jpg", 
         "price": "51,17", 
@@ -1247,7 +1247,7 @@
 
     {
         "id": "118",
-        "category": "fashion",
+        "category": "Moda",
         "title": "Tênis Casual Tribute Style Cano Baixo Skate",
         "image": "https://m.media-amazon.com/images/I/51E57XX95kL._AC_SX575_.jpg", 
         "price": "149,90", 
@@ -1257,7 +1257,7 @@
     },
     {
         "id": "119",
-        "category": "fashion",
+        "category": "Moda",
         "title": "Tênis Rainha Vl 2500 Marinho/gelo Ra00010005 40",
         "image": "https://m.media-amazon.com/images/I/511orXHjzWL._AC_SY575_.jpg", 
         "price": "154,90", 
@@ -1267,7 +1267,7 @@
     },
     {
         "id": "120",
-        "category": "fashion",
+        "category": "Moda",
         "title": "Regata Feminina Camiseta Efeito Sauna Queima Gordura",
         "image": "https://m.media-amazon.com/images/I/51nqEZLMrxL._AC_SX522_.jpg", 
         "price": "50,00", 
@@ -1277,7 +1277,7 @@
     },
     {
         "id": "121",
-        "category": "fashion",
+        "category": "Moda",
         "title": "Blusa Regata Básica Feminina 100% Algodão Malwee",
         "image": "https://m.media-amazon.com/images/I/51n4J45FKrL._AC_SX569_.jpg", 
         "price": "46,99", 
@@ -1287,7 +1287,7 @@
     },
     {
         "id": "122",
-        "category": "fashion",
+        "category": "Moda",
         "title": "Kit Com 3 Camisetas Masculinas Básicas",
         "image": "https://m.media-amazon.com/images/I/61gRYC-stlL._AC_SY606_.jpg", 
         "price": "99,99", 
@@ -1297,7 +1297,7 @@
     },
     {
         "id": "123",
-        "category": "fashion",
+        "category": "Moda",
         "title": "1Bests Conjunto de corrida masculino esportivo camisa de compressão",
         "image": "https://m.media-amazon.com/images/I/71ejwRRWW1L._AC_SX569_.jpg", 
         "price": "99,00", 
@@ -1308,7 +1308,7 @@
 
     {
         "id": "124",
-        "category": "sports",
+        "category": "Esportes e Aventura",
         "title": "Bicicleta Ergométrica Spinning Pro E17 Acte Sports",
         "image": "https://m.media-amazon.com/images/I/51IrDKxNoSL._AC_SX679_.jpg", 
         "price": "2.615", 
@@ -1318,7 +1318,7 @@
     },
     {
         "id": "125",
-        "category": "sports",
+        "category": "Esportes e Aventura",
         "title": "Academia Particular Polimet Polimet Unissex Preto",
         "image": "https://m.media-amazon.com/images/I/51K29blVnJL._AC_SX679_.jpg", 
         "price": "808,69", 
@@ -1328,7 +1328,7 @@
     },
     {
         "id": "126",
-        "category": "sports",
+        "category": "Esportes e Aventura",
         "title": "Polimet Esteira EP-1600 - Banda de corrida, 1.6hp, Preto",
         "image": "https://m.media-amazon.com/images/I/51zE4RtileL._AC_SX679_.jpg", 
         "price": "1.649,", 
@@ -1338,7 +1338,7 @@
     },
     {
         "id": "127",
-        "category": "sports",
+        "category": "Esportes e Aventura",
         "title": "Caloi Bicicleta Vulcan Aro 29",
         "image": "https://m.media-amazon.com/images/I/71O697TvdhL._AC_SX679_.jpg", 
         "price": "1.175,90 ", 
@@ -1348,7 +1348,7 @@
     },
     {
         "id": "128",
-        "category": "sports",
+        "category": "Esportes e Aventura",
         "title": "Bicicleta Aro 29 Caloi Velox MY23",
         "image": "https://m.media-amazon.com/images/I/71UQYsYm3EL._AC_SX679_.jpg", 
         "price": "941,15", 
@@ -1358,7 +1358,7 @@
     },
     {
         "id": "129",
-        "category": "sports",
+        "category": "Esportes e Aventura",
         "title": "Kit 5 Faixas Elasticas Mini Band Exercicios em Casa Extensor Academia Yoga Pilates Fitness Crossfit",
         "image": "https://m.media-amazon.com/images/I/61CPGnLn7xL._AC_SX679_.jpg", 
         "price": "18,90", 
@@ -1369,7 +1369,7 @@
 
     {
         "id": "130",
-        "category": "automotive",
+        "category": "Automotivo",
         "title": "PNEU 175/70R13 TURBO TL 82T TORNEL",
         "image": "https://m.media-amazon.com/images/I/61VHNx87reL._AC_SX522_.jpg", 
         "price": "232,90", 
@@ -1379,7 +1379,7 @@
     },
     {
         "id": "131",
-        "category": "automotive",
+        "category": "Automotivo",
         "title": "Pneu Aro 13 175/75r13 84t Np203 Sunny",
         "image": "https://m.media-amazon.com/images/I/61gYzDCGhhL._AC_SX522_.jpg", 
         "price": "210,90", 
@@ -1390,7 +1390,7 @@
    
     {
         "id": "132",
-        "category": "automotive",
+        "category": "Automotivo",
         "title": "Carregador de Baterias 12v Até 300 Amperes 5ah Carro Moto",
         "image": "https://m.media-amazon.com/images/I/614Ut9YCA-L._AC_SX522_.jpg", 
         "price": "134,90", 
@@ -1400,7 +1400,7 @@
     },
     {
         "id": "133",
-        "category": "automotive",
+        "category": "Automotivo",
         "title": "Bateria Estacionária Selada 12V 7Ah VRLA UP1270E Unipower",
         "image": "https://m.media-amazon.com/images/I/518VOi4zEAL._AC_SX679_.jpg", 
         "price": "117,52", 
@@ -1410,7 +1410,7 @@
     },
     {
         "id": "134",
-        "category": "automotive",
+        "category": "Automotivo",
         "title": "Central Multimidia 7pol 2Din 2GB 32GB Android 12 Carplay Android Auto",
         "image": "https://m.media-amazon.com/images/I/51YMhZpCQoL._AC_SX522_.jpg", 
         "price": "689,99", 
@@ -1420,7 +1420,7 @@
     },
     {
         "id": "135",
-        "category": "automotive",
+        "category": "Automotivo",
         "title": "Media Receiver Pioneer Mvh-S218Bt",
         "image": "https://m.media-amazon.com/images/I/61IwSt2QR6L._AC_SX522_.jpg", 
         "price": "402,81", 
