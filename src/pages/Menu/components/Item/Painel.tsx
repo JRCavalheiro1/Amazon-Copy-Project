@@ -12,11 +12,15 @@ export const Painel = () => {
     return (
         <Container>
             <div className="product">
-                {filterProduct(state).map((product: any) => {
-                    return (
-                        <Product key={product.id} product={product}/>
-                    )
-                })}
+                <h1>{state}</h1>
+                <div className="filter-products">
+                    {filterProduct(state).map((product: any) => {
+                        return (
+                            <Product key={product.id} product={product}/>
+                        )
+                    })}
+
+                </div>
             </div>
         </Container>
     )

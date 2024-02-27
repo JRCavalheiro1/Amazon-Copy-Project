@@ -11,11 +11,11 @@ export const Product = ({product} : itemProps) => {
         <Container>
             <div className="product">
                 <div className="product-image">
-                    <img src={product.image} width="200px" height="190px"/>
+                    <img src={product.image} width={product.imageWidthSize} height={product.imageHeightSize}/>
                 </div>
                     <p>{product.title}</p>
                 <div className="price">
-                    <span>R$</span><h2>{product.title}</h2>
+                    <span>R$</span><h2>{product.price}</h2>
                 </div>
             </div>
         </Container>
