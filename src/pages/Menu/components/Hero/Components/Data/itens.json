@@ -5,6 +5,11 @@
         "category": "Dispositivos Amazon",
         "title": "Echo Pop | Smart speaker compacto com som envolvente e Alexa | Cor Preta",
         "image": "https://m.media-amazon.com/images/I/51UfG+CTu7L.AC_SX250.jpg",
+        "imageOption": [
+            "https://m.media-amazon.com/images/I/71eWKwcVjnL._AC_SY450_.jpg", 
+            "https://m.media-amazon.com/images/I/51UfG+CTu7L.AC_SX250.jpg", 
+            "https://m.media-amazon.com/images/I/71ZMafZ6qrL._AC_SY450_.jpg", 
+            "https://m.media-amazon.com/images/I/810uw5oCrrL._AC_SY450_.jpg"],
         "price": "322,10",
         "description": "",
         "imageWidthSize": "180px", 
