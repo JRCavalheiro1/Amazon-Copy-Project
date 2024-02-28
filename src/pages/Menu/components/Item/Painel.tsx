@@ -7,7 +7,7 @@ export const Painel = () => {
     const {state} = useLocation();
 
     const filterProduct = (productCategory: string | undefined) => {
-        return (productData.filter((product) => product.category === productCategory)) //filter the products according to the category
+        return (productData.product.filter((product) => product.category === productCategory)) //filter the products according to the category
     }
     return (
         <Container>

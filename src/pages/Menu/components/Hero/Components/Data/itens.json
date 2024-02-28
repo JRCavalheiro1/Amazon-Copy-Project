@@ -1,5 +1,5 @@
-
-[
+{
+"product" : [
     {
         "id": "1",
         "category": "Dispositivos Amazon",
@@ -1429,5 +1429,5 @@
         "imageHeightSize": "120px"
     }
 ]
-
+}
 
