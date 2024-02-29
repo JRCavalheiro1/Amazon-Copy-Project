@@ -2,10 +2,13 @@ import { Container } from "./style"
 import product from "../Data/itens.json";
 import { ImageOption } from "./components/ImageOption/ImageOption"; 
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 export const ProductPage = () => {
-    const [mainImage, setMainImage] = useState("https://m.media-amazon.com/images/I/61u2D+u2wFL._AC_SY450_.jpg")
-
+    const [mainImage, setMainImage] = useState("")
+    const location = useLocation();
+    const productData = location.state;
+    
 
     const handleChangeImage = (index: string) => {
         setMainImage(index);
@@ -17,12 +20,12 @@ export const ProductPage = () => {
                 
                 <div className="product-image">
                     <div className="img-options">
-                        {product.product[0].imageOption?.map((currentImage) =>
+                        {productData.imageOption.map((currentImage: string) =>
                             <ImageOption imageIndex={currentImage} handleChangeImage={()=> handleChangeImage(currentImage)}/>
                         )}
                     </div>
                         <div className="img-main">
-                            <img src={mainImage} className="img-principal"/>
+                            <img src={mainImage ? mainImage : productData.image} className="img-principal"/>
                         </div>
                 </div>
                 <div className="product-informations">

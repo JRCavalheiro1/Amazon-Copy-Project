@@ -11,7 +11,7 @@ export const ImageOption = ({imageIndex, handleChangeImage} : imageOptionProps) 
                         className="img-mini" 
                         src={imageIndex}
                         onMouseEnter={handleChangeImage}
-                        />
+                    />
             </ImageOptionStyle>
     )
 }
