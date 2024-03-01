@@ -285,7 +285,7 @@
             "https://m.media-amazon.com/images/I/51HIXFZOWjL._AC_SX679_.jpg", 
             "https://m.media-amazon.com/images/I/51G-Ft7jcIL._AC_SX679_.jpg", 
             "https://m.media-amazon.com/images/I/31a0Eytv9KL._AC_SX679_.jpg"],
-        "price": "4.799", 
+        "price": "4.799,00", 
         "description": "",
         "imageWidthSize": "200px", 
         "imageHeightSize": "150px"
@@ -314,7 +314,7 @@
             "https://m.media-amazon.com/images/I/51SM5xU-M1L._AC_SX679_.jpg", 
             "https://m.media-amazon.com/images/I/51B5lhflkgL._AC_SX679_.jpg", 
             "https://m.media-amazon.com/images/I/510t1zTeTbL._AC_SX679_.jpg"],
-        "price": "3.799", 
+        "price": "3799", 
         "description": "",
         "imageWidthSize": "180px", 
         "imageHeightSize": "180px"

@@ -3,10 +3,10 @@ import { styled } from "styled-components";
 export const Container = styled.div`
     background: #ffffff;    
     margin-top: 30px;
+    
     .product-page {
         display: flex;
-        align-items: center;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .product-image {
@@ -23,6 +23,7 @@ export const Container = styled.div`
 
     .img-main {
     }
+
     .img-principal {
         width: 425px;
         height: 440px;
@@ -38,8 +39,11 @@ export const Container = styled.div`
 
     .product-informations, .product-shopping {
         border: 1px solid red;
-        width: 200px;
         height: 300px;
+    }
+
+    .product-informations {
+
     }
 
     
