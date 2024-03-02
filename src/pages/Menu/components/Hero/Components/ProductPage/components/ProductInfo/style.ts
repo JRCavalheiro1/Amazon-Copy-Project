@@ -1,0 +1,29 @@
+import { styled } from "styled-components";
+
+export const ProductInfoStyle = styled.div`
+    
+    .purchase-icons {
+      display: flex;
+      gap: 30px;
+    }
+    .purchase-mode-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 35px;
+            height: 35px;
+        }
+
+        a{
+            text-align: center;
+            color: #007185;
+        }
+    }
+    .product-informations {
+
+    }
+
+`;

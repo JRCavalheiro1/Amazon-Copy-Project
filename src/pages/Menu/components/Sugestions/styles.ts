@@ -54,7 +54,7 @@ export const Container = styled.div`
         width: 400px;
         display: flex;
         margin-right: 50px;
-        white-space:nowrap;
+        white-space: nowrap;
         justify-content: flex-end;
         font-size: 1.2rem;
         padding: 0px 10px 0px 10px; 
