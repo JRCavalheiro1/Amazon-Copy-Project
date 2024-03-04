@@ -18,7 +18,7 @@ export const ProductInfo = ({productInfoData}: ProductInfoProps) => {
         <div className="product-informations">
                     <div className="product-title-info">
                         <h1 className="product-title">{productInfoData.title}</h1>
-                        <a>Marca</a>
+                        <a className="product-brand">Marca: Amazon</a>
                         <p className="product-rate">karalho</p>
                     </div>
 

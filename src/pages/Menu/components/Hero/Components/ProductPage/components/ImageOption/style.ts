@@ -5,8 +5,8 @@ export const ImageOptionStyle = styled.div`
    
     .img-mini{
         border: 1px solid #737373;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         border-radius: 6px;
         cursor: pointer;
     }

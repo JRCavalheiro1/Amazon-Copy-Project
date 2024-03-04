@@ -4,6 +4,7 @@
         "id": "1",
         "category": "Dispositivos Amazon",
         "title": "Echo Pop | Smart speaker compacto com som envolvente e Alexa | Cor Preta",
+        "brand": "Amazon",
         "image": "https://m.media-amazon.com/images/I/61V5FRUgX8L._AC_SY450_.jpg",
         "imageOption": [
             "https://m.media-amazon.com/images/I/71eWKwcVjnL._AC_SY450_.jpg", 
@@ -19,6 +20,7 @@
         "id": "2",
         "category": "Dispositivos Amazon",
         "title": "Echo Dot 5ª geração | O Echo Dot com o melhor som já lançado | Cor Preta",
+        "brand": "Amazon",
         "image": "https://m.media-amazon.com/images/I/71xoR4A6q-L._AC_SY450_.jpg",
         "imageOption": [
             "https://m.media-amazon.com/images/I/617-HLllfZL._AC_SY300_SX300_.jpg", 
@@ -34,6 +36,7 @@
         "id": "3",
         "category": "Dispositivos Amazon",
         "title": "Echo Dot 5ª geração com Relógio | Smart speaker com Alexa | Display de LED ainda melhor | Cor Branca",
+        "brand": "Amazon",
         "image": "https://m.media-amazon.com/images/I/71bnkM5q8CL._AC_SY450_.jpg",
         "imageOption": [
             "https://m.media-amazon.com/images/I/61zuq4qn-ZL._AC_SY450_.jpg", 
@@ -49,6 +52,7 @@
         "id": "4",
         "category": "Dispositivos Amazon",
         "title": "Echo com Alexa (4ª Geração): Com som premium e hub Zigbee de casa inteligente - Cor Preta",
+        "brand": "Amazon",
         "image": "https://m.media-amazon.com/images/I/71JB6hM6Z6L._AC_SY450_.jpg",
         "imageOption": [
             "https://m.media-amazon.com/images/I/61u2D+u2wFL._AC_SY450_.jpg", 
@@ -64,6 +68,7 @@
         "id": "5",
         "category": "Dispositivos Amazon",
         "title": "Novo Echo Show 5 (3ª geração - 2023) | Smart display com Alexa, graves 2x mais potentes e som mais nítido | Cor Preta",
+        "brand": "Amazon",
         "image": "https://m.media-amazon.com/images/I/51jf-jmkW5L._AC_SY450_.jpg",
         "imageOption": [
             "https://m.media-amazon.com/images/I/51kuQnlRIBL._AC_SY450_.jpg", 
@@ -79,6 +84,7 @@
         "id": "6",
         "category": "Dispositivos Amazon",
         "title": "Echo Show 8 (2ª Geração): Tela Inteligente HD de 8' com Alexa e câmera de 13 MP - Cor Preta",
+        "brand": "Amazon",
         "image": "https://m.media-amazon.com/images/I/71gyzGD0rzL._AC_SX679_.jpg",
         "imageOption": [
             "https://m.media-amazon.com/images/I/61XSjoXPCYL._AC_SX679_.jpg", 

@@ -5,6 +5,7 @@ export const ProductImageStyle = styled.div`
     .product-image {
         display: flex;
         width: 500px;
+        height: 500px;
         gap: 10px;
     }
 

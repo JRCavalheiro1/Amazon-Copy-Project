@@ -6,14 +6,11 @@ export const Container = styled.div`
     
     .product-page {
         display: flex;
-        justify-content: center;
     }
 
     .product-informations, .product-shopping {
         border: 1px solid red;
         height: 300px;
     }
-
-    
 `   
 ;
