@@ -8,9 +8,8 @@ export const Container = styled.div`
         display: flex;
     }
 
-    .product-informations, .product-shopping {
+    .product-shopping {
         border: 1px solid red;
-        height: 300px;
     }
 `   
 ;
