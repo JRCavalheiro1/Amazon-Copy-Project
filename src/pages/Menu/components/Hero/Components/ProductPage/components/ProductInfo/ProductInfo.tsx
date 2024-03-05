@@ -8,12 +8,16 @@ import rateIcon from "../../../../../../../../images/star.svg"
 type ProductInfoProps = {
     productInfoData : any;
 }
-export const ProductInfo = ({productInfoData}: ProductInfoProps) => {
 
-    const priceToInt = Number.parseInt(productInfoData.price);
-    const priceWithoutDiscont = (priceToInt*0.10) + priceToInt;
-    const installmentPrice = priceWithoutDiscont / 12;
+export const calculatePricePortion = (price : string) => {
+    const priceIntoAnumber = Number.parseInt(price);
+    const priceWdiscont = (priceIntoAnumber*0.10) + priceIntoAnumber;
     
+    return priceWdiscont;
+}
+
+
+export const ProductInfo = ({productInfoData}: ProductInfoProps) => {
 
     return (
         <ProductInfoStyle>
@@ -33,7 +37,7 @@ export const ProductInfo = ({productInfoData}: ProductInfoProps) => {
                             <span className="coin">R$</span> <h2 className="price">{productInfoData.price}</h2>
                         </div>
                         <span className="price-portion-text">à vista no Pix e boleto (10% off)</span> <br/>
-                        <span className="price-portion"> <b>ou R${priceWithoutDiscont} em até 12x de R${installmentPrice.toFixed(2)} sem juros </b></span>
+                        <span className="price-portion"> <b>ou R${calculatePricePortion(productInfoData.price)} em até 12x de R${(calculatePricePortion(productInfoData.price) / 12).toFixed(2)} sem juros </b></span>
 
                         <div className="purchase-icons">
                             <div className="purchase-mode-icon">

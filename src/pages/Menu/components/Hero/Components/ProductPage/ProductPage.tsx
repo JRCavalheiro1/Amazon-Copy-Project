@@ -13,6 +13,7 @@ export const ProductPage = () => {
             <div className="product-page">
                 <ProductImage productImageData={productData}/>
                 <ProductInfo productInfoData={productData}/>
+                <ProductShopping producShoppingData={productData}/>
             </div>
         </Container>
     )
