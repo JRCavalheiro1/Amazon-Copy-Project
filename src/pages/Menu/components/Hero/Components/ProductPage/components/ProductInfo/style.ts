@@ -96,10 +96,15 @@ export const ProductInfoStyle = styled.div`
 
     .product-about-info {
         margin-top: 30px;
+        margin-left: 20px;
     }
-    .product-about-text {
-        font-size: 1.2rem;
-        line-height: 1.8;
+    .product-info-description {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .product-descript {
+        font-size: 1.5rem;
     }
 
 `;

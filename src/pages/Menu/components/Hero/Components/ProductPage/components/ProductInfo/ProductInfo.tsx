@@ -65,23 +65,32 @@ export const ProductInfo = ({productInfoData}: ProductInfoProps) => {
                     <hr className="horizontal-line"/>
 
                     <div className="product-about-info">
-                            <p className="product-about-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, repellendus et? Quas modi error<br/> 
-                            quia maiores repellat laudantium porro vel, placeat et quod non consequuntur commodi sed neque facere quibusdam.<br/>
-                            quia maiores repellat laudantium porro vel, placeat et quod non consequuntur commodi sed neque facere quibusdam.<br/>
-                            quia maiores repellat laudantium porro vel, placeat et quod non consequuntur commodi sed neque facere quibusdam.<br/>
-                            quia maiores repellat laudantium porro vel, placeat et quod non consequuntur commodi sed neque facere quibusdam.<br/>
-                            quia maiores repellat laudantium porro vel, placeat et quod non consequuntur commodi sed neque facere quibusdam.<br/>
-                            quia maiores repellat laudantium porro vel, placeat et quod non consequuntur commodi sed neque facere quibusdam.<br/>
-                            quia maiores repellat laudantium porro vel, placeat et quod non consequuntur commodi sed neque facere quibusdam.<br/>
-                            quia maiores repellat laudantium porro vel, placeat et quod non consequuntur commodi sed neque facere quibusdam.<br/>
-                            quia maiores repellat laudantium porro vel, placeat et quod non consequuntur commodi sed neque facere quibusdam.<br/>
-                            quia maiores repellat laudantium porro vel, placeat et quod non consequuntur commodi sed neque facere quibusdam.<br/>
-                            quia maiores repellat laudantium porro vel, placeat et quod non consequuntur commodi sed neque facere quibusdam.<br/>
-                            quia maiores repellat laudantium porro vel, placeat et quod non consequuntur commodi sed neque facere quibusdam.<br/>
-                            quia maiores repellat laudantium porro vel, placeat et quod non consequuntur commodi sed neque facere quibusdam.<br/>
-                            quia maiores repellat laudantium porro vel, placeat et quod non consequuntur commodi sed neque facere quibusdam.
-                            </p>
+                            <ul className="product-info-description">
+                                <li className="product-descript">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit aut dolorem possimus! Dolore accusantium soluta, quas repellendus magnam iusto a, obcaecati iure accusamus ipsum ab porro iste ex? Molestiae, incidunt.
+                                </li>
+                                <li className="product-descript">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit aut dolorem possimus! Dolore accusantium soluta, quas repellendus magnam iusto a, obcaecati iure accusamus ipsum ab porro iste ex? Molestiae, incidunt.
+                                </li>
+                                <li className="product-descript">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit aut dolorem possimus! Dolore accusantium soluta, quas repellendus magnam iusto a, obcaecati iure accusamus ipsum ab porro iste ex? Molestiae, incidunt.
+                                </li>
+                                <li className="product-descript">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit aut dolorem possimus! Dolore accusantium soluta, quas repellendus magnam iusto a, obcaecati iure accusamus ipsum ab porro iste ex? Molestiae, incidunt.
+                                </li>
+                                <li className="product-descript">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit aut dolorem possimus! Dolore accusantium soluta, quas repellendus magnam iusto a, obcaecati iure accusamus ipsum ab porro iste ex? Molestiae, incidunt.
+                                </li>
+                                <li className="product-descript">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit aut dolorem possimus! Dolore accusantium soluta, quas repellendus magnam iusto a, obcaecati iure accusamus ipsum ab porro iste ex? Molestiae, incidunt.
+                                </li>
+                                <li className="product-descript">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit aut dolorem possimus! Dolore accusantium soluta, quas repellendus magnam iusto a, obcaecati iure accusamus ipsum ab porro iste ex? Molestiae, incidunt.
+                                </li>
+                                <li className="product-descript">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit aut dolorem possimus! Dolore accusantium soluta, quas repellendus magnam iusto a, obcaecati iure accusamus ipsum ab porro iste ex? Molestiae, incidunt.
+                                </li>
+                            </ul>
                     </div>
                 </div>
 
