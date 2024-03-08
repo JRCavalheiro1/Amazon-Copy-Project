@@ -4,9 +4,11 @@ import { styled } from "styled-components";
 export const ProductImageStyle = styled.div`
     .product-image {
         display: flex;
+        position: relative;
         width: 500px;
         height: 500px;
         gap: 10px;
+        cursor: pointer;
     }
 
     .img-options {

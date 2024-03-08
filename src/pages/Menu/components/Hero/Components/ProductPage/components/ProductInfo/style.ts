@@ -4,7 +4,7 @@ export const ProductInfoStyle = styled.div`
     
     //product info body
     .product-informations {
-        width:700px;
+        width: 700px;
     }
 
    //product title info content
