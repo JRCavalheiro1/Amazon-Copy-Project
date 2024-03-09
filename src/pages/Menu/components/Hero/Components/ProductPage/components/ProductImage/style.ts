@@ -17,7 +17,7 @@ export const ProductImageStyle = styled.div`
             gap: 10px;
         }
 
-    .img-principal {
+    #img-principal {
         width: 425px;
         height: 440px;
     }

@@ -1,7 +1,7 @@
 import { ImageOption } from "../../components/ImageOption/ImageOption"; 
 import { ProductImageModal } from "../ProductImageModal/ProductImageModal";
 import { ProductImageStyle } from "./style";
-import { useState } from "react";
+import { createElement, useState } from "react";
 
 
 type produtctImageProps = {
@@ -11,9 +11,19 @@ type produtctImageProps = {
 export const ProductImage = ({productImageData} : produtctImageProps) => {
     const [mainImage, setMainImage] = useState("")
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [mainImageZoom, setMainImageZoom] = useState("");
+    
+    //function zoom take the image of image main field
+    //return result that is the zoom spot of the image 
 
-    
-    
+    const zoomImageFunction = (imgClassName: any) => {
+        const image = document.getElementById(imgClassName);
+        const lens = createElement("div", {className: "image-lens"});
+        //image?.parentElement?.insertBefore(lens, image);
+
+        
+    }
+
     const handleChangeImage = (index: string) => {
         setMainImage(index);
     }
@@ -28,8 +38,8 @@ export const ProductImage = ({productImageData} : produtctImageProps) => {
                 <div 
                     className="img-main"
                     onMouseEnter={()=> setModalIsOpen(!modalIsOpen)} 
-                    onMouseLeave={()=> setModalIsOpen(!modalIsOpen)} >
-                    <img src={mainImage ? mainImage : productImageData.image} className="img-principal"/>
+                    onMouseLeave={()=> setModalIsOpen(!modalIsOpen)}>
+                    <img src={mainImage ? mainImage : productImageData.image} id="img-principal"/>
                 </div>
 
                 <div>
