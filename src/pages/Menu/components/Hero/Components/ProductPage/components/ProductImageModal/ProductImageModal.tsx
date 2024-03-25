@@ -2,15 +2,12 @@ import { ProductImageModalStyle } from "./style";
 
 
 type ProducImageModalProps = {
-    productImage?: string;
+    backgroundImageStyle?: any;
 }
-export const ProductImageModal = ({productImage}: ProducImageModalProps) => {
+export const ProductImageModal = ({backgroundImageStyle}: ProducImageModalProps) => {
     return (
         <ProductImageModalStyle>
-            <div className="product-image-modal">
-                <div className="modal-image-inside" >
-                    <img src={productImage}/>   
-                </div>
+            <div className="product-image-modal" style={backgroundImageStyle}>
             </div>
         </ProductImageModalStyle>
     )

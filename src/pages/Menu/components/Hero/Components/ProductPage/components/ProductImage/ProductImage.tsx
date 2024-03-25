@@ -1,7 +1,7 @@
 import { ImageOption } from "../../components/ImageOption/ImageOption"; 
 import { ProductImageModal } from "../ProductImageModal/ProductImageModal";
 import { ProductImageStyle } from "./style";
-import { createElement, useState } from "react";
+import { createElement, useState, useRef } from "react";
 
 
 type produtctImageProps = {
@@ -9,41 +9,46 @@ type produtctImageProps = {
 }
 
 export const ProductImage = ({productImageData} : produtctImageProps) => {
-    const [mainImage, setMainImage] = useState("")
+    const [mainImage, setMainImage] = useState(productImageData.image)
     const [modalIsOpen, setModalIsOpen] = useState(false);
-    const [mainImageZoom, setMainImageZoom] = useState("");
+    const [mainImageZoom, setMainImageZoom] = useState({backgroundImage: `url(${mainImage})`});
+
+    const lens = useRef<HTMLDivElement | null>(null);
+
     
     //function zoom take the image of image main field
     //return result that is the zoom spot of the image 
-
-    const zoomImageFunction = (imgClassName: any) => {
-        const image = document.getElementById(imgClassName);
-        const lens = createElement("div", {className: "image-lens"});
-        //image?.parentElement?.insertBefore(lens, image);
-
+   
+    const handleMouseMove = (e: any) => {
+        const {offsetX, offsetY, currentTarget} = e.nativeEvent;
+        const {offsetWidth, offsetHeight} = currentTarget;
+        const xPercentage = (offsetX / offsetWidth) * 225;
+        const yPercentage = (offsetY / offsetHeight) * 225;
+       
+       
+        lens.current!.style.left = `${offsetX}px`;
+        lens.current!.style.top = `${offsetY}px`;
         
-    }
-
-    const handleChangeImage = (index: string) => {
-        setMainImage(index);
+        setMainImageZoom((prev)=> ({...prev, backgroundImage: `url(${mainImage})`, backgroundPosition: `${xPercentage}% ${yPercentage}%`}))
     }
     return (
         <ProductImageStyle>
             <div className="product-image">
                 <div className="img-options">
                     {productImageData.imageOption.map((currentImage: string) =>
-                        <ImageOption imageIndex={currentImage} handleChangeImage={()=> handleChangeImage(currentImage)}/>
+                        <ImageOption imageIndex={currentImage} handleChangeImage={()=> setMainImage(currentImage)}/>
                     )}
+                </div> 
+                <div className="img-main">
+                    <img src={mainImage} id="img-principal" 
+                        onMouseEnter={()=> setModalIsOpen(!modalIsOpen)} 
+                        onMouseLeave={()=> setModalIsOpen(!modalIsOpen)}
+                        onMouseMove={(e)=> handleMouseMove(e)}/>
+                    <div id="lens" ref={lens}/>    
                 </div>
-                <div 
-                    className="img-main"
-                    onMouseEnter={()=> setModalIsOpen(!modalIsOpen)} 
-                    onMouseLeave={()=> setModalIsOpen(!modalIsOpen)}>
-                    <img src={mainImage ? mainImage : productImageData.image} id="img-principal"/>
-                </div>
-
+                
                 <div>
-                    {modalIsOpen && <ProductImageModal productImage={mainImage}/> }
+                    {modalIsOpen &&  <ProductImageModal backgroundImageStyle={mainImageZoom}/>}
                 </div>
             </div>
     </ProductImageStyle>
