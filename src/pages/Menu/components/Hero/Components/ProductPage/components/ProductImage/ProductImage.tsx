@@ -23,12 +23,10 @@ export const ProductImage = ({productImageData} : produtctImageProps) => {
         const {offsetX, offsetY, currentTarget} = e.nativeEvent;
         //const {offsetWidth, offsetHeight} = currentTarget;
        
-       
-       
         lens.current!.style.left = `${offsetX}px`;
         lens.current!.style.top = `${offsetY}px`;
 
-        const xPercentage = (offsetX / (lens.current!.clientWidth - 50) * 35) ;
+        const xPercentage = (offsetX / (lens.current!.clientWidth - 50) * 35);
         const yPercentage = (offsetY / (lens.current!.clientHeight - 50) * 50) ;
         
         setMainImageZoom((prev)=> ({...prev, backgroundImage: `url(${mainImage})`, backgroundPosition: `${xPercentage}% ${yPercentage}%`}))
@@ -45,10 +43,8 @@ export const ProductImage = ({productImageData} : produtctImageProps) => {
                     <img src={mainImage} id="img-principal" 
                         onMouseEnter={()=> setModalIsOpen(!modalIsOpen)} 
                         onMouseLeave={()=> setModalIsOpen(!modalIsOpen)}
-                        onMouseMove={(e)=> handleMouseMove(e)}
-                        
-                        />
-                        
+                        onMouseMove={(e)=> handleMouseMove(e)}/>
+                     
                     {modalIsOpen && <div id="lens" ref={lens}/>}    
                 </div>
                 

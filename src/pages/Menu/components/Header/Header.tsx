@@ -3,13 +3,14 @@ import { Local, Search, User, Ordered, CartComponent } from "./components/Index"
 import logoMenu from "../../../../images/logo-menu.png";
 import { useState } from "react";
 import { UserModal } from "./components/UserModal/UserModal";
-
+import { CartModal } from "./components/CartModal/CartModal";
+import { Overlay } from "../../../../shared/components/Overlay/Overlay";
 interface HeaderProps {
     name: string,
 }
 export const Header = ({name}: HeaderProps) => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
-   
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <Container>
             <div className="nav-header">
@@ -25,7 +26,9 @@ export const Header = ({name}: HeaderProps) => {
                     isOpen={modalIsOpen}
                     openModal={modalIsOpen && <UserModal/>}/>
                 <Ordered/>
-                <CartComponent/>
+                <CartComponent click={()=> setIsOpen(!isOpen)}/>
+                {isOpen && <CartModal/>}
+                
             </div>
         </Container>
     )
