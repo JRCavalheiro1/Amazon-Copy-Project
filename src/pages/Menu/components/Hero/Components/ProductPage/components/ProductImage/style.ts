@@ -21,7 +21,8 @@ export const ProductImageStyle = styled.div`
       
     #lens {
         position: absolute;
-        border: 1px solid red;
+        background: rgb(209, 224, 240);
+        opacity: 0.36;
         width: 200px;
         height: 200px;
         pointer-events: none;
@@ -41,10 +42,5 @@ export const ProductImageStyle = styled.div`
         height: 100px;
     }
 
-    .lens {
-        width: 100px;
-        height: 100px;
-        border: 1px solid red;
-    }
 
 `;
