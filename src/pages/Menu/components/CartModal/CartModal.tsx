@@ -1,6 +1,6 @@
 import { Container } from "./style"
 import { ComponentAnimation } from "../../../../shared/components/ComponentAnimation/ComponentAnimation"
-
+import { Button } from "../../../../shared/components/Index"
 
 type CartModalProps = {
     isOpen?: boolean,
@@ -37,17 +37,20 @@ export const CartModal = ({isOpen} : CartModalProps) => {
                                 </p>
                             </div>
                             <div className="go-to-cart-page">
-                                <button>Ir para o carrinho</button>
+                                <Button 
+                                    type="button"
+                                    style={{background: "#f2f2f2", border: "1px solid #d9d5d5", padding: "3px", fontSize: "10px"}}>
+                                        Ir para o carrinho
+                                    </Button>
                             </div>
 
                             <div className="product">
                                 <div className="product-visualize">
                                         <div className="product-img">
-                                            <img/>
-                                        </div>
-                                        <div className="product-cost"> 
+                                            <img src="https://m.media-amazon.com/images/I/61V5FRUgX8L._AC_SY450_.jpg"/>
                                             <h2>R$ 286,00</h2>
                                         </div>
+                                       
 
                                         <div className="product-presets">
                                             <button className="remove"> lixo</button>

@@ -38,12 +38,31 @@ export const Container = styled.div`
         #link-p {
             text-decoration: none;
             color: #007185;
-
         }
 
         #link-p:hover {
             text-decoration: underline;
             color: var(--link-color-hover);
         }
+    }
+
+    .product {
+        margin-top: 10px;
+    }
+    
+
+    .product-img {
+        padding: 2px;
+        border: 1px solid transparent;
+        img {
+            width: 109px;
+            height: 109px;
+            cursor: pointer;
+        }
+
+    }
+
+    .product-img:hover {
+        border-color: #d9d5d5;
     }
 `;
