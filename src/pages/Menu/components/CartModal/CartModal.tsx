@@ -1,6 +1,7 @@
 import { Container } from "./style"
 import { ComponentAnimation } from "../../../../shared/components/ComponentAnimation/ComponentAnimation"
 import { Button } from "../../../../shared/components/Index"
+import trashIcon from "../../../../images/trashIcon.svg";
 
 type CartModalProps = {
     isOpen?: boolean,
@@ -51,10 +52,10 @@ export const CartModal = ({isOpen} : CartModalProps) => {
                                             <h2>R$ 286,00</h2>
                                         </div>
                                        
-
-                                        <div className="product-presets">
-                                            <button className="remove"> lixo</button>
+                                        <div className="trash">
+                                            <img src={trashIcon}/>
                                         </div>
+                                        
                                 </div>
                             </div>
                         </div>

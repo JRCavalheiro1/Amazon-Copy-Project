@@ -50,10 +50,16 @@ export const Container = styled.div`
         margin-top: 10px;
     }
     
+    .product-visualize {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .product-img {
         padding: 2px;
         border: 1px solid transparent;
+        
         img {
             width: 109px;
             height: 109px;
@@ -61,8 +67,19 @@ export const Container = styled.div`
         }
 
     }
-
     .product-img:hover {
         border-color: #d9d5d5;
+    }
+
+    .trash {
+        margin-top: 5px;
+        cursor: pointer;
+        border: 1px solid #d9d5d5;
+        border-radius: 7px;
+        padding: 3px 6px;
+        display: flex;
+        width: 35px;
+        align-items: center;
+        justify-content: center;
     }
 `;
