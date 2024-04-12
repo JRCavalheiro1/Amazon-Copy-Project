@@ -4,9 +4,10 @@ import localIcon from "../../../../../../../../images/local-color-black.svg";
 import { Button } from "../../../../../../../../shared/components/Index";
 
 type producShoppingProps = {
-    producShoppingData: any;
+    producShoppingData: any,
+    onClick: ()=> void
 }
-export const ProductShopping = ({producShoppingData}: producShoppingProps ) => {
+export const ProductShopping = ({producShoppingData, onClick}: producShoppingProps ) => {
    
     return (
         <ProductShoppingStyle>
@@ -31,7 +32,12 @@ export const ProductShopping = ({producShoppingData}: producShoppingProps ) => {
                 </div>
 
                 <div className="product-shopping-purchase-buttons">
-                    <Button style={{borderRadius: "13px"}}>Adicionar ao carrinho</Button>
+                    <Button 
+                        style={{borderRadius: "13px"}}
+                        onClick={onClick}>   
+                            Adicionar ao carrinho
+
+                        </Button>
                     <Button style={{background: "#ffa41c", borderRadius: "13px"}}>Comprar agora</Button>
                 </div>
 

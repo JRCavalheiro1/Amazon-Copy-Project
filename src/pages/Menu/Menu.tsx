@@ -32,7 +32,7 @@ export const Menu = ()=> {
         <Container>
             <Header name={nameUser}/>
             <Sugestions name={nameUser}/>
-            <CartModal/>
+            
             <Outlet/>
 
             {/*Footer*/}
