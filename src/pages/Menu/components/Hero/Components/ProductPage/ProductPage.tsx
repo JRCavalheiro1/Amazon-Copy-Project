@@ -8,13 +8,40 @@ import { useState } from "react";
 import { CartModal } from "../../../CartModal/CartModal";
 import { Overlay } from "../../../../../../shared/components/Overlay/Overlay";
 
+import { createSlice, configureStore } from "@reduxjs/toolkit";
+
+const couterSlice = createSlice({
+    name: 'counter',
+    initialState: {
+        value: 0
+    },
+    reducers: {
+        incremented: state => {
+            state.value += 1;      
+        },
+        decremented: state => {
+            state.value -= 1;
+        }
+    }
+})
+
+export const {incremented, decremented} = couterSlice.actions;
+
+const store = configureStore({
+    reducer: couterSlice.reducer
+})
+
+
 export const ProductPage = () => {
     const location = useLocation();
     const productData = location.state;
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
-    const addItemToCar = () => {
-        setModalIsOpen(!modalIsOpen)
+    const addItemToCart = () => {
+        store.dispatch(incremented());
+
+        console.log(store.getState());
+        
     }
 
     return (
@@ -23,7 +50,7 @@ export const ProductPage = () => {
                 <ProductImage productImageData={productData}/>
                 <ProductInfo productInfoData={productData}/>
                 <ProductShopping producShoppingData={productData}
-                    onClick={addItemToCar}
+                    onClick={addItemToCart}
                 />
                 <CartModal isOpen={modalIsOpen} productData={productData}/> 
                 {modalIsOpen && <Overlay onClick={()=> setModalIsOpen(!modalIsOpen)}/>}

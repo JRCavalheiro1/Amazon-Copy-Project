@@ -1,10 +1,12 @@
 import { Container } from "./style";
 import cart from "../../../../../../images/cart.svg";
+import { useState } from "react";
 
 type cart = {
     click? : ()=> void
 } 
 export const CartComponent = ({click}: cart) => {
+    const [totalItens, setTotalItens] = useState(0);
     return (
         <Container>
             <div className="nav-cart-section" onClick={click}>
