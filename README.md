@@ -3,4 +3,4 @@
 
 # React + TypeScript + Vite
 
-![](file:///C:/Users/julio/Desktop/foto%201.png)
+![Algo aqui](file:///C:/Users/julio/Desktop/foto%201.png)
