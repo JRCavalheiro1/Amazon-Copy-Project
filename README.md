@@ -3,5 +3,5 @@
 
 # React + TypeScript + Vite
 
-<img src="file:///C:/Users/julio/Desktop/foto%201.png" alt="Texto Alternativo">
+
 
