@@ -3,4 +3,5 @@
 
 # React + TypeScript + Vite
 
-![Algo aqui](file:///C:/Users/julio/Desktop/foto%201.png)
+<img src="file:///C:/Users/julio/Desktop/foto%201.png" alt="Texto Alternativo">
+
