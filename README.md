@@ -1,4 +1,6 @@
-# Projeto de estudo Amazon Web Site. Este projeto foi feito com o intuito de praticar minhas habilidades técnicas como desenvolvedor front-end. O projeto ainda se encontra em desenvolvimento.
+# Projeto de estudo Amazon Web Site. 
+
+## Este projeto foi feito com o intuito de praticar minhas habilidades técnicas como desenvolvedor front-end. O projeto ainda se encontra em desenvolvimento.
 
 ### Foram utilizadas as tecnologias React, Typescript e Firebase para desenvolver o projeto;
 ### O sistema conta com:
