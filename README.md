@@ -1,7 +1,8 @@
 ### Projeto de estudo Amazon Web Site. Este projeto foi feito com o intuito de praticar minhas habilidades técnicas como desenvolvedor front-end. O projeto ainda se encontra em desenvolvimento.
 
-##Foram utilizadas as tecnologias React, Typescript e Firebase para desenvolver o projeto;
-##O sistema conta com:
+#Foram utilizadas as tecnologias React, Typescript e Firebase para desenvolver o projeto;
+
+#O sistema conta com:
 #- cadastro e login de usuários, integração com Firebase Authentication e Firestore database;
 #- adicionar itens ao carrinho e realizar compras (em andamento);
 #- mecanismo de busca por produtos (não iniciado);
