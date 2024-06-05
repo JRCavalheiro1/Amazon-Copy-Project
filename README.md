@@ -4,9 +4,9 @@
 
 ### Foram utilizadas as tecnologias React, Typescript e Firebase para desenvolver o projeto;
 ### O sistema conta com:
-#### - cadastro e login de usuários, integração com Firebase Authentication e Firestore database;
-#### - adicionar itens ao carrinho e realizar compras utilizando o Redux (em andamento);
-#### - mecanismo de busca por produtos (não iniciado);
+#### - cadastro e login de usuários, integração com Firebase Authentication e Firestore database
+#### - adicionar itens ao carrinho e realizar compras utilizando o Redux (em andamento)
+#### - mecanismo de busca por produtos (não iniciado)
 
 # <img src="https://github.com/JRCavalheiro1/Amazon-Copy-Project_NOT-READY/assets/144833327/87b9c18d-868c-4a7b-8fdc-0b40f386dffa">
 # <img src="https://github.com/JRCavalheiro1/Amazon-Copy-Project_NOT-READY/assets/144833327/e68f3c19-5462-440c-ba3d-7dc6a35caa9a">
