@@ -17,4 +17,4 @@
 ### IMPORTANTE: Este é apenas um projeto de estudo baseado em um clone do Ecommerce do Amazon. Todas as funcionalidades e componentes visuais são resultados do código desenvolvido por mim, e as imagens e icones utilizados servem apenas para demonstração, portanto não estão sendo utilizados como forma de gerar nenhuma renda em cima da marca! 
 
 
-### Para rodar o projeto: digitar yarn dev no terminal.
+### Para rodar o projeto: digitar yarn dev no terminal
